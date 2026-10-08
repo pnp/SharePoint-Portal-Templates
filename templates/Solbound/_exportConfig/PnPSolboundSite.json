@@ -20,7 +20,24 @@
                 "title": "Site Assets"
             },
             {
-                "title": "Events"
+                "title": "Events",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<OrderBy><FieldRef Name='Created' Ascending='FALSE' /></OrderBy>",
+                    "viewFields": [
+                        "Title",
+                        "EventDate",
+                        "Location",
+                        "EndDate",
+                        "Description",
+                        "fAllDayEvent",
+                        "fRecurrence",
+                        "EventType",
+                        "Category",
+                        "BannerUrl"
+                    ]
+                }
             }
         ]
     },
