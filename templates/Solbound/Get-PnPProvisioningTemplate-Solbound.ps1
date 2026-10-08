@@ -1,7 +1,7 @@
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force # Recommended version: 3.3.0 and above
 
-$templateTenant = "spex003" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$templateTenant = "sympraxisdesign" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $templateSiteUrl = "https://$($templateTenant).sharepoint.com/sites/Solbound"
 $templateSiteConnection = Connect-PnPOnline -ClientId e6f6cea5-3653-448b-b4fc-5ddb2a4b376f -Url $templateSiteUrl -Interactive -ReturnConnection
 
@@ -22,25 +22,3 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
     }
 }
 $xml.Save("./templates/Solbound/PnPProvisioning/PnP-Provisioning-SolboundSite.xml")
-
-# Add the Events list items to the template's XML file, as they are not included in the template export, as we need to limit the columns we export to only the required columns for the Events list, and we need to add the items to the template XML file manually.
-$fields = @(
-    "Title",
-    "EventDate",
-    "EndDate",
-    "Location",
-    "Description",
-    "fAllDayEvent",
-    "fRecurrence",
-    "EventType",
-    "Category",
-    "BannerUrl"
-)
-
-Add-PnPDataRowsToSiteTemplate `
-    -Connection $templateSiteConnection `
-    -Path "./templates/Solbound/PnPProvisioning/PnP-Provisioning-SolboundSite.xml" `
-    -List "Events" `
-    -KeyColumn "Title" `
-    -Fields $fields `
-    -TokenizeUrls

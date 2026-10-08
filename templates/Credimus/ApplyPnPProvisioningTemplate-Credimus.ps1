@@ -11,9 +11,9 @@ Import-Module PnP.PowerShell -Force
 
 #region Variables
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "spex003" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "be3b2a30-ea14-4707-adeb-3adb1a77beea" # The App Id from your App Registration for PnP.PowerShell
-$siteUrl = "MARCTEST16" # The URL name for the site you want to create.
+$tenant = "sympraxisdesign" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$clientId = "5a72f1bc-0769-4d82-97c1-91448d69eb56" # The App Id from your App Registration for PnP.PowerShell
+$siteUrl = "Credimus" # The URL name for the site you want to create.
 #endregion
 
 #region Connections
@@ -87,16 +87,7 @@ foreach ($page in $sitePages) {
 # Add the correct ACES to the Viva Connections Dashboard
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Credimus.ACES.csv"
 
-Write-Host -BackgroundColor Cyan "Setting up ACES on the Dashboard"
-
-# There's a bug in the PnP.PowerShell module that causes failures if there are malformed ACEs in the dashboard.
-# Ideally we would remove them before adding, but we can't. Leaving this here in case the bug is fixed later, but skipping for now.
-# If you'd like to remove the malformed ACEs now, you'll need to do it manually.
-#
-# $badACEs = Get-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection
-# foreach ($badACE in $badACEs) {
-#     Remove-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection -Identity $badACE
-# }
+Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
 
 foreach ($ace in $aces) {
     Add-PnPVivaConnectionsDashboardACE `

@@ -11,9 +11,9 @@ Import-Module PnP.PowerShell -Force
 
 #region Variables
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "spex003" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "be3b2a30-ea14-4707-adeb-3adb1a77beea" # The App Id from your App Registration for PnP.PowerShell
-$siteUrl = "MARCTEST17" # The URL name for the site you want to update.
+$tenant = "sympraxisdesign" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$clientId = "5a72f1bc-0769-4d82-97c1-91448d69eb56" # The App Id from your App Registration for PnP.PowerShell
+$siteUrl = "MARCTEST1" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -28,8 +28,7 @@ $newSite = Get-PnPTenantSite -Connection $adminConnection -Identity $destination
 if (!$newSite) {
     Write-Host -BackgroundColor Cyan "Site at $destinationUrl does not exist"
     return
-}
-else {
+} else {
     Write-Host -BackgroundColor Cyan "Connecting to existing site at $destinationUrl..."
 }
 
@@ -72,31 +71,6 @@ foreach ($page in $sitePages) {
 
     if ($pageMetadata -and (Test-Path $folder)) {
 
-        # $thumbUrl = $pageMetadata.ThumbnailUrl
-
-        # $saSitePages = "/sites/$($siteUrl)/SiteAssets/SitePages"
-        # $saFolderName = $pageMetadata.PageName.Replace('.aspx', '')
-        # $saFolder = "$saSitePages/$($saFolderName)"
-
-        # $pageFolder = Get-PnPFolder -Connection $newSiteConnection -Url $saFolder -ErrorAction SilentlyContinue
-
-        # if (!$pageFolder) {
-        #     Add-PnPFolder -Connection $newSiteConnection -Name $saFolderName -Folder $saSitePages | Out-Null
-        #     # New-Item -ItemType Directory -Path $saFolder | Out-Null
-        # }
-        # $fileName = [System.IO.Path]::GetFileName(([uri]$thumbUrl).AbsolutePath)
-            
-        # # Upload the file in $folder to the Site Assets library
-        # Write-Host -BackgroundColor Cyan "  Uploading thumbnail $($fileName) to $saFolder"
-
-        # Add-PnPFile -Connection $newSiteConnection -Path "$($folder)\$($fileName)" -Folder $saFolder | Out-Null
-
-        # Set-PnPPage `
-        #     -Connection $newSiteConnection `
-        #     -Identity $page.FieldValues["FileLeafRef"] `
-        #     -ThumbnailUrl "/sites/$($siteUrl)/SiteAssets/SitePages/$($pageMetadata.PageName.Replace('.aspx', ''))/$fileName" `
-        # | Out-Null
-
         Write-Host -BackgroundColor Cyan "  Republishing page '$($page.FieldValues['Title'])' with new thumbnail and metadata"
 
         $pubItem = Set-PnPPage -Connection $newSiteConnection -Identity $newItem.FieldValues["FileLeafRef"] -Publish
@@ -107,7 +81,12 @@ foreach ($page in $sitePages) {
 # Add the correct ACES to the Viva Connections Dashboard
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Solbound.ACES.csv"
 
-Write-Host -BackgroundColor Cyan "Setting up ACES on the Dashboard"
+Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
+
+# Replace all instances of {site} in the $resources with the actual site URL
+$aces | ForEach-Object {
+    $_.JsonProperties = $_.JsonProperties -replace "{site}", $destinationUrl
+}
 
 $badACEs = Get-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection
 foreach ($badACE in $badACEs) {
@@ -129,6 +108,13 @@ $vcList = "ConnectionsConfiguration-4ce1892f-76d2-4393-b9df-079a66a95c4a"
 
 # import the file Solbound.Resources.csv with the resources to add to the Resources list
 $resources = Import-Csv -Path "$PSScriptRoot/Resources/Solbound.Resources.csv"
+
+Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on the Dashboard"
+
+# Replace all instances of {site} in the $resources with the actual site URL
+$resources | ForEach-Object {
+    $_.Value = $_.Value -replace "{site}", $destinationUrl
+}
 
 Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
     Spotlight_x0020_Configuration = $resources.Value
