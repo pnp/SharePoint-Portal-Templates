@@ -11,8 +11,8 @@ Import-Module PnP.PowerShell -Force
 
 #region Variables
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "sympraxisdesign" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "5a72f1bc-0769-4d82-97c1-91448d69eb56" # The App Id from your App Registration for PnP.PowerShell
+$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
 $siteUrl = "MARCTEST1" # The URL name for the site you want to update.
 #endregion
 
