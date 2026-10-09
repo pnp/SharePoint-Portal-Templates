@@ -11,17 +11,11 @@ $siteName = "<YOUR_SITE_URL>" # The URL name for the site you want to update.
 $siteUrl = "https://$($tenant).sharepoint.com/sites/$($siteName)"
 $siteConnection = Connect-PnPOnline -ClientId $clientId -Url $siteUrl -Interactive -ReturnConnection
 
-$config = Get-PnPListItem `
-    -Connection $siteConnection `
-    -List "ConnectionsConfiguration-4ce1892f-76d2-4393-b9df-079a66a95c4a" `
-    -Id 1
+$siteACES = Get-PnPVivaConnectionsDashboardACE -Connection $siteConnection
 
-# Get the Spotlight configuration
-$resources = [PSCustomObject]@{
-    Title = "Spotlight_x0020_Configuration"
-    Value = $config.FieldValues["Spotlight_x0020_Configuration"]
-}
-
-$resources | Export-Csv -Path "./utils/Resources/$($siteName).Resources.csv" -NoTypeInformation -Force
+# Export $siteACES to a CSV file
+$siteACES | `
+    Select-Object -Property Order, ACEType, Title, CardSize, Description, JsonProperties | `
+    Export-Csv -Path "./utils/ACES/$($siteName).ACEs.csv" -NoTypeInformation -Encoding UTF8 -Force
 
 # endregion
