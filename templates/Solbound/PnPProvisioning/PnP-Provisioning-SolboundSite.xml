@@ -588,7 +588,9 @@
         <pnp:File Src="SiteAssets/SitePages/Home/2534133050-nestor-wilken.jpeg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/shape-314114618-Miram-Graham-1772133060467.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/314114618-Miram-Graham.jpeg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
-        <pnp:File Src="SiteAssets/__sitelogo__solbound-logo.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+        <pnp:File Src="SiteAssets/__sitelogo__solbound-logo.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__rectSitelogo__solbound-logo.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
       </pnp:Files>
       <pnp:ClientSidePages>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx">
