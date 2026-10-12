@@ -1,0 +1,8 @@
+{
+  "Id": "dec7922a-ff45-49bc-9552-4c92700d3673",
+  "Title": "Contoso",
+  "Store": 0,
+  "PackageJson": "{\"fontFaces\":[{\"fontFamily\":\"Aptos-1043438773\",\"path\":\"Aptos-Black.ttf\",\"fontType\":\"contentFont\"},{\"fontFamily\":\"Aptos-643834297\",\"path\":\"Aptos-SemiBold.ttf\",\"fontType\":\"contentFont\"},{\"fontFamily\":\"Aptos-1242580949\",\"path\":\"Aptos.ttf\",\"fontType\":\"contentFont\"}],\"fontSlots\":{\"title\":{\"fontFamily\":\"Aptos-1043438773\",\"fontFace\":\"Black\"},\"heading\":{\"fontFamily\":\"Aptos-643834297\",\"fontFace\":\"SemiBold\"},\"body\":{\"fontFamily\":\"Aptos-1242580949\",\"fontFace\":\"Regular\"},\"label\":{\"fontFamily\":\"Aptos-1242580949\",\"fontFace\":\"Regular\"}}}",
+  "IsValid": true,
+  "IsHidden": false
+}

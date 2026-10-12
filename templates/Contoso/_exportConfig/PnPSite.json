@@ -1,0 +1,48 @@
+{
+    "$schema": "https://aka.ms/sppnp-extract-configuration-schema",
+    "handlers": [
+        "WebSettings",
+        "SiteHeader",
+        "SiteFooter",
+        "ContentTypes",
+        "Fields",
+        "Files",
+        "Lists",
+        "Pages",
+        "Theme"
+    ],
+    "lists": {
+        "lists": [
+            {
+                "title": "Site Pages"
+            },
+            {
+                "title": "Site Assets"
+            },
+            {
+                "title": "Events",
+                "includeItems": true,
+                "skipEmptyFields": true,
+                "query": {
+                    "camlQuery": "<OrderBy><FieldRef Name='Created' Ascending='FALSE' /></OrderBy>",
+                    "viewFields": [
+                        "Title",
+                        "EventDate",
+                        "Location",
+                        "EndDate",
+                        "Description",
+                        "fAllDayEvent",
+                        "fRecurrence",
+                        "EventType",
+                        "Category",
+                        "BannerUrl"
+                    ]
+                }
+            }
+        ]
+    },
+    "pages": {
+        "includeAllClientSidePages": true
+    },
+    "persistAssetFiles": true
+}
