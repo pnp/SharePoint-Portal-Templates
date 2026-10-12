@@ -105,21 +105,6 @@ foreach ($ace in $aces) {
 }
 
 # Resources
-$vcList = "ConnectionsConfiguration-4ce1892f-76d2-4393-b9df-079a66a95c4a"
-
-# import the file Woodgrove.Resources.csv with the resources to add to the Resources list
-$resources = Import-Csv -Path "$PSScriptRoot/Resources/Woodgrove.Resources.csv"
-
-Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on the Dashboard"
-
-# Replace all instances of {site} in the $resources with the actual site URL
-$resources | ForEach-Object {
-    $_.Value = $_.Value -replace "{site}", $destinationUrl
-}
-
-Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
-    Spotlight_x0020_Configuration = $resources.Value
-}
 
 Write-Host -BackgroundColor Cyan "Provisioning complete for site at $destinationUrl"
 #endregion
