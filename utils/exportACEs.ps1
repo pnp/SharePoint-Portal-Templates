@@ -2,9 +2,10 @@ Import-Module PnP.PowerShell -Force
 
 #region Variables
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "<YOUR_SITE_URL>" # The URL name for the site you want to update.
+$tenant = "M365x80643879" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$clientId = "0241da54-30d1-48da-8a55-d38d3d7f7863
+" # The App Id from your App Registration for PnP.PowerShell
+$siteName = "Hello3" # The URL name for the site you want to update.
 #endregion
 
 # region Export Resources
@@ -14,8 +15,12 @@ $siteConnection = Connect-PnPOnline -ClientId $clientId -Url $siteUrl -Interacti
 $siteACES = Get-PnPVivaConnectionsDashboardACE -Connection $siteConnection
 
 # Export $siteACES to a CSV file
-$siteACES | `
-    Select-Object -Property Order, ACEType, Title, CardSize, Description, JsonProperties | `
-    Export-Csv -Path "./utils/ACES/$($siteName).ACEs.csv" -NoTypeInformation -Encoding UTF8 -Force
+
+ $siteACES | Select-Object -Property Order, ACEType, Title, CardSize, Description, JsonProperties |
+    ForEach-Object {
+        $_.JsonProperties = $_.JsonProperties -ireplace [regex]::Escape($siteUrl), '{site}'
+        $_
+    } |
+    Export-Csv -Path "./utils/ACES/$($siteName).ACEs.csv" -NoTypeInformation
 
 # endregion
