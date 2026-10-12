@@ -42,7 +42,7 @@ Write-Host -BackgroundColor Cyan "Applying PnP Provisioning Template to site at 
 # Apply PnP Template
 Invoke-PnPSiteTemplate `
     -Connection $newSiteConnection `
-    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning.xml"
+    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 #endregion
 
