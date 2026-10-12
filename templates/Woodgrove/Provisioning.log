@@ -5324,3 +5324,13 @@ pwsh Information: 0 : 2026-10-12 14:11:53.0813	[PnP.Framework]	[0]	[Debug]	Check
 pwsh Information: 0 : 2026-10-12 14:11:54.2694	[Files]	[23]	[Debug]	Uploading and overwriting existing file 1938318687-GettyImages-2225209600.jpg	48576ms	34b68eb9-214b-4e37-87a9-99eacf04a3b5
 pwsh Information: 0 : 2026-10-12 14:11:54.4285	[PnP.Framework]	[0]	[Information]	File 1938318687-GettyImages-2225209600.jpg retrieved from folder SiteAssets\SitePages\Home	0ms	
 pwsh Information: 0 : 2026-10-12 14:11:54.5226	[PnP.Framework]	[0]	[Debug]	Creating file with name 'Microsoft.SharePoint.Client.ResourcePath'	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:17.0870	[PnP.Framework]	[0]	[Debug]	Created file with name '1938318687-GettyImages-2225209600.jpg'	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:18.6980	[PnP.Framework]	[0]	[Debug]	Cloning context for https://span001.sharepoint.com/sites/MARCTEST2	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:18.6982	[PnP.Framework]	[0]	[Debug]	Checking for different audience https://span001.sharepoint.com/sites/MARCTEST2	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:21.0010	[Files]	[23]	[Debug]	Uploading and overwriting existing file 1031132801-BG4.png	75308ms	34b68eb9-214b-4e37-87a9-99eacf04a3b5
+pwsh Information: 0 : 2026-10-12 14:12:21.1465	[PnP.Framework]	[0]	[Information]	File 1031132801-BG4.png retrieved from folder SiteAssets\SitePages\Home	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:23.5772	[PnP.Framework]	[0]	[Debug]	Cloning context for https://span001.sharepoint.com/sites/MARCTEST2	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:23.5774	[PnP.Framework]	[0]	[Debug]	Checking for different audience https://span001.sharepoint.com/sites/MARCTEST2	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:25.3082	[Files]	[23]	[Debug]	Uploading and overwriting existing file 2329532682-Background.png	79615ms	34b68eb9-214b-4e37-87a9-99eacf04a3b5
+pwsh Information: 0 : 2026-10-12 14:12:25.4352	[PnP.Framework]	[0]	[Information]	File 2329532682-Background.png retrieved from folder SiteAssets\SitePages\Home	0ms	
+pwsh Information: 0 : 2026-10-12 14:12:25.5086	[PnP.Framework]	[0]	[Debug]	Creating file with name 'Microsoft.SharePoint.Client.ResourcePath'	0ms	
