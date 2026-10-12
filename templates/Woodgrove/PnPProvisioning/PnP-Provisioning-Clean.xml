@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.21.33.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-09202262591341A780BCAA095CBF8105">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-09202262591341A780BCAA095CBF8105" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:WebSettings RequestAccessEmail="" NoCrawl="false" WelcomePage="SitePages/Home.aspx" SiteLogo="{site}/SiteAssets/__sitelogo__LogoW.png" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" HorizontalQuickLaunch="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
+      <pnp:SiteFields>
+        <Field ID="{86EBE41F-255F-4170-B040-9977528A8BF5}" Name="_SPCollaborators" StaticName="_SPCollaborators" DisplayName="Collaborators" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ReadOnly="TRUE" Hidden="TRUE" />
+        <Field ID="{46e6583c-87b2-4560-87e6-734a34780746}" Type="Note" Group="_Hidden" Hidden="TRUE" Name="_SPHiddenHighlightsMetadata" DisplayName="Viva Topics Hidden Highlights" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_SPHiddenHighlightsMetadata" />
+        <Field ID="{4C321A6D-2A91-428B-8296-59408B35901A}" Name="_SourceDynamicSectionId" StaticName="_SourceDynamicSectionId" DisplayName="sourceDynamicPageId" Type="Text" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Indexed="TRUE" Description="" ShowInEditForm="FALSE" AllowDeletion="FALSE" Hidden="TRUE" />
+        <Field ID="{D8A77D76-536B-45D2-8B9B-E4E9B00CF3DC}" Name="_Emoji" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" StaticName="_Emoji" Type="Text" DisplayName="Emoji" Sortable="FALSE" />
+        <Field ID="{0F17D094-F613-4D33-8031-7B22650AAD78}" Name="MediaUserMetadata" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" DisplaceOnUpgrade="TRUE" StaticName="MediaUserMetadata" Type="Note" DisplayName="Media User Metadata" Sortable="FALSE" />
+        <Field ID="{b03d6d98-defb-4047-9d2d-a741eb0b4c68}" Type="User" List="UserInfo" Group="_Hidden" Hidden="TRUE" Name="_SPHideListEditorMetadata" DisplayName="Hide Highlights List Editor" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_SPHideListEditorMetadata" />
+        <Field ID="{DCA4E5A0-0887-4480-8F7B-EFCF76B76413}" Name="MediaGeneratedMetadata" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" Group="_Hidden" Sealed="TRUE" UnlimitedLengthInDocumentLibrary="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" DisplaceOnUpgrade="TRUE" StaticName="MediaGeneratedMetadata" Type="Note" DisplayName="Media Generated Metadata" Sortable="FALSE" />
+        <Field ID="{577d74a4-b828-4c3c-bfcd-b16d76cdbc0a}" Name="ComplianceTagAppId" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Hidden="TRUE" DisplaceOnUpgrade="TRUE" ReadOnly="TRUE" StaticName="ComplianceTagAppId" Type="Text" DisplayName="Label applied by App Id" Sortable="FALSE" />
+        <Field ID="{3BDAB9AC-9E5D-44D4-BDE9-13B37E170618}" Name="_ColorHex" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" Hidden="TRUE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" DisplaceOnUpgrade="TRUE" StaticName="_ColorHex" Type="Text" DisplayName="Color" Sortable="FALSE" />
+        <Field ID="{76D13CD2-1BAE-45A5-8B74-545B87B65037}" Name="_ColorTag" SourceID="http://schemas.microsoft.com/sharepoint/v3" Required="FALSE" ShowInFileDlg="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ReadOnly="TRUE" DisplaceOnUpgrade="TRUE" Type="Text" StaticName="_ColorTag" DisplayName="Color Tag" Sortable="TRUE" />
+        <Field ID="{031C92FD-9CB6-4AC8-8F5F-636D28E37079}" Name="_SPAuthoringMetadata" StaticName="_SPAuthoringMetadata" DisplayName="Authoring Metadata" Type="Note" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ReadOnly="TRUE" Hidden="TRUE" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentId="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x0101009D1CB255DA76424F860D91F20E6C411800C0E54B39129A4FB6B71E908D1C98831E" Name="Dashboard" Description="Content type for a Dashboard." Group="_Hidden" Hidden="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="86ebe41f-255f-4170-b040-9977528a8bf5" Name="_SPCollaborators" UpdateChildren="true" />
+            <pnp:FieldRef ID="031c92fd-9cb6-4ac8-8f5f-636d28e37079" Name="_SPAuthoringMetadata" UpdateChildren="true" />
+            <pnp:FieldRef ID="46e6583c-87b2-4560-87e6-734a34780746" Name="_SPHiddenHighlightsMetadata" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b03d6d98-defb-4047-9d2d-a741eb0b4c68" Name="_SPHideListEditorMetadata" Hidden="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentId="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x0101009D1CB255DA76424F860D91F20E6C411800C57E7DC123744954AACC08D1D5260154" Name="Content Freshness" Description="Used to create a dynamic page related to contentfreshness." Group="_Hidden" Hidden="true" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="86ebe41f-255f-4170-b040-9977528a8bf5" Name="_SPCollaborators" UpdateChildren="true" />
+            <pnp:FieldRef ID="031c92fd-9cb6-4ac8-8f5f-636d28e37079" Name="_SPAuthoringMetadata" UpdateChildren="true" />
+            <pnp:FieldRef ID="4c321a6d-2a91-428b-8296-59408b35901a" Name="_SourceDynamicSectionId" UpdateChildren="true" />
+            <pnp:FieldRef ID="46e6583c-87b2-4560-87e6-734a34780746" Name="_SPHiddenHighlightsMetadata" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b03d6d98-defb-4047-9d2d-a741eb0b4c68" Name="_SPHideListEditorMetadata" Hidden="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+        <pnp:ContentType DisplayFormClientSideComponentId="" DisplayFormClientSideComponentProperties="" NewFormClientSideComponentId="" NewFormClientSideComponentProperties="" EditFormClientSideComponentId="" EditFormClientSideComponentProperties="" ID="0x0101009D1CB255DA76424F860D91F20E6C411800EE3B4FE2C29A4DCDB55229ADEB3DBFE4" Name="Html Page" Description="A user-uploaded HTML page rendered within SharePoint. Supports the full page lifecycle including upload, edit, approve, schedule, and publish." Group="Document Content Types" NewFormUrl="" EditFormUrl="" DisplayFormUrl="" UpdateChildren="false">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="c042a256-787d-4a6f-8a8a-cf6ab767f12d" Name="ContentType" UpdateChildren="true" />
+            <pnp:FieldRef ID="5f47e085-2150-41dc-b661-442f3027f552" Name="SelectFilename" UpdateChildren="true" />
+            <pnp:FieldRef ID="8553196d-ec8d-4564-9861-3dbe931050c8" Name="FileLeafRef" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="8c06beca-0777-48f7-91c7-6da68bc07b69" Name="Created" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" UpdateChildren="true" />
+            <pnp:FieldRef ID="28cf69c5-fa48-462a-b5cd-27b6f9d2bd5f" Name="Modified" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="822c78e3-1ea9-4943-b449-57863ad33ca9" Name="Modified_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="4dd7e525-8d6b-4cb4-9d3e-44ee25f973eb" Name="Created_x0020_By" UpdateChildren="true" />
+            <pnp:FieldRef ID="82642ec8-ef9b-478f-acf9-31f7d45fbc31" Name="LinkTitle" UpdateChildren="true" />
+            <pnp:FieldRef ID="7efc33c1-b56b-490e-9c9b-1097e971ba96" Name="ClientSideApplicationId" UpdateChildren="true" />
+            <pnp:FieldRef ID="daef58d7-ccfd-43fc-b776-2e292cc66bba" Name="PageLayoutType" UpdateChildren="true" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" UpdateChildren="true" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" UpdateChildren="true" />
+            <pnp:FieldRef ID="fb3259ac-bd07-4397-b7aa-03e885b0838e" Name="BannerImageOffset" UpdateChildren="true" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" UpdateChildren="true" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" UpdateChildren="true" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" UpdateChildren="true" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" UpdateChildren="true" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" UpdateChildren="true" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" UpdateChildren="true" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" UpdateChildren="true" />
+            <pnp:FieldRef ID="ff41708b-e251-4237-a060-bea44657e8dc" Name="_SPAssetFolderId" UpdateChildren="true" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" UpdateChildren="true" />
+            <pnp:FieldRef ID="86ebe41f-255f-4170-b040-9977528a8bf5" Name="_SPCollaborators" UpdateChildren="true" />
+            <pnp:FieldRef ID="031c92fd-9cb6-4ac8-8f5f-636d28e37079" Name="_SPAuthoringMetadata" UpdateChildren="true" />
+            <pnp:FieldRef ID="46e6583c-87b2-4560-87e6-734a34780746" Name="_SPHiddenHighlightsMetadata" Hidden="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="b03d6d98-defb-4047-9d2d-a741eb0b4c68" Name="_SPHideListEditorMetadata" Hidden="true" UpdateChildren="true" />
+          </pnp:FieldRefs>
+          <pnp:DocumentTemplate TargetName="/_layouts/15/CreateSitePage.aspx" />
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D467CD35-7FD5-49DF-B2C7-7CC70B8D65E6}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" RecurrenceRowset="TRUE" Type="CALENDAR" TabularView="FALSE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <ViewData>
+                <FieldRef Name="Title" Type="CalendarMonthTitle" />
+                <FieldRef Name="Title" Type="CalendarWeekTitle" />
+                <FieldRef Name="Location" Type="CalendarWeekLocation" />
+                <FieldRef Name="Title" Type="CalendarDayTitle" />
+                <FieldRef Name="Location" Type="CalendarDayLocation" />
+              </ViewData>
+            </View>
+            <View Name="{9B6F7E21-0F88-426A-9F0F-A3034D9520F2}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{232B872E-A4F2-418B-B5A2-BB69753C6DC5}" MobileView="TRUE" RecurrenceRowset="TRUE" Type="HTML" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="DateTime" ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" DisplayName="Start Time" Format="DateTime" Sealed="TRUE" Required="TRUE" FromBaseType="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate" ColName="datetime1">
+              <Default>[today]</Default>
+              <FieldRefs>
+                <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+              </FieldRefs>
+            </Field>
+            <Field Type="Note" ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Description" RichText="TRUE" RichTextMode="FullHtml" DisplayName="Description" Sortable="FALSE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Description" ColName="ntext2" />
+            <Field ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" DisplayName="Attendees" Type="UserMulti" List="UserInfo" Mult="TRUE" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" Sortable="FALSE" Sealed="FALSE" AllowDeletion="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ParticipantsPicker" ColName="int5" />
+            <Field ID="{8a4be162-151d-4a11-b9be-e7dc05196d73}" Name="BannerImageUrl" StaticName="BannerImageUrl" DisplayName="Banner Image URL" Type="Note" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" ColName="ntext6" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" DisplayName="Title" />
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Cybersecurity spotlight: Recognizing phishing in 2026-2027</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2026-09-02T23:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2026-09-03T00:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8, {site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">CEO Townhall: Q4 results and 2027 Outlook</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2026-09-17T23:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2026-09-18T00:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5, {site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{255F0AF3-DA64-4762-A0E9-B8C5AE634193}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Note" DisplayName="Image Tags_0" StaticName="lcf76f155ced4ddcb4097134ff3c332f" Name="lcf76f155ced4ddcb4097134ff3c332f" ID="{7c51d632-27e0-f6f7-a5d6-ed67b68bd369}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ColName="ntext8" RowOrdinal="0" />
+            <Field ID="{3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b}" ColName="tp_CheckoutUserId" RowOrdinal="0" ReadOnly="TRUE" Type="User" List="UserInfo" Name="CheckoutUser" DisplaceOnUpgrade="TRUE" DisplayName="Checked Out To" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CheckoutUser" FromBaseType="TRUE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
+              <pnp:Folder Name="Home" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Home" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="200" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="httpswwwmicrosoftcomen-us_29806170" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="httpswwwmicrosoftcomen-us_29806170" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="1900" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Page" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Page" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2100" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="https---www.microsoft.com-en-us" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="https---www.microsoft.com-en-us" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2400" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2500" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Q1-AML-refresher-training-by-March-28,-enroll-now" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Q1-AML-refresher-training-by-March-28,-enroll-now" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2700" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2800" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="London-bureau-chief-up-for-finance-award_29806203" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="London-bureau-chief-up-for-finance-award_29806203" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2900" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Dashboard" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Dashboard" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="3400" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Event" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Event" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="4300" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Event(1)" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Event(1)" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="4500" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="SitePages" />
+                <pnp:Property Key="_ModerationStatus" Value="0" />
+                <pnp:Property Key="Order" Value="100" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://northcentralus1-0.pushnp.svc.ms/notifications?token=ns_9f007c6c-bb47-47be-aec7-e6371089a989" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800C0E54B39129A4FB6B71E908D1C98831E" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800EE3B4FE2C29A4DCDB55229ADEB3DBFE4" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{ACD4EA48-21F7-41D3-B547-8943DF775155}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="PromotedState" />
+                <FieldRef Name="FirstPublishedDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{E6D78AA7-CB8A-4048-A3A1-5DA78616ED8C}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{79711224-0B31-4D24-A64A-6B987E8BEB8F}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{1CCA965D-DB25-4FC8-9793-54840FB98190}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{DD75EEB8-E712-4AFF-B0C1-3BE1B023D9D7}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b}" ColName="tp_CheckoutUserId" RowOrdinal="0" ReadOnly="TRUE" Type="User" List="UserInfo" Name="CheckoutUser" DisplaceOnUpgrade="TRUE" DisplayName="Checked Out To" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CheckoutUser" FromBaseType="TRUE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" DisplayName="Call To Action" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Home/2701674420-GettyImages-1401941657.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="2701674420-GettyImages-1401941657.jpg" />
+            <pnp:Property Key="Title" Value="1401941657" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1528616286-Background-2.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1528616286-Background-2.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1" />
+            <pnp:Property Key="Order" Value="400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/81046596-GettyImages-2223895987.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="81046596-GettyImages-2223895987.jpg" />
+            <pnp:Property Key="Title" Value="2223895987" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/260934430-Frame-2147238931.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="260934430-Frame-2147238931.png" />
+            <pnp:Property Key="Order" Value="600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1938318687-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1938318687-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1031132801-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1031132801-BG4.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/2329532682-Background.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="2329532682-Background.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1754349987-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1754349987-Logo-top.png" />
+            <pnp:Property Key="Order" Value="1000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1314888437-BG2.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1314888437-BG2.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="map|ffffffff-ffff-ffff-ffff-fffffffff229;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,6" />
+            <pnp:Property Key="Order" Value="1100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1694508084-GettyImages-1089350488.jpg" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="1200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/shape-1694508084-GettyImages-1089350488-1788369107955.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="shape-1694508084-GettyImages-1089350488-1788369107955.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="1300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/883649571-BG3.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="883649571-BG3.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="1400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/247093063-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="247093063-BG4.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="1500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/885775077-BG5.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="885775077-BG5.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5" />
+            <pnp:Property Key="Order" Value="1600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/370988152-BG6.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="370988152-BG6.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="1700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1579592023-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1579592023-Logo-top.png" />
+            <pnp:Property Key="Order" Value="1800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/httpswwwmicrosoftcomen-us_29806170/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/httpswwwmicrosoftcomen-us_29806170" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Page/1497204675-GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/Page" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1497204675-GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Page/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/Page" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179/BG5.png" Folder="SiteAssets/SitePages/CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="BG5.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5" />
+            <pnp:Property Key="Order" Value="2600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/London-bureau-chief-up-for-finance-award_29806203/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/London-bureau-chief-up-for-finance-award_29806203" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="3000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1963570142-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1963570142-BG4.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1014433986-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1372799161-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Dashboard/GettyImages-1069237496.jpg" Folder="SiteAssets/SitePages/Dashboard" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1069237496.jpg" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="book|ffffffff-ffff-ffff-ffff-fffffffffd08;indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,2,8,7" />
+            <pnp:Property Key="Order" Value="3500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1014433986-GettyImages-2225209600_1788373331821.jpg" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1372799161-GettyImages-2225209600_1788373345909.jpg" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,1" />
+            <pnp:Property Key="Order" Value="3700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__globalNavigationLogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__globalNavigationLogo__LogoW.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__sitelogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__sitelogo__LogoW.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__rectSitelogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__rectSitelogo__LogoW.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedHeaderBackgroundImage__LogoW.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__BG6.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedHeaderBackgroundImage__BG6.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg" Folder="SiteAssets/SitePages/Event" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="80171-GettyImages-2258623996.jpg" />
+            <pnp:Property Key="Title" Value="2258623996" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2" />
+            <pnp:Property Key="Order" Value="4400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg" Folder="SiteAssets/SitePages/Event(1)" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="98868-GettyImages-2166211751.jpg" />
+            <pnp:Property Key="Title" Value="2166211751" />
+            <pnp:Property Key="Order" Value="4600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedFooterBackgroundImage__BG3.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedFooterBackgroundImage__BG3.png" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="4700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedFooterBackgroundImage__Frame 2147225511.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedFooterBackgroundImage__Frame 2147225511.png" />
+            <pnp:Property Key="Order" Value="4800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1754349987-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/2329532682-Background.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1314888437-BG2.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/883649571-BG3.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1963570142-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/885775077-BG5.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/370988152-BG6.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/shape-1694508084-GettyImages-1089350488-1788369107955.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/1579592023-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Dashboard/GettyImages-1069237496.jpg" Folder="SiteAssets/SitePages/Dashboard" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/__sitelogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Draft" />
+      </pnp:Files>
+      <pnp:ClientSidePages>
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Home" EnableComments="false" Title="Home" ThumbnailUrl="" PageName="Home.aspx">
+          <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;0d9dbfeb-f6fb-4968-ad65-b8dc5d048226&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:39,&quot;y&quot;:8,&quot;w&quot;:31,&quot;h&quot;:8}}}" ControlId="0d9dbfeb-f6fb-4968-ad65-b8dc5d048226" Order="1" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h1&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;Funded on trust.&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;fontSizeXxLargePlus&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;Motivated by the future.&lt;/span&gt;&lt;/span&gt;&lt;/h1&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;webPartId&quot;:&quot;81b57906-cbed-4bb1-9823-2e3314f46f28&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:153,&quot;reservedWidth&quot;:413,&quot;controlType&quot;:3,&quot;id&quot;:&quot;45a78012-c0f3-490a-9918-46d4b85115e5&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:46,&quot;y&quot;:18,&quot;w&quot;:24,&quot;h&quot;:10}},&quot;properties&quot;:{&quot;timeFormat&quot;:&quot;hm&quot;,&quot;dateFormat&quot;:&quot;mmm dd, yyyy&quot;,&quot;isSpecifyDateTimeFormats&quot;:false,&quot;shouldShowDayOfWeek&quot;:true,&quot;clockItems&quot;:[{&quot;location&quot;:&quot;New York, NY&quot;,&quot;useManualConfiguration&quot;:true,&quot;displayedLocation&quot;:&quot;Woodgrove HQ&quot;,&quot;isTimezoneResolved&quot;:true,&quot;manualConfiguredTimezoneId&quot;:&quot;Eastern Standard Time&quot;,&quot;ianaTimeZoneId&quot;:&quot;America/New_York&quot;}],&quot;isTitleEnabled&quot;:true},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;&lt;span class=\&quot;fontSizeXLarge\&quot;&gt;Location and times&lt;/span&gt;&lt;/h2&gt;&quot;},&quot;searchablePlainTexts&quot;:{&quot;webPartTitle&quot;:&quot;Location and times&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.3&quot;}" ControlId="81b57906-cbed-4bb1-9823-2e3314f46f28" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="ContentRollup" JsonControlData="{&quot;webPartId&quot;:&quot;daf0b71c-6de8-4ef7-b511-faae7c388708&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:333,&quot;reservedWidth&quot;:413,&quot;controlType&quot;:3,&quot;id&quot;:&quot;8722451e-e967-44aa-9575-3e328beb343a&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:46,&quot;y&quot;:28,&quot;w&quot;:24,&quot;h&quot;:20}},&quot;properties&quot;:{&quot;isTitleEnabled&quot;:true,&quot;showCardMotion&quot;:true,&quot;query&quot;:{&quot;contentLocation&quot;:3,&quot;contentTypes&quot;:[4],&quot;sortType&quot;:1,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;}],&quot;documentTypes&quot;:[]},&quot;templateId&quot;:6,&quot;maxItemsPerPage&quot;:2,&quot;hideWebPartWhenEmpty&quot;:false,&quot;sites&quot;:[],&quot;queryMode&quot;:&quot;Basic&quot;,&quot;layoutId&quot;:&quot;CompactGrid&quot;,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;displayMaps&quot;:{&quot;1&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]},&quot;telemetryProperties&quot;:{&quot;sources&quot;:[&quot;TelemetryProperties&quot;]},&quot;imageOverlapText&quot;:{&quot;sources&quot;:[&quot;ImageOverlapText&quot;]},&quot;imageOverlapTextAriaLabel&quot;:{&quot;sources&quot;:[&quot;ImageOverlapTextAriaLabel&quot;]},&quot;spWebUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;fileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;iframeUrl&quot;:{&quot;sources&quot;:[&quot;iframeUrl&quot;]},&quot;isVideoItem&quot;:{&quot;sources&quot;:[&quot;isVideoItem&quot;]}},&quot;2&quot;:{&quot;column1&quot;:{&quot;heading&quot;:&quot;Filetype&quot;,&quot;sources&quot;:[&quot;FileType&quot;],&quot;width&quot;:34},&quot;column2&quot;:{&quot;heading&quot;:&quot;Title&quot;,&quot;sources&quot;:[&quot;Title&quot;],&quot;linkUrls&quot;:[&quot;WebPath&quot;],&quot;width&quot;:250},&quot;column3&quot;:{&quot;heading&quot;:&quot;Modified&quot;,&quot;sources&quot;:[&quot;ModifiedDate&quot;],&quot;width&quot;:100},&quot;column4&quot;:{&quot;heading&quot;:&quot;Modified By&quot;,&quot;sources&quot;:[&quot;Name&quot;],&quot;width&quot;:150}},&quot;3&quot;:{&quot;id&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;edit&quot;:{&quot;sources&quot;:[&quot;edit&quot;]},&quot;DefaultEncodingURL&quot;:{&quot;sources&quot;:[&quot;DefaultEncodingURL&quot;]},&quot;FileExtension&quot;:{&quot;sources&quot;:[&quot;FileExtension&quot;]},&quot;FileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;imageOverlapText&quot;:{&quot;sources&quot;:[&quot;ImageOverlapText&quot;]},&quot;imageOverlapTextAriaLabel&quot;:{&quot;sources&quot;:[&quot;ImageOverlapTextAriaLabel&quot;]},&quot;Path&quot;:{&quot;sources&quot;:[&quot;Path&quot;]},&quot;PictureThumbnailURL&quot;:{&quot;sources&quot;:[&quot;PictureThumbnailURL&quot;]},&quot;PreviewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;]},&quot;SiteID&quot;:{&quot;sources&quot;:[&quot;SiteID&quot;]},&quot;SiteTitle&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;Title&quot;:{&quot;sources&quot;:[&quot;Title&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;WebId&quot;:{&quot;sources&quot;:[&quot;WebId&quot;]},&quot;WebPath&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;spWebUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;fileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;iframeUrl&quot;:{&quot;sources&quot;:[&quot;iframeUrl&quot;]},&quot;isVideoItem&quot;:{&quot;sources&quot;:[&quot;isVideoItem&quot;]}},&quot;4&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]},&quot;telemetryProperties&quot;:{&quot;sources&quot;:[&quot;TelemetryProperties&quot;]},&quot;imageOverlapText&quot;:{&quot;sources&quot;:[&quot;ImageOverlapText&quot;]},&quot;imageOverlapTextAriaLabel&quot;:{&quot;sources&quot;:[&quot;ImageOverlapTextAriaLabel&quot;]},&quot;spWebUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;fileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;iframeUrl&quot;:{&quot;sources&quot;:[&quot;iframeUrl&quot;]},&quot;isVideoItem&quot;:{&quot;sources&quot;:[&quot;isVideoItem&quot;]}},&quot;6&quot;:{&quot;headingText&quot;:{&quot;sources&quot;:[&quot;SiteTitle&quot;]},&quot;headingUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;title&quot;:{&quot;sources&quot;:[&quot;UserName&quot;,&quot;Title&quot;]},&quot;personImageUrl&quot;:{&quot;sources&quot;:[&quot;ProfileImageSrc&quot;]},&quot;name&quot;:{&quot;sources&quot;:[&quot;Name&quot;]},&quot;initials&quot;:{&quot;sources&quot;:[&quot;Initials&quot;]},&quot;itemUrl&quot;:{&quot;sources&quot;:[&quot;WebPath&quot;]},&quot;activity&quot;:{&quot;sources&quot;:[&quot;ModifiedDate&quot;]},&quot;previewUrl&quot;:{&quot;sources&quot;:[&quot;PreviewUrl&quot;,&quot;PictureThumbnailURL&quot;]},&quot;iconUrl&quot;:{&quot;sources&quot;:[&quot;IconUrl&quot;]},&quot;accentColor&quot;:{&quot;sources&quot;:[&quot;AccentColor&quot;]},&quot;cardType&quot;:{&quot;sources&quot;:[&quot;CardType&quot;]},&quot;tipActionLabel&quot;:{&quot;sources&quot;:[&quot;TipActionLabel&quot;]},&quot;tipActionButtonIcon&quot;:{&quot;sources&quot;:[&quot;TipActionButtonIcon&quot;]},&quot;className&quot;:{&quot;sources&quot;:[&quot;ClassName&quot;]},&quot;telemetryProperties&quot;:{&quot;sources&quot;:[&quot;TelemetryProperties&quot;]},&quot;imageOverlapText&quot;:{&quot;sources&quot;:[&quot;ImageOverlapText&quot;]},&quot;imageOverlapTextAriaLabel&quot;:{&quot;sources&quot;:[&quot;ImageOverlapTextAriaLabel&quot;]},&quot;spWebUrl&quot;:{&quot;sources&quot;:[&quot;SPWebUrl&quot;]},&quot;fileType&quot;:{&quot;sources&quot;:[&quot;FileType&quot;]},&quot;UniqueID&quot;:{&quot;sources&quot;:[&quot;UniqueID&quot;]},&quot;iframeUrl&quot;:{&quot;sources&quot;:[&quot;iframeUrl&quot;]},&quot;isVideoItem&quot;:{&quot;sources&quot;:[&quot;isVideoItem&quot;]}}},&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;&lt;span class=\&quot;fontSizeXLarge\&quot;&gt;Recommended viewing&lt;/span&gt;&lt;/h2&gt;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Recommended viewing&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;62680648-d047-46ec-81e0-475ee78e482d&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;2.8&quot;}" ControlId="daf0b71c-6de8-4ef7-b511-faae7c388708" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;webPartId&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:138,&quot;reservedWidth&quot;:585,&quot;controlType&quot;:3,&quot;id&quot;:&quot;b98708f9-242f-4b08-b62b-e06f2771af3c&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:4,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:7,&quot;w&quot;:34,&quot;h&quot;:8.023255813953488}},&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;1754349987-Logo-top.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1754349987-Logo-top.png}&quot;,&quot;overlayTextStyles&quot;:{&quot;textColor&quot;:&quot;light&quot;,&quot;isBold&quot;:false,&quot;isItalic&quot;:false,&quot;textBoxColor&quot;:&quot;dark&quot;,&quot;textBoxOpacity&quot;:0.54,&quot;overlayColor&quot;:&quot;light&quot;,&quot;overlayTransparency&quot;:0},&quot;minimumLayoutWidth&quot;:1,&quot;isStretchEnabled&quot;:true,&quot;customContentDropSupport&quot;:&quot;externallink&quot;,&quot;isOverlayTextVisible&quot;:false,&quot;imgHeight&quot;:456,&quot;imgWidth&quot;:1888,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isCaptionHeightMigrated&quot;:true,&quot;resizeDesiredWidth&quot;:585,&quot;resizeDesiredHeight&quot;:138},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/1754349987-Logo-top.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1754349987-Logo-top.png}&quot;,&quot;width&quot;:1888,&quot;height&quot;:456}}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.13&quot;}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;webPartId&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:493,&quot;reservedWidth&quot;:757,&quot;controlType&quot;:3,&quot;id&quot;:&quot;a5823739-ef8c-4773-b0b5-a906dc2cd497&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:5,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:18,&quot;w&quot;:44,&quot;h&quot;:29}},&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true,&quot;showSiteTitle&quot;:true},&quot;isTitleEnabled&quot;:true,&quot;minimumLayoutWidth&quot;:22,&quot;renderItemsSliderValue&quot;:4,&quot;layoutId&quot;:&quot;FeaturedNews&quot;,&quot;newsDataSourceProp&quot;:1,&quot;filterKQLQuery&quot;:&quot;&quot;,&quot;carouselHeroWrapperComponentId&quot;:&quot;&quot;,&quot;prefetchCount&quot;:4,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;dataProviderId&quot;:&quot;news&quot;,&quot;newsSiteList&quot;:[],&quot;layoutComponentId&quot;:&quot;&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;&lt;span class=\&quot;fontSizeXLarge\&quot;&gt;News&lt;/span&gt;&lt;/h2&gt;&quot;,&quot;pinnedItems&quot;:[{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;1db39546-19fe-465a-850e-b1b95dbc1f78&quot;,&quot;siteId&quot;:&quot;1db39546-19fe-465a-850e-b1b95dbc1f78&quot;,&quot;webId&quot;:&quot;1db39546-19fe-465a-850e-b1b95dbc1f78&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;e9592ea5-44c8-44e5-9ba1-f696b11a8c2a&quot;,&quot;siteId&quot;:&quot;e9592ea5-44c8-44e5-9ba1-f696b11a8c2a&quot;,&quot;webId&quot;:&quot;e9592ea5-44c8-44e5-9ba1-f696b11a8c2a&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;30098e78-79eb-4a23-96f7-fcecae6c06a1&quot;,&quot;siteId&quot;:&quot;30098e78-79eb-4a23-96f7-fcecae6c06a1&quot;,&quot;webId&quot;:&quot;30098e78-79eb-4a23-96f7-fcecae6c06a1&quot;},{&quot;author&quot;:&quot;MOD Administrator&quot;,&quot;authorAccountName&quot;:&quot;i:0#.f|membership|admin@m365x80643879.onmicrosoft.com&quot;,&quot;description&quot;:&quot;Stay current on regulatory requirements with this mandatory training.&quot;,&quot;email&quot;:&quot;admin@m365x80643879.onmicrosoft.com&quot;,&quot;isAuthoritative&quot;:true,&quot;image&quot;:&quot;https://cdn.hubblecontent.osi.office.net/m365content/publish/c034953c-2325-464c-b905-e7da5d20235a/thumbnails/large.jpg?file=1080466304.jpg&quot;,&quot;publishedOn&quot;:&quot;2026-09-02T17:43:05Z&quot;,&quot;publishedOnRelativeTime&quot;:&quot;September 2&quot;,&quot;title&quot;:&quot;Q1 AML refresher training by March 28, enroll now&quot;,&quot;url&quot;:&quot;https://{fqdn}{site}/SitePages/Q1-AML-refresher-training-by-March-28%2C-enroll-now.aspx&quot;,&quot;listItemId&quot;:6,&quot;originalSourceItemId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;originalSourceUrl&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;path&quot;:&quot;SitePages/Q1-AML-refresher-training-by-March-28,-enroll-now.aspx&quot;,&quot;siteTitle&quot;:&quot;Woodgrove&quot;,&quot;siteUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;viewCounts&quot;:3,&quot;isHelpArticle&quot;:false,&quot;uniqueId&quot;:&quot;{pageuniqueid:SitePages/Q1-AML-refresher-training-by-March-28,-enroll-now.aspx}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Pages}&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;60a15b2a-ae1e-4a4b-9cbe-ed63a003144c&quot;,&quot;siteId&quot;:&quot;60a15b2a-ae1e-4a4b-9cbe-ed63a003144c&quot;,&quot;webId&quot;:&quot;60a15b2a-ae1e-4a4b-9cbe-ed63a003144c&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;0067e12a-3025-49cd-a98f-269d10476fa2&quot;,&quot;siteId&quot;:&quot;0067e12a-3025-49cd-a98f-269d10476fa2&quot;,&quot;webId&quot;:&quot;0067e12a-3025-49cd-a98f-269d10476fa2&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;f8c2363a-a426-4109-ad93-18a46367ab80&quot;,&quot;siteId&quot;:&quot;f8c2363a-a426-4109-ad93-18a46367ab80&quot;,&quot;webId&quot;:&quot;f8c2363a-a426-4109-ad93-18a46367ab80&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;19604537-8815-4ce1-beaa-991c14eb95db&quot;,&quot;siteId&quot;:&quot;19604537-8815-4ce1-beaa-991c14eb95db&quot;,&quot;webId&quot;:&quot;19604537-8815-4ce1-beaa-991c14eb95db&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;ea3d58c8-e7a2-4948-927e-57b5ac8eb729&quot;,&quot;siteId&quot;:&quot;ea3d58c8-e7a2-4948-927e-57b5ac8eb729&quot;,&quot;webId&quot;:&quot;ea3d58c8-e7a2-4948-927e-57b5ac8eb729&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;74fd4037-5533-4999-9292-2a267f3464a5&quot;,&quot;siteId&quot;:&quot;74fd4037-5533-4999-9292-2a267f3464a5&quot;,&quot;webId&quot;:&quot;74fd4037-5533-4999-9292-2a267f3464a5&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;523c8f50-42e7-4615-900e-829f33bcb59d&quot;,&quot;siteId&quot;:&quot;523c8f50-42e7-4615-900e-829f33bcb59d&quot;,&quot;webId&quot;:&quot;523c8f50-42e7-4615-900e-829f33bcb59d&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;bfa287ee-edea-467b-b0a1-dd424bb56d89&quot;,&quot;siteId&quot;:&quot;bfa287ee-edea-467b-b0a1-dd424bb56d89&quot;,&quot;webId&quot;:&quot;bfa287ee-edea-467b-b0a1-dd424bb56d89&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;7541ac6f-bacf-4d21-8d79-45798ae65355&quot;,&quot;siteId&quot;:&quot;7541ac6f-bacf-4d21-8d79-45798ae65355&quot;,&quot;webId&quot;:&quot;7541ac6f-bacf-4d21-8d79-45798ae65355&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;03c5e799-be49-4a9c-9afb-73bbb8157400&quot;,&quot;siteId&quot;:&quot;03c5e799-be49-4a9c-9afb-73bbb8157400&quot;,&quot;webId&quot;:&quot;03c5e799-be49-4a9c-9afb-73bbb8157400&quot;},{&quot;author&quot;:&quot;&quot;,&quot;authorAccountName&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;image&quot;:&quot;&quot;,&quot;publishedOnRelativeTime&quot;:&quot;A few seconds ago&quot;,&quot;title&quot;:&quot;Automatic&quot;,&quot;listItemId&quot;:&quot;&quot;,&quot;isHelpArticle&quot;:true,&quot;uniqueId&quot;:&quot;cd48a249-4adc-40a9-9c4c-53af10e3a739&quot;,&quot;siteId&quot;:&quot;cd48a249-4adc-40a9-9c4c-53af10e3a739&quot;,&quot;webId&quot;:&quot;cd48a249-4adc-40a9-9c4c-53af10e3a739&quot;}],&quot;serializedFilterQuery&quot;:&quot;&lt;Where&gt;&lt;Eq&gt;&lt;FieldRef Name=\&quot;FSObjType\&quot; /&gt;&lt;Value Type=\&quot;Integer\&quot;&gt;0&lt;/Value&gt;&lt;/Eq&gt;&lt;/Where&gt;&quot;,&quot;templateId&quot;:&quot;FeaturedNews&quot;,&quot;propsLastEdited&quot;:&quot;2026-09-02T23:24:35.846Z&quot;,&quot;compactMode&quot;:false,&quot;showNewsPinningPanel&quot;:true},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;News&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.18&quot;}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="5" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;webPartId&quot;:null,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:false,&quot;reservedHeight&quot;:0,&quot;reservedWidth&quot;:0,&quot;controlType&quot;:14,&quot;id&quot;:&quot;b3774de7-bd8c-434b-b0b9-7416331035f5&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:6,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;properties&quot;:{&quot;zoneBackground&quot;:{&quot;426a0c6c-d3a8-48fc-90eb-445712076809&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;2329532682-Background.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:3356,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/2329532682-Background.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:true},&quot;23e8c0cb-a6e0-485d-8f24-0e9d29c1ce18&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;1314888437-BG2.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:2068,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1314888437-BG2.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:false},&quot;ef66a8c7-16a7-4dd8-8772-375c24bc616e&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;883649571-BG3.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:600,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/883649571-BG3.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:true},&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;1963570142-BG4.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:3864,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1963570142-BG4.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:true},&quot;c237595e-540c-4f7c-9909-2d0a65b17536&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;885775077-BG5.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:2776,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/885775077-BG5.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#FFFFFF&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:false},&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;:{&quot;type&quot;:&quot;image&quot;,&quot;imageData&quot;:{&quot;fileName&quot;:&quot;370988152-BG6.png&quot;,&quot;width&quot;:7272,&quot;height&quot;:1344,&quot;source&quot;:0,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/370988152-BG6.png}&quot;},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:0},&quot;useLightText&quot;:true}}},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;zoneBackground.426a0c6c-d3a8-48fc-90eb-445712076809.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/2329532682-Background.png&quot;,&quot;zoneBackground.23e8c0cb-a6e0-485d-8f24-0e9d29c1ce18.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1314888437-BG2.png&quot;,&quot;zoneBackground.ef66a8c7-16a7-4dd8-8772-375c24bc616e.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/883649571-BG3.png&quot;,&quot;zoneBackground.7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1963570142-BG4.png&quot;,&quot;zoneBackground.c237595e-540c-4f7c-9909-2d0a65b17536.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/885775077-BG5.png&quot;,&quot;zoneBackground.0168c749-0698-4674-bfec-8e6f9e9a37d9.imageData.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/370988152-BG6.png&quot;},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.0&quot;}" ControlId="b3774de7-bd8c-434b-b0b9-7416331035f5" Order="6" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="2" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;webPartId&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:335,&quot;reservedWidth&quot;:482,&quot;controlType&quot;:3,&quot;id&quot;:&quot;db8bbc84-b86e-40e8-9612-ddabd1594e11&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:2,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;23e8c0cb-a6e0-485d-8f24-0e9d29c1ce18&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:3,&quot;w&quot;:28,&quot;h&quot;:19.476744186046513}},&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;1694508084-GettyImages-1089350488.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg}&quot;,&quot;overlayTextStyles&quot;:{&quot;textColor&quot;:&quot;light&quot;,&quot;isBold&quot;:false,&quot;isItalic&quot;:false,&quot;textBoxColor&quot;:&quot;dark&quot;,&quot;textBoxOpacity&quot;:0.54,&quot;overlayColor&quot;:&quot;light&quot;,&quot;overlayTransparency&quot;:0},&quot;minimumLayoutWidth&quot;:1,&quot;isStretchEnabled&quot;:false,&quot;customContentDropSupport&quot;:&quot;externallink&quot;,&quot;isOverlayTextVisible&quot;:true,&quot;imgHeight&quot;:4002,&quot;imgWidth&quot;:6000,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;imageShape&quot;:&quot;Teardrop&quot;,&quot;imageShapeData&quot;:{&quot;imageShape&quot;:&quot;Teardrop&quot;,&quot;version&quot;:&quot;1788369107955&quot;,&quot;savedImageShape&quot;:{&quot;serverRelativeUrl&quot;:&quot;{site}/SiteAssets/SitePages/Home/shape-1694508084-GettyImages-1089350488-1788369107955.png&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/shape-1694508084-GettyImages-1089350488-1788369107955.png}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;},&quot;width&quot;:1701,&quot;height&quot;:1701,&quot;imageTransformData&quot;:{&quot;zoom&quot;:1,&quot;translateX&quot;:0,&quot;translateY&quot;:0,&quot;imgWidth&quot;:1188,&quot;imgHeight&quot;:792.3960000000001}},&quot;fixAspectRatio&quot;:false,&quot;isCaptionHeightMigrated&quot;:true,&quot;resizeDesiredWidth&quot;:482,&quot;resizeDesiredHeight&quot;:335},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg}&quot;,&quot;width&quot;:6000,&quot;height&quot;:4002}}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.13&quot;}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;319754f7-386e-417a-a4d0-a51561fa0fce&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:2,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;23e8c0cb-a6e0-485d-8f24-0e9d29c1ce18&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:28,&quot;y&quot;:3,&quot;w&quot;:42,&quot;h&quot;:4}}}" ControlId="319754f7-386e-417a-a4d0-a51561fa0fce" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h2 class=&quot;headingSpacingAbove headingSpacingBelow&quot;&gt;&lt;span style=&quot;font-size:40px;&quot; data-fontsize=&quot;40px&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;Leadership message&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;4ca559f9-17a7-46e2-9abf-a1e7d1208017&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:2,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;23e8c0cb-a6e0-485d-8f24-0e9d29c1ce18&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:28,&quot;y&quot;:12,&quot;w&quot;:42,&quot;h&quot;:11}}}" ControlId="4ca559f9-17a7-46e2-9abf-a1e7d1208017" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;p class=&quot;noSpacingAbove spacingBelow&quot; data-text-type=&quot;withSpacing&quot;&gt;&lt;i&gt;“Q4 was strong because this team delivered. Across every office and every function, you moved the business forward. That momentum comes from people who care about what we’re building and how we build it. I look forward to talking about what’s next at our town hall on April 3.”&lt;/i&gt;&lt;/p&gt;&lt;p class=&quot;noSpacingAbove spacingBelow&quot; data-text-type=&quot;withSpacing&quot;&gt;&lt;i&gt;SERENA DAVIS&lt;/i&gt;&lt;/p&gt;&lt;p class=&quot;noSpacingAbove spacingBelow&quot; data-text-type=&quot;withSpacing&quot;&gt;&lt;i&gt;CEO, Woodgrove&lt;/i&gt;&lt;/p&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="3" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;webPartId&quot;:&quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:118,&quot;reservedWidth&quot;:1188,&quot;controlType&quot;:3,&quot;id&quot;:&quot;86eaaab2-2326-455a-8839-a4d4be9d2e3f&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:3,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:12,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;ef66a8c7-16a7-4dd8-8772-375c24bc616e&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;properties&quot;:{&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;documentsearch&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;headsetsolid&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;money&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;reminderperson&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;hideWebPartWhenEmpty&quot;:true,&quot;isTitleEnabled&quot;:true,&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;&lt;span class=\&quot;fontSizeXLargePlus\&quot;&gt;Workplace essentials&lt;/span&gt;&lt;/h2&gt;&quot;,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:3,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;iconPicker&quot;:&quot;reminderperson&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Workplace essentials&quot;,&quot;items[0].title&quot;:&quot;People directory&quot;,&quot;items[1].title&quot;:&quot;IT support&quot;,&quot;items[2].title&quot;:&quot;Expense claim&quot;,&quot;items[3].title&quot;:&quot;Leave request&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;2.4&quot;}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="1" Column="1" />
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="4" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;webPartId&quot;:&quot;90c0a746-fdcd-4b85-9e6b-52528adc8b10&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:304,&quot;reservedWidth&quot;:361,&quot;controlType&quot;:3,&quot;id&quot;:&quot;f54eb572-d013-42ca-b2be-14d202d8a4dc&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:23,&quot;y&quot;:11,&quot;w&quot;:21,&quot;h&quot;:18}},&quot;properties&quot;:{&quot;layout&quot;:&quot;TextOverlay&quot;,&quot;image&quot;:{&quot;metadata&quot;:{&quot;fileName&quot;:&quot;1372799161-GettyImages-2225209600_1788373345909.jpg&quot;,&quot;width&quot;:3813,&quot;height&quot;:2950,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;originalImageMetadata&quot;:{&quot;fileName&quot;:&quot;1372799161-GettyImages-2225209600.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600.jpg}&quot;,&quot;width&quot;:8256,&quot;height&quot;:5504,&quot;url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600.jpg&quot;},&quot;cacheBuster&quot;:&quot;cba3145d-fd4f-4205-af1c-a3a066a729d5&quot;},&quot;focalPointPosition&quot;:{&quot;x&quot;:0.06391280914880766,&quot;y&quot;:0.03384135437723525}},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:37},&quot;emphasis&quot;:0,&quot;showCardMotion&quot;:true,&quot;callToAction&quot;:{&quot;openInNewTab&quot;:false,&quot;appearance&quot;:&quot;IconButton&quot;},&quot;horizontalAlign&quot;:&quot;center&quot;,&quot;hideKicker&quot;:true,&quot;hideDescription&quot;:true,&quot;verticalAlign&quot;:&quot;center&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{&quot;headline&quot;:&quot;&lt;h2&gt;Q1 AML refresher due July 26&lt;/h2&gt;&quot;},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;image.metadata.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg&quot;},&quot;links&quot;:{&quot;callToAction.linkUrl&quot;:&quot;https://www.microsoft.com/en-us&quot;},&quot;customMetadata&quot;:{&quot;image.metadata.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg}&quot;,&quot;fixedWidth&quot;:3813}}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.0&quot;}" ControlId="90c0a746-fdcd-4b85-9e6b-52528adc8b10" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;webPartId&quot;:&quot;90c0a746-fdcd-4b85-9e6b-52528adc8b10&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:304,&quot;reservedWidth&quot;:378,&quot;controlType&quot;:3,&quot;id&quot;:&quot;fd2cde75-5a2f-4fb7-87d7-2941304c6051&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:11,&quot;w&quot;:22,&quot;h&quot;:18}},&quot;properties&quot;:{&quot;layout&quot;:&quot;TextOverlay&quot;,&quot;image&quot;:{&quot;metadata&quot;:{&quot;fileName&quot;:&quot;1014433986-GettyImages-2225209600_1788373331821.jpg&quot;,&quot;width&quot;:4318,&quot;height&quot;:3286,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;originalImageMetadata&quot;:{&quot;fileName&quot;:&quot;1014433986-GettyImages-2225209600.jpg&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600.jpg}&quot;,&quot;width&quot;:8256,&quot;height&quot;:5504,&quot;url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600.jpg&quot;},&quot;cacheBuster&quot;:&quot;09c56b70-fcae-4be5-8576-0d580e8b170e&quot;},&quot;focalPointPosition&quot;:{&quot;x&quot;:0.7371210656479598,&quot;y&quot;:0.4272249660779397}},&quot;overlay&quot;:{&quot;color&quot;:&quot;#000000&quot;,&quot;opacity&quot;:37},&quot;emphasis&quot;:0,&quot;showCardMotion&quot;:true,&quot;callToAction&quot;:{&quot;openInNewTab&quot;:false,&quot;appearance&quot;:&quot;IconButton&quot;},&quot;horizontalAlign&quot;:&quot;center&quot;,&quot;hideKicker&quot;:true,&quot;hideHeadline&quot;:false,&quot;hideDescription&quot;:true,&quot;verticalAlign&quot;:&quot;center&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{&quot;headline&quot;:&quot;&lt;h2&gt;Update KYC procedures from high risk jurisdictions, effective August 1&lt;/h2&gt;&quot;},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;image.metadata.url&quot;:&quot;{site}/SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg&quot;},&quot;links&quot;:{&quot;callToAction.linkUrl&quot;:&quot;https://www.microsoft.com/en-us&quot;},&quot;customMetadata&quot;:{&quot;image.metadata.url&quot;:{&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg}&quot;,&quot;fixedWidth&quot;:4318}}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.0&quot;}" ControlId="90c0a746-fdcd-4b85-9e6b-52528adc8b10" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Custom" JsonControlData="{&quot;webPartId&quot;:&quot;9cc0f495-db64-4d74-b06b-a3de16231fe1&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:243,&quot;reservedWidth&quot;:1204,&quot;controlType&quot;:3,&quot;id&quot;:&quot;4ffc1f22-de9e-43b7-b6ea-f1ddb54a358f&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:33,&quot;w&quot;:70,&quot;h&quot;:14}},&quot;properties&quot;:{&quot;numVisibleCards&quot;:5,&quot;dashboardURL&quot;:&quot;https://{fqdn}{site}/SitePages/Dashboard.aspx&quot;,&quot;personalizationData&quot;:{&quot;DashboardId&quot;:&quot;{sitecollectionid}_{siteid}_{listid:Site Pages}_8&quot;,&quot;DashboardFormFactor&quot;:&quot;Mobile&quot;,&quot;DashboardCardDetails&quot;:[],&quot;LastModifiedDate&quot;:&quot;2026-09-02T22:54:06.6879979Z&quot;},&quot;title&quot;:&quot;My Dashboard&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.0&quot;}" ControlId="9cc0f495-db64-4d74-b06b-a3de16231fe1" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Divider" JsonControlData="{&quot;webPartId&quot;:&quot;2161a1c6-db61-4731-b97c-3cdb303f7cbb&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:1,&quot;reservedWidth&quot;:1204,&quot;controlType&quot;:3,&quot;id&quot;:&quot;1a8d9f05-aa39-449d-a0f9-ca1931b6aa63&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:4,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:30.999999999999996,&quot;w&quot;:70,&quot;h&quot;:0}},&quot;properties&quot;:{&quot;minimumLayoutWidth&quot;:1,&quot;length&quot;:100,&quot;weight&quot;:2},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{},&quot;links&quot;:{}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.2&quot;}" ControlId="2161a1c6-db61-4731-b97c-3cdb303f7cbb" Order="4" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;webPartId&quot;:&quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:295,&quot;reservedWidth&quot;:413,&quot;controlType&quot;:3,&quot;id&quot;:&quot;4af53f8c-9796-4b86-b284-b3ce75da2242&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:5,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:45,&quot;y&quot;:11,&quot;w&quot;:24,&quot;h&quot;:17}},&quot;properties&quot;:{&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;dietplannotebook&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;calendar&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;pin&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;bullseyetarget&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:5,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;giftboxopen&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;Button&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;hideWebPartWhenEmpty&quot;:true,&quot;isTitleEnabled&quot;:false,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:1},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;iconPicker&quot;:&quot;giftboxopen&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;items[0].title&quot;:&quot;Complianace handbook&quot;,&quot;items[1].title&quot;:&quot;Regulatory calendar&quot;,&quot;items[2].title&quot;:&quot;Suspicious activity report (SAR)&quot;,&quot;items[3].title&quot;:&quot;Wishtleblower reporting channel&quot;,&quot;items[4].title&quot;:&quot;Gifts &amp; Entertainment&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[4].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;2.4&quot;}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="5" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;0468731a-80ec-434d-af8f-7282bcbd9a87&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:6,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;7bf01cf9-6ca3-4951-bd90-a12fc5f0daf5&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:4,&quot;w&quot;:70,&quot;h&quot;:4}}}" ControlId="0468731a-80ec-434d-af8f-7282bcbd9a87" Order="6" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 class=&quot;headingSpacingAbove headingSpacingBelow&quot;&gt;&lt;span style=&quot;font-size:40px;&quot; data-fontsize=&quot;40px&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;Compliance&lt;/span&gt;&lt;/span&gt;&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="5" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="News" JsonControlData="{&quot;webPartId&quot;:&quot;8c88f208-6c77-4bdb-86a0-0c47b4316588&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:499,&quot;reservedWidth&quot;:1204,&quot;controlType&quot;:3,&quot;id&quot;:&quot;6036757d-c177-4e09-9509-c9bb1373d633&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:5,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;c237595e-540c-4f7c-9909-2d0a65b17536&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:10,&quot;w&quot;:70,&quot;h&quot;:29}},&quot;properties&quot;:{&quot;carouselSettings&quot;:{&quot;autoplay&quot;:false,&quot;autoplaySpeed&quot;:5,&quot;dots&quot;:true,&quot;lazyLoad&quot;:true,&quot;metadata&quot;:true,&quot;swipe&quot;:true,&quot;useStockItems&quot;:false},&quot;showChrome&quot;:false,&quot;showNewsMetadata&quot;:{&quot;showSocialActions&quot;:true,&quot;showAuthor&quot;:true,&quot;showDate&quot;:true,&quot;showSiteTitle&quot;:true},&quot;isTitleEnabled&quot;:false,&quot;minimumLayoutWidth&quot;:22,&quot;renderItemsSliderValue&quot;:2,&quot;layoutId&quot;:&quot;Hero&quot;,&quot;newsDataSourceProp&quot;:3,&quot;prefetchCount&quot;:2,&quot;filters&quot;:[{&quot;filterType&quot;:1,&quot;value&quot;:&quot;&quot;,&quot;values&quot;:[]}],&quot;dataProviderId&quot;:&quot;multiSiteNews&quot;,&quot;newsSiteList&quot;:[{&quot;Acronym&quot;:&quot;h&quot;,&quot;Title&quot;:&quot;hello&quot;,&quot;BannerColor&quot;:&quot;#ca5010&quot;,&quot;Url&quot;:&quot;https://{fqdn}/sites/hello&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;dc43ac05-e9a1-4775-9da2-5c3f17104244&quot;,&quot;IndexId&quot;:4133730938116224000,&quot;SiteId&quot;:&quot;e8523e73-d6c5-4bf9-854e-72cd5e0b6fcf&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;templateId&quot;:&quot;Hero&quot;,&quot;propsLastEdited&quot;:&quot;2026-09-02T22:58:31.721Z&quot;,&quot;compactMode&quot;:false,&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;&lt;span class=\&quot;fontSizeLarge\&quot;&gt;NEWS&lt;/span&gt;&lt;/h2&gt;&quot;,&quot;pinnedItems&quot;:[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;h&quot;,&quot;Title&quot;:&quot;hello&quot;,&quot;BannerColor&quot;:&quot;#ca5010&quot;,&quot;Url&quot;:&quot;https://{fqdn}/sites/hello&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;dc43ac05-e9a1-4775-9da2-5c3f17104244&quot;,&quot;IndexId&quot;:4133730938116224000,&quot;SiteId&quot;:&quot;e8523e73-d6c5-4bf9-854e-72cd5e0b6fcf&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;filterKQLQuery&quot;:&quot;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;NEWS&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;9586b262-54de-4b27-9eb9-34c671400c33&quot;,&quot;carouselHeroWrapperComponentId&quot;:&quot;67f38b9a-1ca4-427d-961d-732f70c1bdfe&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.18&quot;}" ControlId="8c88f208-6c77-4bdb-86a0-0c47b4316588" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;96472d6a-e8d8-4ed9-b8e4-2567de85efc5&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:5,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;c237595e-540c-4f7c-9909-2d0a65b17536&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:0,&quot;w&quot;:70,&quot;h&quot;:5}}}" ControlId="96472d6a-e8d8-4ed9-b8e4-2567de85efc5" Order="2" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h3 class=&quot;headingSpacingAbove headingSpacingBelow&quot;&gt;&lt;span class=&quot;rte-fontscale-font-max&quot; style=&quot;font-size:46px;&quot; data-fontsize=&quot;46px&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;People Pulse&lt;/span&gt;&lt;/span&gt;&lt;/h3&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;a8067c29-5064-432b-a589-97b74076008d&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:5,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;c237595e-540c-4f7c-9909-2d0a65b17536&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:6,&quot;w&quot;:70,&quot;h&quot;:3}}}" ControlId="a8067c29-5064-432b-a589-97b74076008d" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;What's moving across our teams, culture, and careers&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+            <pnp:Section Order="6" Type="OneColumn">
+              <pnp:Controls>
+                <pnp:CanvasControl WebPartType="Image" JsonControlData="{&quot;webPartId&quot;:&quot;d1d91016-032f-456d-98a4-721247c305e8&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:82,&quot;reservedWidth&quot;:378,&quot;controlType&quot;:3,&quot;id&quot;:&quot;5e78ab8a-269e-43a0-9f94-375f2ca5ed21&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:1,&quot;zoneIndex&quot;:6,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:3,&quot;w&quot;:22,&quot;h&quot;:4.767441860465117}},&quot;properties&quot;:{&quot;imageSourceType&quot;:2,&quot;captionText&quot;:&quot;&quot;,&quot;altText&quot;:&quot;&quot;,&quot;linkUrl&quot;:&quot;&quot;,&quot;overlayText&quot;:&quot;&quot;,&quot;fileName&quot;:&quot;1579592023-Logo-top.png&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;listId&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueId&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1579592023-Logo-top.png}&quot;,&quot;overlayTextStyles&quot;:{&quot;textColor&quot;:&quot;light&quot;,&quot;isBold&quot;:false,&quot;isItalic&quot;:false,&quot;textBoxColor&quot;:&quot;dark&quot;,&quot;textBoxOpacity&quot;:0.54,&quot;overlayColor&quot;:&quot;light&quot;,&quot;overlayTransparency&quot;:0},&quot;minimumLayoutWidth&quot;:1,&quot;isStretchEnabled&quot;:true,&quot;customContentDropSupport&quot;:&quot;externallink&quot;,&quot;isOverlayTextVisible&quot;:false,&quot;imgHeight&quot;:456,&quot;imgWidth&quot;:1888,&quot;resizeCoefficient&quot;:1,&quot;alignment&quot;:&quot;Center&quot;,&quot;fixAspectRatio&quot;:false,&quot;isCaptionHeightMigrated&quot;:true,&quot;resizeDesiredWidth&quot;:378,&quot;resizeDesiredHeight&quot;:82},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{},&quot;imageSources&quot;:{&quot;imageSource&quot;:&quot;{site}/SiteAssets/SitePages/Home/1579592023-Logo-top.png&quot;},&quot;links&quot;:{},&quot;customMetadata&quot;:{&quot;imageSource&quot;:{&quot;siteid&quot;:&quot;{sitecollectionid}&quot;,&quot;webid&quot;:&quot;{siteid}&quot;,&quot;listid&quot;:&quot;{listid:Site Assets}&quot;,&quot;uniqueid&quot;:&quot;{fileuniqueid:SiteAssets/SitePages/Home/1579592023-Logo-top.png}&quot;,&quot;width&quot;:&quot;1888&quot;,&quot;height&quot;:&quot;456&quot;}}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.13&quot;}" ControlId="d1d91016-032f-456d-98a4-721247c305e8" Order="1" Column="1" />
+                <pnp:CanvasControl WebPartType="QuickLinks" JsonControlData="{&quot;webPartId&quot;:&quot;c70391ea-0b10-4ee9-b2b4-006d3fcad0cd&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:259,&quot;reservedWidth&quot;:396,&quot;controlType&quot;:3,&quot;id&quot;:&quot;e0987f19-cc37-4937-a585-f1f895d676de&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:6,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:47,&quot;y&quot;:2,&quot;w&quot;:23,&quot;h&quot;:15}},&quot;properties&quot;:{&quot;items&quot;:[{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:4,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mappin12&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:3,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mappin12&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:2,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mappin12&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767},{&quot;sourceItem&quot;:{&quot;itemType&quot;:2,&quot;fileExtension&quot;:&quot;&quot;,&quot;progId&quot;:&quot;&quot;},&quot;thumbnailType&quot;:2,&quot;id&quot;:1,&quot;description&quot;:&quot;&quot;,&quot;fabricReactIcon&quot;:{&quot;iconName&quot;:&quot;mappin12&quot;},&quot;altText&quot;:&quot;&quot;,&quot;rawPreviewImageMinCanvasWidth&quot;:32767}],&quot;isMigrated&quot;:true,&quot;layoutId&quot;:&quot;List&quot;,&quot;shouldShowThumbnail&quot;:true,&quot;hideWebPartWhenEmpty&quot;:true,&quot;isTitleEnabled&quot;:true,&quot;imageWidth&quot;:100,&quot;buttonLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;buttonTreatment&quot;:2,&quot;iconPositionType&quot;:2,&quot;textAlignmentVertical&quot;:2,&quot;textAlignmentHorizontal&quot;:2,&quot;linesOfText&quot;:2},&quot;listLayoutOptions&quot;:{&quot;showDescription&quot;:false,&quot;showIcon&quot;:true},&quot;waffleLayoutOptions&quot;:{&quot;iconSize&quot;:1,&quot;onlyShowThumbnail&quot;:false},&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;QuickLinks&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;h2 class=\&quot;lineHeight1_4\&quot;&gt;Our offices&lt;/h2&gt;&quot;,&quot;iconPicker&quot;:&quot;mappin12&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;Our offices&quot;,&quot;items[0].title&quot;:&quot;388 Vesey Street, 42nd Floor, New York...&quot;,&quot;items[1].title&quot;:&quot;25 Threadneedle Street, London EC2R...&quot;,&quot;items[2].title&quot;:&quot;Taunusstraße 22, 60329 Frankfurt am...&quot;,&quot;items[3].title&quot;:&quot;3812 Nihonbashi, Chuo ku, Tokyo 103...&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;{site}&quot;,&quot;items[0].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[1].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[2].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;,&quot;items[3].sourceItem.url&quot;:&quot;https://www.microsoft.com/en-us&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;706e33c8-af37-4e7b-9d22-6e5694d92a6f&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;2.4&quot;}" ControlId="c70391ea-0b10-4ee9-b2b4-006d3fcad0cd" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;516a9de4-9bae-4aab-b543-c45a9a5c998f&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:6,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:15,&quot;w&quot;:42,&quot;h&quot;:4}}}" ControlId="516a9de4-9bae-4aab-b543-c45a9a5c998f" Order="3" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="Woodgrove Bank N.A. | Member FDIC | Equal Opportunity Employer &amp;nbsp;&lt;br&gt;© 2026 Woodgrove Bank. Internal use only" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;9d0e7596-3d64-4ad1-91d0-942b73b681f3&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:4,&quot;zoneIndex&quot;:6,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:25,&quot;y&quot;:3,&quot;w&quot;:18,&quot;h&quot;:4}}}" ControlId="9d0e7596-3d64-4ad1-91d0-942b73b681f3" Order="4" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;h4 class=&quot;headingSpacingAbove headingSpacingBelow&quot;&gt;&lt;span style=&quot;color:#10B981;&quot;&gt;Funded on trust. Motivated by the future.&lt;/span&gt;&lt;/h4&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+                <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;189b4c1d-e053-45b3-9274-e6842c93d90b&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:5,&quot;zoneIndex&quot;:6,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;0168c749-0698-4674-bfec-8e6f9e9a37d9&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:12,&quot;w&quot;:42,&quot;h&quot;:3}}}" ControlId="189b4c1d-e053-45b3-9274-e6842c93d90b" Order="5" Column="1">
+                  <pnp:CanvasControlProperties>
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLarge&quot;&gt;IT Helpdesk: +1 212 555 0100&lt;/span&gt;" />
+                  </pnp:CanvasControlProperties>
+                </pnp:CanvasControl>
+              </pnp:Controls>
+            </pnp:Section>
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Welcome to our 2026 graduate cohort — 3 analysts. CRDM closes at 52 week high as Q4 earnings beat estimates" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/a8967341-0e1f-4222-b147-b99c3cf47084/thumbnails/large.jpg?file=1306947578.jpg" PageName="https---www.microsoft.com-en-us.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="CRDM closes at 52-week high as Q4 earnings beat estimates" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/024bdf26-a6bb-47f5-a442-96dcf8d9560f/thumbnails/large.jpg?file=image.jpg" PageName="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Q1 AML refresher training by March 28, enroll now" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/c034953c-2325-464c-b905-e7da5d20235a/thumbnails/large.jpg?file=1080466304.jpg" PageName="Q1-AML-refresher-training-by-March-28,-enroll-now.aspx">
+          <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+        </pnp:ClientSidePage>
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="London bureau chief up for finance award" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="{site}/SiteAssets/SitePages/London-bureau-chief-up-for-finance-award_29806203/GettyImages-2194273209.jpg" PageName="London-bureau-chief-up-for-finance-award.aspx">
+          <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
+        </pnp:ClientSidePage>
+      </pnp:ClientSidePages>
+      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" ShowSiteTitle="false" />
+      <pnp:Footer Enabled="true" Logo="" RemoveExistingNodes="false" BackgroundEmphasis="Strong">
+        <pnp:FooterLinks>
+          <pnp:FooterLink DisplayName="Term of use" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Contact us" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Privacy policy" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Legal" Url="http://linkless.header/" />
+        </pnp:FooterLinks>
+      </pnp:Footer>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

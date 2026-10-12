@@ -17,7 +17,8 @@
                 "title": "Site Pages"
             },
             {
-                "title": "Site Assets"
+                "title": "Site Assets",
+                "includeItems": true
             },
             {
                 "title": "Events",

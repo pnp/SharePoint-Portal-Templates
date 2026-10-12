@@ -1,0 +1,49 @@
+{
+  "name": "Contoso 3",
+  "isInverted": false,
+  "palette": {
+    "themeDarker": "#0b394e",
+    "themeDark": "#194c64",
+    "themeDarkAlt": "#2b617a",
+    "themePrimary": "#022839",
+    "themeSecondary": "#427790",
+    "themeTertiary": "#5e8fa5",
+    "themeLight": "#7ea8bb",
+    "themeLighter": "#a3c3d1",
+    "themeLighterAlt": "#cddfe7",
+    "black": "#000000",
+    "neutralDark": "#201f1e",
+    "neutralPrimary": "#323130",
+    "neutralPrimaryAlt": "#3b3a39",
+    "neutralSecondary": "#605e5c",
+    "neutralTertiary": "#a19f9d",
+    "neutralTertiaryAlt": "#c8c8c8",
+    "neutralLight": "#eaeaea",
+    "neutralLighter": "#f4f4f4",
+    "neutralLighterAlt": "#f8f8f8",
+    "white": "#ffffff",
+    "neutralQuaternaryAlt": "#dadada",
+    "neutralQuaternary": "#d0d0d0"
+  },
+  "displayMode": "light",
+  "secondaryColors": {
+    "light": [
+      {
+        "themePrimary": "#ffffff",
+        "backgroundColor": "#022839"
+      },
+      {
+        "themePrimary": "#F5AA5D"
+      },
+      {
+        "themePrimary": "#ffffff",
+        "backgroundColor": "#F5AA5D"
+      },
+      {
+        "themePrimary": "#022839",
+        "backgroundColor": "#F5AA5D"
+      }
+    ],
+    "dark": []
+  }
+}
