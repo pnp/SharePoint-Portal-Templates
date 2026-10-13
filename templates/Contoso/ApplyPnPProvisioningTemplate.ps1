@@ -14,7 +14,7 @@ Import-Module PnP.PowerShell -Force
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
 $siteName = "Contoso" # The name of the site you want to update.
-$siteUrl = "MARCTEST4" # The URL name for the site you want to update.
+$siteUrl = "Contoso" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -40,9 +40,9 @@ $newSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $destinationUrl 
 Write-Host -BackgroundColor Cyan "Applying PnP Provisioning Template to site at $destinationUrl..."
 
 # Apply PnP Template
-# Invoke-PnPSiteTemplate `
-#     -Connection $newSiteConnection `
-#     -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-Clean.xml"
+Invoke-PnPSiteTemplate `
+    -Connection $newSiteConnection `
+    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 #endregion
 
