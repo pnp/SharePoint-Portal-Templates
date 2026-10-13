@@ -1602,8 +1602,8 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Mark 8: See the world through a whole new perspective" ThumbnailUrl="/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" PageName="Contoso-Mark-8--See-the-world-through-a-whole-new-perspective.aspx">
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Mark 8: See the world through a whole new perspective" ThumbnailUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" PageName="Contoso-Mark-8--See-the-world-through-a-whole-new-perspective.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -1616,7 +1616,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="{site}/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1644,7 +1644,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" PageName="Communicating-Product-Value(1).aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="{site}/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" PageName="Communicating-Product-Value(1).aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1658,7 +1658,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" PageName="The-importance-of-branding-at-Contoso.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" PageName="The-importance-of-branding-at-Contoso.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="GLOBAL MARKETING" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1672,7 +1672,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now" ThumbnailUrl="/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" PageName="New-401K-Packets-Available-Now.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now" ThumbnailUrl="{site}/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" PageName="New-401K-Packets-Available-Now.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="contoso works" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1725,7 +1725,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="/SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg" PageName="Functions-of-customer-service.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="{site}/SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg" PageName="Functions-of-customer-service.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="true" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1739,7 +1739,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="FlySafe Conference propels commercial drone industry forward" ThumbnailUrl="/SiteAssets/SitePages/FlySafe-Conference-propels-commercial-drone-industry-forward/38062003FlySafe_conference.jpeg" PageName="FlySafe-Conference-propels-commercial-drone-industry-forward.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="FlySafe Conference propels commercial drone industry forward" ThumbnailUrl="{site}/SiteAssets/SitePages/FlySafe-Conference-propels-commercial-drone-industry-forward/38062003FlySafe_conference.jpeg" PageName="FlySafe-Conference-propels-commercial-drone-industry-forward.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1753,7 +1753,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Washington scheduled update to drone laws" ThumbnailUrl="/SiteAssets/SitePages/Washington-scheduled-update-to-drone-laws/GettyImages-688060593.jpg" PageName="Washington-scheduled-update-to-drone-laws.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Washington scheduled update to drone laws" ThumbnailUrl="{site}/SiteAssets/SitePages/Washington-scheduled-update-to-drone-laws/GettyImages-688060593.jpg" PageName="Washington-scheduled-update-to-drone-laws.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1815,7 +1815,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ThumbnailUrl="/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/16094-37867-miriamgraham.jpeg" PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ThumbnailUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/16094-37867-miriamgraham.jpeg" PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx">
           <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
@@ -1868,7 +1868,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="/SiteAssets/SitePages/Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers_29757474/GettyImages-2166211751.jpg" PageName="Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="{site}/SiteAssets/SitePages/Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers_29757474/GettyImages-2166211751.jpg" PageName="Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers.aspx">
           <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
         </pnp:ClientSidePage>
         <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="" ThumbnailUrl="" PageName="Page.aspx">
