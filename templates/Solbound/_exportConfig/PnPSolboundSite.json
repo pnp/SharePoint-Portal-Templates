@@ -35,7 +35,8 @@
                         "fRecurrence",
                         "EventType",
                         "Category",
-                        "BannerUrl"
+                        "BannerUrl",
+                        "BannerImageUrl"
                     ]
                 }
             }

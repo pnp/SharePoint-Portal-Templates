@@ -230,6 +230,7 @@
               <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
               <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
               <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8, {site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerImageUrl">{site}//SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">CEO Townhall: Q4 results and 2027 Outlook</pnp:DataValue>
@@ -239,6 +240,7 @@
               <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
               <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
               <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5, {site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerImageUrl">{site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg</pnp:DataValue>
             </pnp:DataRow>
           </pnp:DataRows>
           <pnp:FieldDefaults>

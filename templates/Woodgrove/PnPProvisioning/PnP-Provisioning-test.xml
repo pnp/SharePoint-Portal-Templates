@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences Generator="PnP.Framework, Version=1.21.33.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-E04632A5F96F406CAAB26B99C4C98355">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-E04632A5F96F406CAAB26B99C4C98355" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="Events" Description="" DocumentTemplate="" TemplateType="106" Url="Lists/Events" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-ec85-4903-972d-ebe475780106" ContentTypesEnabled="true" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Events/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Events/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Events/NewForm.aspx" ImageUrl="/_layouts/15/images/itevent.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0102" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{D467CD35-7FD5-49DF-B2C7-7CC70B8D65E6}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" RecurrenceRowset="TRUE" Type="CALENDAR" TabularView="FALSE" DisplayName="Calendar" Url="{site}/Lists/Events/calendar.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" MobileUrl="_layouts/15/mobile/viewdaily.aspx" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Month />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="EventType" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="Description" />
+                <FieldRef Name="Workspace" />
+                <FieldRef Name="MasterSeriesItemID" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <ViewData>
+                <FieldRef Name="Title" Type="CalendarMonthTitle" />
+                <FieldRef Name="Title" Type="CalendarWeekTitle" />
+                <FieldRef Name="Location" Type="CalendarWeekLocation" />
+                <FieldRef Name="Title" Type="CalendarDayTitle" />
+                <FieldRef Name="Location" Type="CalendarDayLocation" />
+              </ViewData>
+            </View>
+            <View Name="{9B6F7E21-0F88-426A-9F0F-A3034D9520F2}" MobileView="TRUE" Type="HTML" DisplayName="All Events" Url="{site}/Lists/Events/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{232B872E-A4F2-418B-B5A2-BB69753C6DC5}" MobileView="TRUE" RecurrenceRowset="TRUE" Type="HTML" DisplayName="Current Events" Url="{site}/Lists/Events/MyItems.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ImageUrl="/_layouts/15/images/events.png?rev=50">
+              <Query>
+                <Where>
+                  <DateRangesOverlap>
+                    <FieldRef Name="EventDate" />
+                    <FieldRef Name="EndDate" />
+                    <FieldRef Name="RecurrenceID" />
+                    <Value Type="DateTime">
+                      <Now />
+                    </Value>
+                  </DateRangesOverlap>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="EventDate" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="fRecurrence" />
+                <FieldRef Name="WorkspaceLink" />
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="Location" />
+                <FieldRef Name="EventDate" />
+                <FieldRef Name="EndDate" />
+                <FieldRef Name="fAllDayEvent" />
+              </ViewFields>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="DateTime" ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" DisplayName="Start Time" Format="DateTime" Sealed="TRUE" Required="TRUE" FromBaseType="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate" ColName="datetime1">
+              <Default>[today]</Default>
+              <FieldRefs>
+                <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+              </FieldRefs>
+            </Field>
+            <Field Type="Note" ID="{9da97a8a-1da5-4a77-98d3-4bc10456e700}" Name="Description" RichText="TRUE" RichTextMode="FullHtml" DisplayName="Description" Sortable="FALSE" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Description" ColName="ntext2" />
+            <Field ID="{8137f7ad-9170-4c1d-a17b-4ca7f557bc88}" Name="ParticipantsPicker" DisplayName="Attendees" Type="UserMulti" List="UserInfo" Mult="TRUE" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleAndGroups" UserSelectionScope="0" Sortable="FALSE" Sealed="FALSE" AllowDeletion="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="ParticipantsPicker" ColName="int5" />
+            <Field ID="{8a4be162-151d-4a11-b9be-e7dc05196d73}" Name="BannerImageUrl" StaticName="BannerImageUrl" DisplayName="Banner Image URL" Type="Note" Sealed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" Group="_Hidden" Description="" AllowDeletion="FALSE" ShowInNewForm="FALSE" ShowInEditForm="FALSE" ShowInDisplayForm="FALSE" ShowInViewForms="FALSE" ShowInListSettings="FALSE" ShowInVersionHistory="FALSE" ColName="ntext6" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" Required="true" DisplayName="Title" />
+            <pnp:FieldRef ID="288f5f32-8462-4175-8f09-dd7ba29359a9" Name="Location" DisplayName="Location" />
+            <pnp:FieldRef ID="2684f9f2-54be-429f-ba06-76754fc056bf" Name="EndDate" Required="true" DisplayName="End Time" />
+            <pnp:FieldRef ID="7d95d1f4-f5fd-4a70-90cd-b35abc9b5bc8" Name="fAllDayEvent" DisplayName="All Day Event" />
+            <pnp:FieldRef ID="f2e63656-135e-4f1c-8fc2-ccbe74071901" Name="fRecurrence" DisplayName="Recurrence" />
+            <pnp:FieldRef ID="6df9bd52-550e-4a30-bc31-a4366832a87d" Name="Category" DisplayName="Category" />
+          </pnp:FieldRefs>
+          <pnp:DataRows UpdateBehavior="Overwrite">
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">Cybersecurity spotlight: Recognizing phishing in 2026-2027</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2026-09-02T23:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2026-09-03T00:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">https://m365x80643879.sharepoint.com{site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8, {site}/SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg?X=NaN&amp;Y=NaN&amp;Id=bc51cf94-aee9-4633-8ae2-16ce2d8b3f54&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.8</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerImageUrl">https://m365x80643879.sharepoint.com/_layouts/15/getpreview.ashx?guidSite=44b79118ad46442e8e29427fdfcfbd0c&amp;guidWeb=864b20e7b778481892c8ee3161367760&amp;guidFile=bc51cf94aee946338ae216ce2d8b3f54&amp;ext=jpg</pnp:DataValue>
+            </pnp:DataRow>
+            <pnp:DataRow>
+              <pnp:DataValue FieldName="Title">CEO Townhall: Q4 results and 2027 Outlook</pnp:DataValue>
+              <pnp:DataValue FieldName="EventDate">2026-09-17T23:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="EndDate">2026-09-18T00:30:00Z</pnp:DataValue>
+              <pnp:DataValue FieldName="fAllDayEvent">False</pnp:DataValue>
+              <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
+              <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">https://m365x80643879.sharepoint.com{site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5, {site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg?X=NaN&amp;Y=NaN&amp;Id=1b8fcafe-df84-49ea-9638-dbc57dcc3824&amp;listId=54d757ed-6be1-4d78-8d9e-5338e73cdf26&amp;ar=1.5</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerImageUrl">https://m365x80643879.sharepoint.com/_layouts/15/getpreview.ashx?path={site}/SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg</pnp:DataValue>
+            </pnp:DataRow>
+          </pnp:DataRows>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Category" />
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Assets" Description="Use this library to store files which are included on pages within this site, such as images on Wiki pages." DocumentTemplate="{site}/SiteAssets/Forms/template.doc" TemplateType="101" Url="SiteAssets" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" DefaultDisplayFormUrl="{site}/SiteAssets/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SiteAssets/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SiteAssets/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:PropertyBagEntries>
+            <pnp:PropertyBagEntry Key="IsAttachmentLibrary" Value="1" Overwrite="false" />
+          </pnp:PropertyBagEntries>
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{255F0AF3-DA64-4762-A0E9-B8C5AE634193}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Documents" Url="{site}/SiteAssets/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="MediaServiceImageTags" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Note" DisplayName="Image Tags_0" StaticName="lcf76f155ced4ddcb4097134ff3c332f" Name="lcf76f155ced4ddcb4097134ff3c332f" ID="{7c51d632-27e0-f6f7-a5d6-ed67b68bd369}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ColName="ntext8" RowOrdinal="0" />
+            <Field Type="TaxonomyFieldTypeMulti" DisplayName="Image Tags" ID="{5cf76f15-5ced-4ddc-b409-7134ff3c332f}" Name="MediaServiceImageTags" List="{listid:TaxonomyHiddenList}" WebId="{siteid}" ShowField="Term1033" SourceID="{{listid:Site Assets}}" StaticName="MediaServiceImageTags" ColName="int1" RowOrdinal="0" Version="2" Group="_Hidden" CustomFormatter="" Description="Field created by MediaTA" EnforceUniqueValues="FALSE" Hidden="FALSE" CanToggleHidden="TRUE" Indexed="FALSE" ReadOnly="FALSE" Required="FALSE" Mult="TRUE" Sortable="FALSE">
+              <Customization>
+                <ArrayOfProperty>
+                  <Property>
+                    <Name>SspId</Name>
+                    <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{sitecollectiontermstoreid}</Value>
+                  </Property>
+                  <Property>
+                    <Name>GroupId</Name>
+                  </Property>
+                  <Property>
+                    <Name>TermSetId</Name>
+                    <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{termsetid:System:Image Tags}</Value>
+                  </Property>
+                  <Property>
+                    <Name>AnchorId</Name>
+                    <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">fba54fb3-c3e1-fe81-a776-ca4b69148c4d</Value>
+                  </Property>
+                  <Property>
+                    <Name>UserCreated</Name>
+                    <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>Open</Name>
+                    <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+                  </Property>
+                  <Property>
+                    <Name>TextField</Name>
+                    <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{7c51d632-27e0-f6f7-a5d6-ed67b68bd369}</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsPathRendered</Name>
+                    <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsKeyword</Name>
+                    <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>TargetTemplate</Name>
+                  </Property>
+                  <Property>
+                    <Name>CreateValuesInEditForm</Name>
+                    <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsDocTagsEnabled</Name>
+                    <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsEnhancedImageTaggingEnabled</Name>
+                    <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterAssemblyStrongName</Name>
+                    <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterClassName</Name>
+                    <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterMethodName</Name>
+                    <Value xmlns:q14="http://www.w3.org/2001/XMLSchema" p4:type="q14:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterJavascriptProperty</Name>
+                    <Value xmlns:q15="http://www.w3.org/2001/XMLSchema" p4:type="q15:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+                  </Property>
+                </ArrayOfProperty>
+              </Customization>
+            </Field>
+            <Field ID="{3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b}" ColName="tp_CheckoutUserId" RowOrdinal="0" ReadOnly="TRUE" Type="User" List="UserInfo" Name="CheckoutUser" DisplaceOnUpgrade="TRUE" DisplayName="Checked Out To" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CheckoutUser" FromBaseType="TRUE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="76d13cd2-1bae-45a5-8b74-545b87b65037" Name="_ColorTag" DisplayName="Color Tag" />
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
+            <pnp:FieldRef ID="d307dff3-340f-44a2-9f4b-fbfe1ba07459" Name="_CommentCount" DisplayName="Comment count" />
+            <pnp:FieldRef ID="db8d9d6d-dc9a-4fbd-85f3-4a753bfdc58c" Name="_LikeCount" DisplayName="Like count" />
+          </pnp:FieldRefs>
+          <pnp:Folders>
+            <pnp:Folder Name="SitePages" ContentTypeID="0x0120">
+              <pnp:Folder Name="Home" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Home" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="200" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="httpswwwmicrosoftcomen-us_29806170" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="httpswwwmicrosoftcomen-us_29806170" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="1900" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Page" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Page" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2100" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="https---www.microsoft.com-en-us" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="https---www.microsoft.com-en-us" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2400" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2500" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Q1-AML-refresher-training-by-March-28,-enroll-now" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Q1-AML-refresher-training-by-March-28,-enroll-now" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2700" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2800" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="London-bureau-chief-up-for-finance-award_29806203" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="London-bureau-chief-up-for-finance-award_29806203" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="2900" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Dashboard" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Dashboard" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="3400" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Event" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Event" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="4300" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Folder Name="Event(1)" ContentTypeID="0x0120">
+                <pnp:Properties>
+                  <pnp:Property Key="FileLeafRef" Value="Event(1)" />
+                  <pnp:Property Key="_ModerationStatus" Value="0" />
+                  <pnp:Property Key="Order" Value="4500" />
+                </pnp:Properties>
+              </pnp:Folder>
+              <pnp:Properties>
+                <pnp:Property Key="FileLeafRef" Value="SitePages" />
+                <pnp:Property Key="_ModerationStatus" Value="0" />
+                <pnp:Property Key="Order" Value="100" />
+              </pnp:Properties>
+            </pnp:Folder>
+          </pnp:Folders>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://northcentralus1-0.pushnp.svc.ms/notifications?token=ns_9f007c6c-bb47-47be-aec7-e6371089a989" ExpiresInDays="1" />
+          </pnp:Webhooks>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Site Pages" Description="" DocumentTemplate="" OnQuickLaunch="true" TemplateType="119" Url="SitePages" EnableVersioning="true" EnableMinorVersions="true" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="1" TemplateFeatureID="00bfea71-c796-4402-9f2f-0eb9a6e71b18" ContentTypesEnabled="true" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/SitePages/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/SitePages/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/SitePages/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=50" IrmExpire="false" IrmReject="false" IsApplicationList="true" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800C0E54B39129A4FB6B71E908D1C98831E" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800EE3B4FE2C29A4DCDB55229ADEB3DBFE4" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{ACD4EA48-21F7-41D3-B547-8943DF775155}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="By Author" Url="{site}/SitePages/Forms/ByAuthor.aspx" Level="1" BaseViewID="4" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Author" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="Modified" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Created" />
+                <FieldRef Name="PromotedState" />
+                <FieldRef Name="FirstPublishedDate" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{E6D78AA7-CB8A-4048-A3A1-5DA78616ED8C}" Type="HTML" DisplayName="Recent Changes" Url="{site}/SitePages/Forms/RecentChanges.aspx" Level="1" BaseViewID="2" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{79711224-0B31-4D24-A64A-6B987E8BEB8F}" Type="HTML" DisplayName="Created By Me" Url="{site}/SitePages/Forms/CreatedByMe.aspx" Level="1" BaseViewID="3" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="Author" />
+                    <Value Type="Integer">
+                      <UserID />
+                    </Value>
+                  </Eq>
+                </Where>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{1CCA965D-DB25-4FC8-9793-54840FB98190}" Type="HTML" DisplayName="By Editor" Url="{site}/SitePages/Forms/ByEditor.aspx" Level="1" BaseViewID="5" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <GroupBy Collapse="FALSE">
+                  <FieldRef Name="Editor" />
+                </GroupBy>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+            <View Name="{DD75EEB8-E712-4AFF-B0C1-3BE1B023D9D7}" Type="HTML" DisplayName="All Pages" Url="{site}/SitePages/Forms/AllPages.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ToolbarTemplate="WikiLibraryViewToolBar" ImageUrl="/_layouts/15/images/dlicon.png?rev=50">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Author" />
+                <FieldRef Name="Created" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{3881510a-4e4a-4ee8-b102-8ee8e2d0dd4b}" ColName="tp_CheckoutUserId" RowOrdinal="0" ReadOnly="TRUE" Type="User" List="UserInfo" Name="CheckoutUser" DisplaceOnUpgrade="TRUE" DisplayName="Checked Out To" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="CheckoutUser" FromBaseType="TRUE" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+            <pnp:FieldRef ID="4966388e-6e12-4bc6-8990-5b5b66153eae" Name="CanvasContent1" DisplayName="Authoring Canvas Content" />
+            <pnp:FieldRef ID="5baf6db5-9d25-4738-b15e-db5789298e82" Name="BannerImageUrl" DisplayName="Banner Image URL" />
+            <pnp:FieldRef ID="3f155110-a6a2-4d70-926c-94648101f0e8" Name="Description" DisplayName="Description" />
+            <pnp:FieldRef ID="f5ad16a2-85be-46b2-b5f0-2bb8b4a5074a" Name="PromotedState" DisplayName="Promoted State" />
+            <pnp:FieldRef ID="c84f8697-331e-457d-884a-c4fb8f30ea74" Name="FirstPublishedDate" DisplayName="First Published Date" />
+            <pnp:FieldRef ID="261075db-0525-4fb8-a6ea-772014186599" Name="LayoutWebpartsContent" DisplayName="Page Layout Content" />
+            <pnp:FieldRef ID="1a7348e7-1bb7-4a47-9790-088e7cb20b58" Name="_AuthorByline" DisplayName="Author Byline" />
+            <pnp:FieldRef ID="d60d65ff-ff42-4044-a684-ac3f7a5e598c" Name="_TopicHeader" DisplayName="Topic header" />
+            <pnp:FieldRef ID="9de685c5-fdf5-4319-b987-3edf55efb36f" Name="_SPSitePageFlags" DisplayName="Site Page Flags" />
+            <pnp:FieldRef ID="9889a80f-c9ec-41d8-a359-ac5fb5c4cfa2" Name="_SPCallToAction" DisplayName="Call To Action" />
+            <pnp:FieldRef ID="0e7b982f-698a-4d0c-aacb-f16906f66d30" Name="_OriginalSourceUrl" DisplayName="Original Source Url" />
+            <pnp:FieldRef ID="36193413-dd5c-4096-8c1e-1b40098b9ba3" Name="_OriginalSourceSiteId" DisplayName="Original Source Site ID" />
+            <pnp:FieldRef ID="3477a5bc-c605-4b2e-a7c1-8db8f13c017e" Name="_OriginalSourceWebId" DisplayName="Original Source Web ID" />
+            <pnp:FieldRef ID="139da674-dbf6-439f-98e0-4eb05fa9a669" Name="_OriginalSourceListId" DisplayName="Original Source List ID" />
+            <pnp:FieldRef ID="91e86a43-75f2-426f-80da-35edfb47d55d" Name="_OriginalSourceItemId" DisplayName="Original Source Item ID" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+      <pnp:Files>
+        <pnp:File Src="SiteAssets/SitePages/Home/2701674420-GettyImages-1401941657.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="2701674420-GettyImages-1401941657.jpg" />
+            <pnp:Property Key="Title" Value="1401941657" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1528616286-Background-2.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1528616286-Background-2.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1" />
+            <pnp:Property Key="Order" Value="400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/81046596-GettyImages-2223895987.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="81046596-GettyImages-2223895987.jpg" />
+            <pnp:Property Key="Title" Value="2223895987" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/260934430-Frame-2147238931.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="260934430-Frame-2147238931.png" />
+            <pnp:Property Key="Order" Value="600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1938318687-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1938318687-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="MediaServiceImageTags" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1031132801-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1031132801-BG4.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/2329532682-Background.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="2329532682-Background.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1754349987-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1754349987-Logo-top.png" />
+            <pnp:Property Key="Order" Value="1000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1314888437-BG2.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1314888437-BG2.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="map|ffffffff-ffff-ffff-ffff-fffffffff229;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="map|ffffffff-ffff-ffff-ffff-fffffffff229;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,6" />
+            <pnp:Property Key="Order" Value="1100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1694508084-GettyImages-1089350488.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1694508084-GettyImages-1089350488.jpg" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="1200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/shape-1694508084-GettyImages-1089350488-1788369107955.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="shape-1694508084-GettyImages-1089350488-1788369107955.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,1" />
+            <pnp:Property Key="Order" Value="1300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/883649571-BG3.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="883649571-BG3.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="1400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/247093063-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="247093063-BG4.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="1500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/885775077-BG5.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="885775077-BG5.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5" />
+            <pnp:Property Key="Order" Value="1600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/370988152-BG6.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="370988152-BG6.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="1700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1579592023-Logo-top.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1579592023-Logo-top.png" />
+            <pnp:Property Key="Order" Value="1800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/httpswwwmicrosoftcomen-us_29806170/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/httpswwwmicrosoftcomen-us_29806170" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="MediaServiceImageTags" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Page/1497204675-GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/Page" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1497204675-GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="MediaServiceImageTags" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Page/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/Page" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="MediaServiceImageTags" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="2300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179/BG5.png" Folder="SiteAssets/SitePages/CRDM-closes-at-52-week-high-as-Q4-earnings-beat-estimates_29806179" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="BG5.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5" />
+            <pnp:Property Key="Order" Value="2600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/London-bureau-chief-up-for-finance-award_29806203/GettyImages-2194273209.jpg" Folder="SiteAssets/SitePages/London-bureau-chief-up-for-finance-award_29806203" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-2194273209.jpg" />
+            <pnp:Property Key="Title" Value="2194273209" />
+            <pnp:Property Key="MediaServiceImageTags" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2,7" />
+            <pnp:Property Key="Order" Value="3000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1963570142-BG4.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1963570142-BG4.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1014433986-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="MediaServiceImageTags" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1372799161-GettyImages-2225209600.jpg" />
+            <pnp:Property Key="Title" Value="2225209600" />
+            <pnp:Property Key="MediaServiceImageTags" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3300" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Dashboard/GettyImages-1069237496.jpg" Folder="SiteAssets/SitePages/Dashboard" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="GettyImages-1069237496.jpg" />
+            <pnp:Property Key="MediaServiceImageTags" Value="book|ffffffff-ffff-ffff-ffff-fffffffffd08;indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="book|ffffffff-ffff-ffff-ffff-fffffffffd08;indoor|ffffffff-ffff-ffff-ffff-fffffffff41f;person|ffffffff-ffff-ffff-ffff-ffffffffef3c;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,2,8,7" />
+            <pnp:Property Key="Order" Value="3500" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1014433986-GettyImages-2225209600_1788373331821.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1014433986-GettyImages-2225209600_1788373331821.jpg" />
+            <pnp:Property Key="MediaServiceImageTags" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="city|ffffffff-ffff-ffff-ffff-fffffffffb30;outdoor|ffffffff-ffff-ffff-ffff-fffffffff006" />
+            <pnp:Property Key="TaxCatchAll" Value="1,3" />
+            <pnp:Property Key="Order" Value="3600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Home/1372799161-GettyImages-2225209600_1788373345909.jpg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="1372799161-GettyImages-2225209600_1788373345909.jpg" />
+            <pnp:Property Key="MediaServiceImageTags" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="outdoor|ffffffff-ffff-ffff-ffff-fffffffff006;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,1" />
+            <pnp:Property Key="Order" Value="3700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__globalNavigationLogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__globalNavigationLogo__LogoW.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3800" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__sitelogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__sitelogo__LogoW.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="3900" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__rectSitelogo__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__rectSitelogo__LogoW.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4000" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__LogoW.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedHeaderBackgroundImage__LogoW.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4100" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__BG6.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedHeaderBackgroundImage__BG6.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e" />
+            <pnp:Property Key="TaxCatchAll" Value="4" />
+            <pnp:Property Key="Order" Value="4200" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Event/80171-GettyImages-2258623996.jpg" Folder="SiteAssets/SitePages/Event" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="80171-GettyImages-2258623996.jpg" />
+            <pnp:Property Key="Title" Value="2258623996" />
+            <pnp:Property Key="MediaServiceImageTags" Value="person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="person|ffffffff-ffff-ffff-ffff-ffffffffef3c" />
+            <pnp:Property Key="TaxCatchAll" Value="2" />
+            <pnp:Property Key="Order" Value="4400" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/SitePages/Event(1)/98868-GettyImages-2166211751.jpg" Folder="SiteAssets/SitePages/Event(1)" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="98868-GettyImages-2166211751.jpg" />
+            <pnp:Property Key="Title" Value="2166211751" />
+            <pnp:Property Key="Order" Value="4600" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedFooterBackgroundImage__BG3.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedFooterBackgroundImage__BG3.png" />
+            <pnp:Property Key="MediaServiceImageTags" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="lcf76f155ced4ddcb4097134ff3c332f" Value="screenshot|ffffffff-ffff-ffff-ffff-ffffffffec2e;text|ffffffff-ffff-ffff-ffff-ffffffffe8c6" />
+            <pnp:Property Key="TaxCatchAll" Value="5,4" />
+            <pnp:Property Key="Order" Value="4700" />
+          </pnp:Properties>
+        </pnp:File>
+        <pnp:File Src="SiteAssets/__extendedFooterBackgroundImage__Frame 2147225511.png" Folder="SiteAssets" Overwrite="true" Level="Published">
+          <pnp:Properties>
+            <pnp:Property Key="ContentTypeId" Value="0x010100A2E3253DE4D9BA418DEA9B6E4857D3EF" />
+            <pnp:Property Key="FileLeafRef" Value="__extendedFooterBackgroundImage__Frame 2147225511.png" />
+            <pnp:Property Key="Order" Value="4800" />
+          </pnp:Properties>
+        </pnp:File>
+      </pnp:Files>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

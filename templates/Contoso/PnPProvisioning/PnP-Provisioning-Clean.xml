@@ -881,6 +881,7 @@
         </pnp:ListInstance>
       </pnp:Lists>
       <pnp:Files>
+        <pnp:File Src="SiteAssets/Icons/ic-vivalearning.png" Folder="SiteAssets/Icons" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" Folder="SiteAssets/SitePages/newpage" Overwrite="true" Level="Published">
           <pnp:Properties>
             <pnp:Property Key="ContentTypeId" Value="0x0101009BC9DC1D615C9942BC4E30E7995A3E64" />
@@ -1505,7 +1506,7 @@
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;84266b2d-dfcc-4ad7-a0ef-80c8cd1a8e0d&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:5,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;4d093a30-fa9f-4b06-a8b2-a3c0ed605f26&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:8,&quot;w&quot;:70,&quot;h&quot;:3}}}" ControlId="84266b2d-dfcc-4ad7-a0ef-80c8cd1a8e0d" Order="5" Column="1">
                   <pnp:CanvasControlProperties>
-                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span class=&quot;fontSizeXLargePlus&quot;&gt;&lt;i&gt;&lt;span class=&quot;fontColorNeutralPrimaryAlt&quot;&gt;&lt;strong&gt;POWERING TOMORROW&lt;/strong&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt;" />
+                    <pnp:CanvasControlProperty Key="Text" Value="&lt;span style=&quot;text-align:center;&quot; class=&quot;fontSizeXLargePlus&quot;&gt;&lt;i&gt;&lt;span class=&quot;fontColorNeutralPrimaryAlt&quot;&gt;&lt;strong&gt;POWERING TOMORROW&lt;/strong&gt;&lt;/span&gt;&lt;/i&gt;&lt;/span&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
                 <pnp:CanvasControl WebPartType="Text" JsonControlData="{&quot;editorType&quot;:&quot;CKEditor&quot;,&quot;controlType&quot;:4,&quot;id&quot;:&quot;a83574b7-0506-40fa-b8c7-fbb54bdf07fa&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:6,&quot;zoneIndex&quot;:1,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;4d093a30-fa9f-4b06-a8b2-a3c0ed605f26&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:21,&quot;w&quot;:23,&quot;h&quot;:4}}}" ControlId="a83574b7-0506-40fa-b8c7-fbb54bdf07fa" Order="6" Column="1">
