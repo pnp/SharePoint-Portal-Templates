@@ -6,10 +6,12 @@ Site templates used as demos from Microsoft
 
 This repo contains portal demo sites. The sites are built using PnP Provisioning templates, which allow us to create a site with a specific configuration and content in a repeatable way. The templates are applied using PowerShell scripts, which also perform some additional configuration tasks that cannot be contained in the template for technical reasons.
 
-Each site can be installed in your tenant independently, so you can choose to install one or both. The instructions for each site are in their respective README file.
+Each site can be installed in your tenant independently, so you can choose to install any combination of the templates. The instructions for each site are in their respective README file.
 
+- [Contoso](./templates/Contoso/README.md) is a demo portal site for a solar company
 - [Credimus](./templates/Credimus/README.md) is a demo site for a financial services company
 - [Solbound](./templates/Solbound/README.md) is a demo site for a solar installation company
+- [Woodgrove](./templates/Woodgrove/README.md) is a demo portal for a bank
 
 ## Author(s)
 - [Julie Turner](https://www.linkedin.com/in/juliemturner/), MVP (Sympraxis Consulting)

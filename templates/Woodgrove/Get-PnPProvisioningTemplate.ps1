@@ -9,13 +9,13 @@ $templateSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $templateSi
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
-    -Configuration "./templates/Woodgrove/_exportConfig/PnPSite.json" `
+    -Configuration "./templates/$($siteName)/_exportConfig/PnPSite.json" `
     -IncludeAllPages `
-    -Out "./templates/Woodgrove/PnPProvisioning/PnP-Provisioning.xml" `
+    -Out "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml" `
     -Force
 
 # Remove the Dashboard.aspx page from the template's XML file, as it will be created by the Viva Connections experience setup
-[xml]$xml = Get-Content "./templates/Woodgrove/PnPProvisioning/PnP-Provisioning.xml"
+[xml]$xml = Get-Content "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
 
 $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage | ForEach-Object {
     if ($_.PageName -like "dashboard*.aspx") {
@@ -23,12 +23,12 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
         Write-Host -BackgroundColor Cyan "Removed Dashboard.aspx page from the template XML file."
     }
 }
-$xml.Save("./templates/Woodgrove/PnPProvisioning/PnP-Provisioning.xml")
+$xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml")
 
 
 # Remove the MediaServiceImageTags from the export to eliminate Term Store mismatches and errors
-$sourcePath = "./templates/Woodgrove/PnPProvisioning/PnP-Provisioning.xml"
-$cleanPath  = "./templates/Woodgrove/PnPProvisioning/PnP-Provisioning-Clean.xml"
+$sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
+$cleanPath  = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 Copy-Item $sourcePath $cleanPath -Force
 
@@ -52,11 +52,14 @@ $template.Save($cleanPath)
 
 Write-Host "Removed $($nodes.Count) MediaServiceImageTags nodes."
 
-
+# Clean up site-specific URLs from the template and replace with {site} tokens
 $content = Get-Content $cleanPath -Raw
 
 $content = $content -replace `
     'https://[^/]+\.sharepoint\.com\{site\}',
     '{site}'
+$content = $content -replace `
+    'https://[^/]+\.sharepoint\.com',
+    '{site}/'
 
 Set-Content $cleanPath $content

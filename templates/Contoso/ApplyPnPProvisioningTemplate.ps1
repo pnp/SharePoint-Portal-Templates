@@ -14,7 +14,7 @@ Import-Module PnP.PowerShell -Force
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
 $siteName = "Contoso" # The name of the site you want to update.
-$siteUrl = "MARCTEST3" # The URL name for the site you want to update.
+$siteUrl = "Contoso" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -53,31 +53,10 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
     -HeaderLayout Standard `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__Frame 2147238928.png" `
+    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME" `
     -SiteThumbnailUrl "SiteAssets/__sitelogo__Logo" `
     -SiteLogoUrl "SiteAssets/__sitelogo__Logo"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
-
-# Update Site Pages library to add Department values and set thumbnails
-$sitePages = Get-PnPListItem -Connection $newSiteConnection -List "Site Pages" -Fields "Id", "Title"
-
-$pagesMetadata = Import-Csv -Path "$PSScriptRoot/Pages Metadata/Contoso.PagesMetadata.csv"
-
-foreach ($page in $sitePages) {
-
-    Write-Host -BackgroundColor Green "Processing page '$($page.FieldValues['Title'])'"
-
-    $pageMetadata = ($pagesMetadata | Where-Object { $_.PageName -eq $page.FieldValues['PageName'] })
-    $folder = "$PSScriptRoot/Pages Metadata/$($pageMetadata.Id)"
-
-    if ($pageMetadata -and (Test-Path $folder)) {
-
-        Write-Host -BackgroundColor Cyan "  Republishing page '$($page.FieldValues['Title'])' with new thumbnail and metadata"
-
-        $pubItem = Set-PnPPage -Connection $newSiteConnection -Identity $newItem.FieldValues["FileLeafRef"] -Publish
-
-    }
-}
 
 # Add the correct ACES to the Viva Connections Dashboard
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Contoso.ACES.csv"
@@ -105,7 +84,8 @@ foreach ($ace in $aces) {
 }
 
 # Resources
-$vcList = "ConnectionsConfiguration-4ce1892f-76d2-4393-b9df-079a66a95c4a"
+$lists = Get-PnPList -Connection $newSiteConnection
+$vcList = ($lists | Where-Object { $_.Title -like "ConnectionsConfiguration*" }).Title
 
 # import the file Contoso.Resources.csv with the resources to add to the Resources list
 $resources = Import-Csv -Path "$PSScriptRoot/Resources/Contoso.Resources.csv"
