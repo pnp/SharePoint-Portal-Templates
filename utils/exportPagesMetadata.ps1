@@ -9,14 +9,13 @@ $siteName = "Contoso" # The URL name for the site you want to update.
 #endregion
 
 # region Export Resources
-$siteUrl = "https://$($tenant).sharepoint.com/sites/$($siteName)"
+$siteUrl = "https://$($tenant).sharepoint.com/" # sites/$($siteName)"
 $siteConnection = Connect-PnPOnline -ClientId $clientId -Url $siteUrl -Interactive -ReturnConnection
 
 $outputPath = ".\utils\Pages Metadata\$($siteName).PagesMetadata.csv"
 
 $pages = Get-PnPListItem -Connection $siteConnection -List "Site Pages" `
-    -Fields "FileLeafRef", "Title", "Canv
-    asContent1", "BannerImageUrl", "AuthorByline", "FieldValuesAsText", "ol_Department"
+    -Fields "FileLeafRef", "Title", "CanvasContent1", "BannerImageUrl", "AuthorByline", "FieldValuesAsText"
 
 $results = @()
 
@@ -38,10 +37,10 @@ foreach ($page in $pages) {
     }
 
     # Normalize URL (important for cross-tenant)
-    # if ($thumbUrl -and $thumbUrl.StartsWith("http")) {
-    #     $uri = [System.Uri]$thumbUrl
-    #     $thumbUrl = $uri.AbsolutePath
-    # }
+    if ($thumbUrl -and $thumbUrl.StartsWith("http")) {
+        $uri = [System.Uri]$thumbUrl
+        $thumbUrl = $uri.AbsolutePath
+    }
 
     $results += [PSCustomObject]@{
         ID           = $page.Id

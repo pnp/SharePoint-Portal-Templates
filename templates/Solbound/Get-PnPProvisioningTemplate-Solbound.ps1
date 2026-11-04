@@ -7,9 +7,9 @@ $templateSiteConnection = Connect-PnPOnline -ClientId e6f6cea5-3653-448b-b4fc-5d
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
-    -Configuration "./templates/Solbound/_exportConfig/PnPSolboundSite.json" `
+    -Configuration "./templates/Solbound/_exportConfig/PnPSite.json" `
     -IncludeAllPages `
-    -Out "./templates/Solbound/PnPProvisioning/PnP-Provisioning-SolboundSite.xml" `
+    -Out "./templates/Solbound/PnPProvisioning/PnP-Provisioning.xml" `
     -Force
 
 # Remove the Dashboard.aspx page from the template's XML file, as it will be created by the Viva Connections experience setup

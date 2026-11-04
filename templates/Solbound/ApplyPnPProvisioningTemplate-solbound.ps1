@@ -13,7 +13,7 @@ Import-Module PnP.PowerShell -Force
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteUrl = "MARCTEST1" # The URL name for the site you want to update.
+$siteUrl = "Solbound" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -41,7 +41,7 @@ Write-Host -BackgroundColor Cyan "Applying PnP Provisioning Template to site at 
 # Apply PnP Template
 Invoke-PnPSiteTemplate `
     -Connection $newSiteConnection `
-    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-SolboundSite.xml"
+    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning.xml"
 
 #endregion
 
@@ -56,27 +56,6 @@ Set-PnPWebHeader -Connection $newSiteConnection `
     -SiteThumbnailUrl "SiteAssets/__rectSitelogo__solbound-logo.png" `
     -SiteLogoUrl "SiteAssets/__sitelogo__solbound-logo.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
-
-# Update Site Pages library to add Department values and set thumbnails
-$sitePages = Get-PnPListItem -Connection $newSiteConnection -List "Site Pages" -Fields "Id", "Title"
-
-$pagesMetadata = Import-Csv -Path "$PSScriptRoot/Pages Metadata/Solbound_PagesMetadata.csv"
-
-foreach ($page in $sitePages) {
-
-    Write-Host -BackgroundColor Green "Processing page '$($page.FieldValues['Title'])'"
-
-    $pageMetadata = ($pagesMetadata | Where-Object { $_.PageName -eq $page.FieldValues['PageName'] })
-    $folder = "$PSScriptRoot/Pages Metadata/$($pageMetadata.Id)"
-
-    if ($pageMetadata -and (Test-Path $folder)) {
-
-        Write-Host -BackgroundColor Cyan "  Republishing page '$($page.FieldValues['Title'])' with new thumbnail and metadata"
-
-        $pubItem = Set-PnPPage -Connection $newSiteConnection -Identity $newItem.FieldValues["FileLeafRef"] -Publish
-
-    }
-}
 
 # Add the correct ACES to the Viva Connections Dashboard
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Solbound.ACES.csv"
@@ -104,7 +83,8 @@ foreach ($ace in $aces) {
 }
 
 # Resources
-$vcList = "ConnectionsConfiguration-4ce1892f-76d2-4393-b9df-079a66a95c4a"
+$lists = Get-PnPList -Connection $newSiteConnection
+$vcList = ($lists | Where-Object { $_.Title -like "ConnectionsConfiguration*" }).Title
 
 # import the file Solbound.Resources.csv with the resources to add to the Resources list
 $resources = Import-Csv -Path "$PSScriptRoot/Resources/Solbound.Resources.csv"
@@ -115,6 +95,9 @@ Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on th
 $resources | ForEach-Object {
     $_.Value = $_.Value -replace "{site}", $destinationUrl
 }
+
+$resources | ForEach-Object { Write-Host -BackgroundColor Cyan "Resource: $($_.Value)" }
+
 
 Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
     Spotlight_x0020_Configuration = $resources.Value
