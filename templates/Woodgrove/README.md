@@ -15,6 +15,10 @@ Installing the Woodgrove site requires several steps:
 
 ## Prerequisites
 
+Before running the provisioning script, install [PowerShell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell) and [PnP.PowerShell](https://pnp.github.io/powershell/articles/installation.html). Use a PowerShell version supported by your installed PnP.PowerShell module; Windows PowerShell 5.1 is not supported.
+
+You also need an [Entra ID application registration for PnP.PowerShell interactive login](https://pnp.github.io/powershell/articles/registerapplication.html), with administrator consent for the delegated SharePoint permissions required by the provisioning commands. Set `$clientId` in the script to your application's client ID, and update `$tenant` and `$siteUrl` for your environment. The sample values are not intended for your tenant.
+
 For most of these instructions, you should have the SharePoint Admin role. While some steps can be accomplished by the Site Owner, it will be most expeditious to follow all the instructions with the SharePoint Admin role.
 
 Any exceptions to the above (for example, where Global Administrator permissions are required) are noted in each step.
@@ -64,9 +68,9 @@ We recommend you extract the ZIP file into a folder in the root of your machine,
 
 ## Apply PnP Provisioning template
 
-The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnP Provisioning*, and is named *PnP-Provisioning-WoodgroveSite.xml*. The folder also contains the images and other files which are referenced in the template.
+The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnPProvisioning*, and is named *PnP-Provisioning-Clean.xml*. The folder also contains the images and other files which are referenced in the template.
 
-The script *ApplyPnPProvisioningTemplate-Woodgrove.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
+The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
@@ -119,42 +123,6 @@ Next, give the theme the name *Woodgrove.Theme*, and Save.
 Finally, the theme should look like this is you have set it up correctly.
 ![Review the theme](./media/Woodgrove-view-theme.jpg)
 
-### Upload fonts
-
-The site uses several custom fonts to enhance its look and feel. You need to upload specific font files to support the site. These font files are not prefixed. For each font family, you need to upload a set of font files, each of which contains variants on the font for use the Font Package, which we will create next. For detailed instructions, see [Brand Fonts](https://learn.microsoft.com/sharepoint/brand-fonts).
-
-Woodgrove uses the custom fonts *Exo 2* and *Barlow*. The appropriate files are in the *Fonts* folder.
-
-### Create Font Package
-
-Font Packages combine sets of fonts for use in a site which has the Font Package enabled. For detailed instructions, see [Font packages](https://learn.microsoft.com/sharepoint/brand-center-font-packages).
-
-| Font Slot | Font Name | Font Variant |
-|---|---|---|
-| Title | Exo 2 | Black |
-| Headline | Exo 2 | ExtraBold |
-| Body | Barlow | Medium |
-| Interactive | Exo 2 | ExtraBold |
-| | | |
-
-#### Choose your fonts
-
-![Choose your fonts](./media/Woodgrove-choose-your-fonts.jpg)
-
-#### Assign your fonts
-
-![Assign your fonts](./media/Woodgrove-assign-your-fonts.jpg)
-
-#### Give your package a name
-
-![Give your package a name](./media/Woodgrove-give-your-package-a-name.jpg)
-
-### Review font package
-
-Review the settings to ensure you have created the Font Package correctly.
-
-![Review font package](./media/Woodgrove-review-font-package.jpg)
-
 ## Final site configuration
 
 These final steps apply the configurations you have set up above in the site itself.
@@ -169,18 +137,18 @@ Select Theme and choose the `Woodgrove.Theme` and Save.
 
 ![Apply Woodgrove Theme](./media/Woodgrove-set-theme.jpg)
 
-#### Apply Font Package
+#### Apply Font
 
-Enable the Font Package you created above under Fonts.
+Set the font to `Georgia Pro Condensed-Verdana Pro Condensed`, which is one of the Microsoft-provided fonts.
 
-![Apply Woodgrove Font Package](./media/Woodgrove-apply-font-package.jpg)
+
+![Apply Woodgrove Font](./media/Woodgrove-apply-font-package.jpg)
 
 ## Summary
 
 At this point, you should have a fully functioning Woodgrove site, with the theme and fonts applied. You can continue to customize the site as you see fit, adding additional content, pages, and web parts to make it your own.
 
 If you've had problems setting up the site, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues) in the GitHub repo, and we will do our best to assist you.
-
 
 
 

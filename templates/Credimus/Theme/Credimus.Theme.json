@@ -1,42 +1,63 @@
-﻿{
-    "Name": "Credimus.Theme",
-    "Palette": null,
-    "ColorPairs": {
-        "light": [
-            {
-                "accentColor": "#022C22",
-                "backgroundColor": "#FFFFFF"
-            },
-            {
-                "accentColor": "#FFFFFF",
-                "backgroundColor": "#022C22"
-            },
-            {
-                "accentColor": "#059669",
-                "backgroundColor": "#FFFFFF"
-            },
-            {
-                "accentColor": "#FFFFFF",
-                "backgroundColor": "#059669"
-            },
-            {
-                "accentColor": "#06B6D4",
-                "backgroundColor": "#FFFFFF"
-            },
-            {
-                "accentColor": "#FFFFFF",
-                "backgroundColor": "#06B6D4"
-            },
-            {
-                "accentColor": "#0A0F0D",
-                "backgroundColor": "#FFFFFF"
-            },
-            {
-                "accentColor": "#FFFFFF",
-                "backgroundColor": "#0A0F0D"
-            }
-        ]
-    },
-    "IsInverted": false,
-    "Editable": true
+{
+  "palette": {
+    "themePrimary": "#022C22",
+    "themeLighterAlt": "#CBE6DF",
+    "themeLighter": "#A1CEC4",
+    "themeLight": "#7CB7A9",
+    "themeTertiary": "#5BA090",
+    "themeSecondary": "#408878",
+    "themeDarkAlt": "#297160",
+    "themeDark": "#175A4A",
+    "themeDarker": "#0A4335",
+    "neutralLighterAlt": "#F8F8F8",
+    "neutralLighter": "#F4F4F4",
+    "neutralLight": "#EAEAEA",
+    "neutralQuaternaryAlt": "#DADADA",
+    "neutralQuaternary": "#D0D0D0",
+    "neutralTertiaryAlt": "#C8C8C8",
+    "neutralTertiary": "#A19F9D",
+    "neutralSecondary": "#605E5C",
+    "neutralPrimaryAlt": "#3B3A39",
+    "neutralPrimary": "#323130",
+    "neutralDark": "#201F1E",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "displayMode": "light",
+  "secondaryColors": {
+    "light": [
+      {
+        "themePrimary": "#FFFFFF",
+        "backgroundColor": "#022C22"
+      },
+      {
+        "themePrimary": "#059669",
+        "backgroundColor": "#FFFFFF"
+      },
+      {
+        "themePrimary": "#FFFFFF",
+        "backgroundColor": "#059669"
+      },
+      {
+        "themePrimary": "#06B6D4",
+        "backgroundColor": "#FFFFFF"
+      },
+      {
+        "themePrimary": "#FFFFFF",
+        "backgroundColor": "#06B6D4"
+      },
+      {
+        "themePrimary": "#0A0F0D",
+        "backgroundColor": "#FFFFFF"
+      },
+      {
+        "themePrimary": "#FFFFFF",
+        "backgroundColor": "#0A0F0D"
+      }
+    ],
+    "dark": []
+  },
+  "isInverted": false,
+  "name": "Credimus.Theme"
 }

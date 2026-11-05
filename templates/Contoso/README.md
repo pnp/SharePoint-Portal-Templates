@@ -15,6 +15,10 @@ Installing the Contoso site requires several steps:
 
 ## Prerequisites
 
+Before running the provisioning script, install [PowerShell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell) and [PnP.PowerShell](https://pnp.github.io/powershell/articles/installation.html). Use a PowerShell version supported by your installed PnP.PowerShell module; Windows PowerShell 5.1 is not supported.
+
+You also need an [Entra ID application registration for PnP.PowerShell interactive login](https://pnp.github.io/powershell/articles/registerapplication.html), with administrator consent for the delegated SharePoint permissions required by the provisioning commands. Set `$clientId` in the script to your application's client ID, and update `$tenant` and `$siteUrl` for your environment. The sample values are not intended for your tenant.
+
 For most of these instructions, you should have the SharePoint Admin role. While some steps can be accomplished by the Site Owner, it will be most expeditious to follow all the instructions with the SharePoint Admin role.
 
 Any exceptions to the above (for example, where Global Administrator permissions are required) are noted in each step.
@@ -64,9 +68,9 @@ We recommend you extract the ZIP file into a folder in the root of your machine,
 
 ## Apply PnP Provisioning template
 
-The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnP Provisioning*, and is named *PnP-Provisioning-ContosoSite.xml*. The folder also contains the images and other files which are referenced in the template.
+The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnPProvisioning*, and is named *PnP-Provisioning-Clean.xml*. The folder also contains the images and other files which are referenced in the template.
 
-The script *ApplyPnPProvisioningTemplate-Contoso.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
+The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
@@ -94,10 +98,8 @@ For this site, you should add the following colors into your Brand Colors. Each 
 
 | Color Name | Color Code | Color |
 |---|---|---|
-| Contoso.Yellow | #FAE300 | ![#FAE300](https://placehold.co/30x30/FAE300/FAE300.png) |
-| Contoso.Blue | #0B1F2A | ![#0B1F2A](https://placehold.co/30x30/0B1F2A/0B1F2A.png) | 
-| Contoso.Orange | #E8441A | ![#E8441A](https://placehold.co/30x30/E8441A/E8441A.png) |
-| Contoso.Neutral | #F2F2F2 | ![#F2F2F2](https://placehold.co/30x30/F2F2F2/F2F2F2.png) | 
+| Contoso.Blue | #022839 | ![#022839](https://placehold.co/30x30/022839/022839.png) |
+| Contoso.Peach | #F5AA5D | ![#F5AA5D](https://placehold.co/30x30/F5AA5D/F5AA5D.png) |
 | | |
 
 ### Set up theme
@@ -125,7 +127,7 @@ Finally, the theme should look like this is you have set it up correctly.
 
 The site uses several custom fonts to enhance its look and feel. You need to upload specific font files to support the site. These font files are not prefixed. For each font family, you need to upload a set of font files, each of which contains variants on the font for use the Font Package, which we will create next. For detailed instructions, see [Brand Fonts](https://learn.microsoft.com/sharepoint/brand-fonts).
 
-Contoso uses the custom fonts *Exo 2* and *Barlow*. The appropriate files are in the *Fonts* folder.
+Contoso uses the custom font *Aptos*. The appropriate files are in the *Fonts* folder.
 
 ### Create Font Package
 
@@ -133,10 +135,10 @@ Font Packages combine sets of fonts for use in a site which has the Font Package
 
 | Font Slot | Font Name | Font Variant |
 |---|---|---|
-| Title | Exo 2 | Black |
-| Headline | Exo 2 | ExtraBold |
-| Body | Barlow | Medium |
-| Interactive | Exo 2 | ExtraBold |
+| Title | Aptos | Black |
+| Headline | Aptos | SemiBold |
+| Body | Aptos | Regular |
+| Interactive | Aptos | Regular |
 | | | |
 
 #### Choose your fonts
@@ -182,6 +184,5 @@ Enable the Font Package you created above under Fonts.
 At this point, you should have a fully functioning Contoso site, with the theme and fonts applied. You can continue to customize the site as you see fit, adding additional content, pages, and web parts to make it your own.
 
 If you've had problems setting up the site, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues) in the GitHub repo, and we will do our best to assist you.
-
 
 

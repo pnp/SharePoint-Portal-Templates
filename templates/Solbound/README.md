@@ -15,6 +15,10 @@ Installing the Solbound site requires several steps:
 
 ## Prerequisites
 
+Before running the provisioning script, install [PowerShell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell) and [PnP.PowerShell](https://pnp.github.io/powershell/articles/installation.html). Use a PowerShell version supported by your installed PnP.PowerShell module; Windows PowerShell 5.1 is not supported.
+
+You also need an [Entra ID application registration for PnP.PowerShell interactive login](https://pnp.github.io/powershell/articles/registerapplication.html), with administrator consent for the delegated SharePoint permissions required by the provisioning commands. Set `$clientId` in the script to your application's client ID, and update `$tenant` and `$siteUrl` for your environment. The sample values are not intended for your tenant.
+
 For most of these instructions, you should have the SharePoint Admin role. While some steps can be accomplished by the Site Owner, it will be most expeditious to follow all the instructions with the SharePoint Admin role.
 
 Any exceptions to the above (for example, where Global Administrator permissions are required) are noted in each step.
@@ -64,9 +68,9 @@ We recommend you extract the ZIP file into a folder in the root of your machine,
 
 ## Apply PnP Provisioning template
 
-The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnP Provisioning*, and is named *PnP-Provisioning-SolboundSite.xml*. The folder also contains the images and other files which are referenced in the template.
+The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnPProvisioning*, and is named *PnP-Provisioning.xml*. The folder also contains the images and other files which are referenced in the template.
 
-The script *ApplyPnPProvisioningTemplate-Solbound.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
+The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
@@ -92,10 +96,10 @@ For this site, you should add the following colors into your Brand Colors. Each 
 
 | Color Name | Color Code | Color |
 |---|---|---|
-| Solbound.Yellow | #FAE300 | ![#FAE300](https://placehold.co/30x30/FAE300/FAE300.png) |
 | Solbound.Blue | #0B1F2A | ![#0B1F2A](https://placehold.co/30x30/0B1F2A/0B1F2A.png) | 
-| Solbound.Orange | #E8441A | ![#E8441A](https://placehold.co/30x30/E8441A/E8441A.png) |
 | Solbound.Neutral | #F2F2F2 | ![#F2F2F2](https://placehold.co/30x30/F2F2F2/F2F2F2.png) | 
+| Solbound.Yellow | #FAE300 | ![#FAE300](https://placehold.co/30x30/FAE300/FAE300.png) |
+| Solbound.Orange | #E8441A | ![#E8441A](https://placehold.co/30x30/E8441A/E8441A.png) |
 | | |
 
 ### Set up theme
@@ -180,7 +184,6 @@ Enable the Font Package you created above under Fonts.
 At this point, you should have a fully functioning Solbound site, with the theme and fonts applied. You can continue to customize the site as you see fit, adding additional content, pages, and web parts to make it your own.
 
 If you've had problems setting up the site, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues) in the GitHub repo, and we will do our best to assist you.
-
 
 
 

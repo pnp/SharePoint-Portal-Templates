@@ -101,7 +101,7 @@ Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values
     Spotlight_x0020_Configuration = $resources.Value
 }
 
-$themeJson = Get-Content -LiteralPath ".\templates\contoso\Theme\Contoso.Theme.json" -Raw -ErrorAction Stop
+$themeJson = Get-Content -LiteralPath (Join-Path $PSScriptRoot 'Theme\Contoso.Theme.json') -Raw -ErrorAction Stop
 $contosoTheme = $themeJson | ConvertFrom-Json -AsHashtable -ErrorAction Stop
 
 if ([string]::IsNullOrWhiteSpace($contosoTheme.name) -or
