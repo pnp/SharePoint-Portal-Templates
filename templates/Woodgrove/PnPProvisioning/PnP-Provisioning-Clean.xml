@@ -999,7 +999,7 @@
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Standard" MenuStyle="MegaMenu" ShowSiteTitle="false" />
-      <pnp:Footer Enabled="true" Logo="" RemoveExistingNodes="false" BackgroundEmphasis="Strong">
+      <pnp:Footer Enabled="true" Logo="" RemoveExistingNodes="false" BackgroundEmphasis="Strong" Alignment="Left" backgroundImageUrl="SiteAssets/__extendedFooterBackgroundImage__Frame 2147225511.png">
         <pnp:FooterLinks>
           <pnp:FooterLink DisplayName="Term of use" Url="http://linkless.header/" />
           <pnp:FooterLink DisplayName="Contact us" Url="http://linkless.header/" />

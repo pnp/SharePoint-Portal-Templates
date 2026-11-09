@@ -25,7 +25,6 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
 }
 $xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml")
 
-
 # Remove the MediaServiceImageTags from the export to eliminate Term Store mismatches and errors
 $sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
 $cleanPath  = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-Clean.xml"
