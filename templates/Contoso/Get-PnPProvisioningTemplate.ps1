@@ -2,7 +2,7 @@
 Import-Module PnP.PowerShell -Force # Recommended version: 3.3.0 and above
 
 $templateTenant = "M365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$siteName = "Contoso" # The name of the site you want to export
+$siteName = "m365x58285237" # The name of the site you want to export
 $templateSiteUrl = "https://$($templateTenant).sharepoint.com" #/sites/hello3"
 $clientId = "2396d3c1-c4c2-445b-b514-835990c14dd0"
 $templateSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $templateSiteUrl -Interactive -ReturnConnection
