@@ -7,7 +7,7 @@ $templateSiteConnection = Connect-PnPOnline -ClientId e6f6cea5-3653-448b-b4fc-5d
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
-    -Configuration "./templates/Credimus/_exportConfig/PnPCredimusSite.json" `
+    -Configuration "./templates/Credimus/_exportConfig/PnPSite.json" `
     -IncludeAllPages `
     -Out "./templates/Credimus/PnPProvisioning/PnP-Provisioning-CredimusSite.xml" `
     -Force

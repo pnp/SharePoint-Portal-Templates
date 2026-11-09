@@ -14,7 +14,7 @@ Import-Module PnP.PowerShell -Force
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
 $siteName = "Contoso" # The name of the site you want to update.
-$siteUrl = "MARCTEST9" # The URL name for the site you want to update.
+$siteUrl = "MARCTEST10" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
