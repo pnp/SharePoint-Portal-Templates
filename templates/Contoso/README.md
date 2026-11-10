@@ -11,9 +11,13 @@ Installing the Contoso site requires several steps:
 - Configure the Brand Center
 - Configure the Contoso site settings which can't be automated
 
-![Contoso Home Page](./media/Contoso-home-page.jpg)
+![Contoso Home Page](./media/contoso-home-page.jpg)
 
 ## Prerequisites
+
+Before running the provisioning script, install [PowerShell](https://learn.microsoft.com/powershell/scripting/install/installing-powershell) and [PnP.PowerShell](https://pnp.github.io/powershell/articles/installation.html). Use a PowerShell version supported by your installed PnP.PowerShell module; Windows PowerShell 5.1 is not supported.
+
+You also need an [Entra ID application registration for PnP.PowerShell interactive login](https://pnp.github.io/powershell/articles/registerapplication.html), with administrator consent for the delegated SharePoint permissions required by the provisioning commands. Set `$clientId` in the script to your application's client ID, and update `$tenant` and `$siteUrl` for your environment. The sample values are not intended for your tenant.
 
 For most of these instructions, you should have the SharePoint Admin role. While some steps can be accomplished by the Site Owner, it will be most expeditious to follow all the instructions with the SharePoint Admin role.
 
@@ -33,7 +37,7 @@ Throughout the rest of these instructions, you will be either making changes to 
 
 You will need to create a Viva Connections experience for the site you've just created if you'd like to have the Dashboard and Resources displaying properly. For detailed instructions, see [Set up Viva Connections in the Microsoft 365 admin center](https://learn.microsoft.com/viva/connections/set-up-admin-center). This is a long article, but you don't need to follow all the steps. You'll want to choose the option to `Build from an existing portal to set a home site`. This will make the Contoso site a home site for your tenant.
 
-The provisioning script adds the ACES to the Dashboard for the site and sets up the links in the Resources Web Part. Prior to running the provisioning script, you will need to create the experience in order for them to be visible.
+The provisioning script adds the ACEs to the Dashboard for the site and sets up the links in the Resources Web Part. Prior to running the provisioning script, you will need to create the experience in order for them to be visible.
 
 If you'd like step-by-step instructions which focus only on the required steps here, see the article [Set up Viva Connections for the site](/_common/setup-viva-connections.md).
 
@@ -49,9 +53,6 @@ Finally, publish the *Dashboard.aspx* page. You don't need to add any cards to i
 
 ![Publish the Dashboard page](../../_common/media/vc-publish-dashboard.png)
 
-Ready to provision the Contoso artifacts!
-
-
 ### Download ZIP file
 
 Download the [Contoso ZIP file](./Contoso.zip). This ZIP file contains all the necessary files to apply the PnP Provisioning template, as well as the images and fonts used in the site.
@@ -62,15 +63,15 @@ We recommend you extract the ZIP file into a folder in the root of your machine,
 
 >Note: The ZIP file contains additional files, should you want to automate more of the implementation. These files can also be used as documentation for the process, in addition to these instructions.
 
+Ready to provision the Contoso artifacts!
+
 ## Apply PnP Provisioning template
 
-The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnP Provisioning*, and is named *PnP-Provisioning-ContosoSite.xml*. The folder also contains the images and other files which are referenced in the template.
+The base definition for the site is contained in the PnP Provisioning template file. This file can be found in the folder *PnPProvisioning*, and is named *PnP-Provisioning-Clean.xml*. The folder also contains the images and other files which are referenced in the template.
 
-The script *ApplyPnPProvisioningTemplate-Contoso.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
+The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning template to the site you have created above. The script also performs some additional configuration which cannot be contained in the PnP Provisioning template for technical reasons.
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
-
-The [Contoso provisioning script](./ApplyPnPProvisioningTemplate.ps1) also imports and applies the full site-local theme from [Contoso.Theme.json](./Theme/Contoso.Theme.json), including its secondary color variants. On subsequent runs it updates the existing site theme with the same name. A palette-only import with `Add-PnPTenantTheme` does not preserve these variants and will not reproduce the full theme. This step does not create, overwrite, or remove tenant-wide themes.
 
 To run the script, you will need to update the variables at the top of the script to reflect your tenant and site information. Then, you can run the script. For detailed instructions, see [Applying PnP Templates to SharePoint Sites](https://learn.microsoft.com/sharepoint/dev/solution-guidance/applying-pnp-templates).
 
@@ -94,11 +95,9 @@ For this site, you should add the following colors into your Brand Colors. Each 
 
 | Color Name | Color Code | Color |
 |---|---|---|
-| Contoso.Yellow | #FAE300 | ![#FAE300](https://placehold.co/30x30/FAE300/FAE300.png) |
-| Contoso.Blue | #0B1F2A | ![#0B1F2A](https://placehold.co/30x30/0B1F2A/0B1F2A.png) | 
-| Contoso.Orange | #E8441A | ![#E8441A](https://placehold.co/30x30/E8441A/E8441A.png) |
-| Contoso.Neutral | #F2F2F2 | ![#F2F2F2](https://placehold.co/30x30/F2F2F2/F2F2F2.png) | 
-| | |
+| Contoso.Blue | #022839 | ![#022839](https://placehold.co/30x30/022839/022839.png) |
+| Contoso.Peach | #F5AA5D | ![#F5AA5D](https://placehold.co/30x30/F5AA5D/F5AA5D.png) |
+| | | |
 
 ### Set up theme
 
@@ -108,24 +107,24 @@ Once you have the Brand Colors defined, you use them to set up a theme. For deta
 
 First, you add the colors to the theme. Add the colors in the order listed above.
 
-![Add the theme colors](./media/Contoso-add-theme-colors.jpg)
+![Add the theme colors](./media/contoso-add-theme-colors.jpg)
 
 #### Name the theme
 
 Next, give the theme the name *Contoso.Theme*, and Save.
 
-![Name the theme](./media/Contoso-name-theme.jpg)
+![Name the theme](./media/contoso-name-theme.jpg)
 
 #### Review the theme
 
-Finally, the theme should look like this is you have set it up correctly.
-![Review the theme](./media/Contoso-view-theme.jpg)
+Finally, the theme should look like this if you have set it up correctly.
+![Review the theme](./media/contoso-view-theme.jpg)
 
 ### Upload fonts
 
-The site uses several custom fonts to enhance its look and feel. You need to upload specific font files to support the site. These font files are not prefixed. For each font family, you need to upload a set of font files, each of which contains variants on the font for use the Font Package, which we will create next. For detailed instructions, see [Brand Fonts](https://learn.microsoft.com/sharepoint/brand-fonts).
+The site uses several custom fonts to enhance its look and feel. You need to upload specific font files to support the site. These font files are not prefixed. For each font family, you need to upload a set of font files, each of which contains variants on the font for use in the Font Package, which we will create next. For detailed instructions, see [Brand Fonts](https://learn.microsoft.com/sharepoint/brand-fonts).
 
-Contoso uses the custom fonts *Exo 2* and *Barlow*. The appropriate files are in the *Fonts* folder.
+Contoso uses the custom font *Aptos*. The appropriate files are in the *Fonts* folder.
 
 ### Create Font Package
 
@@ -133,29 +132,31 @@ Font Packages combine sets of fonts for use in a site which has the Font Package
 
 | Font Slot | Font Name | Font Variant |
 |---|---|---|
-| Title | Exo 2 | Black |
-| Headline | Exo 2 | ExtraBold |
-| Body | Barlow | Medium |
-| Interactive | Exo 2 | ExtraBold |
+| Title | Aptos | Black |
+| Headline | Aptos | SemiBold |
+| Body | Aptos | Regular |
+| Interactive | Aptos | Regular |
 | | | |
 
 #### Choose your fonts
 
-![Choose your fonts](./media/Contoso-choose-your-fonts.jpg)
+![Choose your fonts](./media/contoso-choose-your-fonts.jpg)
 
 #### Assign your fonts
 
-![Assign your fonts](./media/Contoso-assign-your-fonts.jpg)
+![Assign your fonts](./media/contoso-assign-your-fonts.jpg)
 
 #### Give your package a name
 
-![Give your package a name](./media/Contoso-give-your-package-a-name.jpg)
+Name the font package *Contoso.Fonts*, and Save.
+
+![Give your package a name](./media/contoso-give-your-package-a-name.jpg)
 
 ### Review font package
 
 Review the settings to ensure you have created the Font Package correctly.
 
-![Review font package](./media/Contoso-review-font-package.jpg)
+![Review font package](./media/contoso-review-font-package.jpg)
 
 ## Final site configuration
 
@@ -169,19 +170,18 @@ Go to the gear, and select Change the look.
 
 Select Theme and choose the `Contoso.Theme` and Save.
 
-![Apply Contoso Theme](./media/Contoso-set-theme.jpg)
+![Apply Contoso Theme](./media/contoso-set-theme.jpg)
 
 #### Apply Font Package
 
 Enable the Font Package you created above under Fonts.
 
-![Apply Contoso Font Package](./media/Contoso-apply-font-package.jpg)
+![Apply Contoso Font Package](./media/contoso-apply-font-package.jpg)
 
 ## Summary
 
 At this point, you should have a fully functioning Contoso site, with the theme and fonts applied. You can continue to customize the site as you see fit, adding additional content, pages, and web parts to make it your own.
 
 If you've had problems setting up the site, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues) in the GitHub repo, and we will do our best to assist you.
-
 
 

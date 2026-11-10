@@ -13,8 +13,7 @@ Import-Module PnP.PowerShell -Force
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Contoso" # The name of the site you want to update.
-$siteUrl = "Contoso" # The URL name for the site you want to update.
+$siteUrl = "MARCTEST11" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -29,7 +28,8 @@ $newSite = Get-PnPTenantSite -Connection $adminConnection -Identity $destination
 if (!$newSite) {
     Write-Host -BackgroundColor Cyan "Site at $destinationUrl does not exist"
     return
-} else {
+}
+else {
     Write-Host -BackgroundColor Cyan "Connecting to existing site at $destinationUrl..."
 }
 
@@ -53,13 +53,13 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
     -HeaderLayout Standard `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME" `
-    -SiteThumbnailUrl "SiteAssets/__sitelogo__Logo" `
-    -SiteLogoUrl "SiteAssets/__sitelogo__Logo"
+    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
+    -SiteThumbnailUrl "SiteAssets/__sitelogo__Logo.png" `
+    -SiteLogoUrl "SiteAssets/__sitelogo__Logo.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
 
 # Add the correct ACES to the Viva Connections Dashboard
-$aces = Import-Csv -Path "$PSScriptRoot/ACES/Contoso.ACES.csv"
+$aces = Import-Csv -Path "$PSScriptRoot/ACEs/Contoso.ACEs.csv"
 
 Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
 
@@ -80,14 +80,14 @@ foreach ($ace in $aces) {
         -Order $ace.Order `
         -Title $ace.Title `
         -PropertiesJSON $ace.JsonProperties `
-        -CardSize $ace.CardSize `
+        -CardSize $ace.CardSize
 }
 
 # Resources
 $lists = Get-PnPList -Connection $newSiteConnection
 $vcList = ($lists | Where-Object { $_.Title -like "ConnectionsConfiguration*" }).Title
 
-# import the file Contoso.Resources.csv with the resources to add to the Resources list
+# Import the file Contoso.Resources.csv with the resources to add to the Resources list
 $resources = Import-Csv -Path "$PSScriptRoot/Resources/Contoso.Resources.csv"
 
 Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on the Dashboard"
@@ -100,52 +100,6 @@ $resources | ForEach-Object {
 Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
     Spotlight_x0020_Configuration = $resources.Value
 }
-
-$themeJson = Get-Content -LiteralPath ".\templates\contoso\Theme\Contoso.Theme.json" -Raw -ErrorAction Stop
-$contosoTheme = $themeJson | ConvertFrom-Json -AsHashtable -ErrorAction Stop
-
-if ([string]::IsNullOrWhiteSpace($contosoTheme.name) -or
-    $contosoTheme.palette -isnot [System.Collections.IDictionary] -or
-    $contosoTheme.palette.Count -eq 0 -or
-    $contosoTheme.isInverted -isnot [bool]) {
-    throw "The Contoso theme must contain a name, a non-empty palette, and a Boolean isInverted value."
-}
-
-Write-Host -BackgroundColor Cyan "Importing full site theme '$($contosoTheme.name)'..."
-
-$context = Get-PnPContext -Connection $newSiteConnection
-$brandCenter = [Microsoft.SharePoint.Client.BrandCenter]::new($context)
-$siteThemes = $brandCenter.GetSiteThemes()
-Invoke-PnPQuery -Connection $newSiteConnection -ErrorAction Stop
-
-$existingThemes = @($siteThemes.Value.themeData | Where-Object { $_.name -eq $contosoTheme.name })
-if ($existingThemes.Count -gt 1) {
-    throw "Multiple site themes named '$($contosoTheme.name)' exist on the destination site."
-}
-
-$siteTheme = [Microsoft.SharePoint.Client.ThemeData]::new()
-$siteTheme.name = $contosoTheme.name
-# Preserve the complete definition, including displayMode and secondaryColors.
-$siteTheme.themeJson = $themeJson
-$siteTheme.isThemesV2 = $true
-$siteTheme.isVisible = $true
-$siteTheme.editable = $true
-$siteTheme.source = [Microsoft.SharePoint.Client.ThemeSource]::BrandCenter
-
-if ($existingThemes.Count -eq 1) {
-    $siteTheme.id = $existingThemes[0].id
-    $importedTheme = $brandCenter.UpdateSiteTheme($siteTheme)
-} else {
-    $importedTheme = $brandCenter.AddSiteTheme($siteTheme)
-}
-Invoke-PnPQuery -Connection $newSiteConnection -ErrorAction Stop
-
-if ($null -eq $importedTheme.Value -or $importedTheme.Value.name -ne $contosoTheme.name) {
-    throw "SharePoint did not return the imported site theme '$($contosoTheme.name)'."
-}
-
-$appliedTheme = $brandCenter.SetWebTheme($contosoTheme.name, $destinationUrl)
-Invoke-PnPQuery -Connection $newSiteConnection -ErrorAction Stop
 
 Write-Host -BackgroundColor Cyan "Provisioning complete for site at $destinationUrl"
 #endregion

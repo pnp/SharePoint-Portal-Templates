@@ -1,0 +1,29 @@
+{
+    "$schema": "https://aka.ms/sppnp-extract-configuration-schema",
+    "handlers": [
+        "WebSettings",
+        "SiteHeader",
+        "SiteFooter",
+        "ContentTypes",
+        "Fields",
+        "Lists",
+        "Files",
+        "Pages",
+        "Theme",
+        "Navigation"
+    ],
+    "lists": {
+        "lists": [
+            {
+                "title": "Site Pages"
+            },
+            {
+                "title": "Site Assets"
+            }
+        ]
+    },
+    "pages": {
+        "includeAllClientSidePages": true
+    },
+    "persistAssetFiles": true
+}

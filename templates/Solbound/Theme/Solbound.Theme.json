@@ -1,34 +1,55 @@
-﻿{
-    "Name": "Solbound.Theme",
-    "Palette": null,
-    "ColorPairs": {
-        "light": [
-            {
-                "accentColor": "#0B1F2A",
-                "backgroundColor": "#F2F2F2"
-            },
-            {
-                "accentColor": "#F2F2F2",
-                "backgroundColor": "#0B1F2A"
-            },
-            {
-                "accentColor": "#0B1F2A",
-                "backgroundColor": "#FAE300"
-            },
-            {
-                "accentColor": "#FAE300",
-                "backgroundColor": "#0B1F2A"
-            },
-            {
-                "accentColor": "#E8441A",
-                "backgroundColor": "#F2F2F2"
-            },
-            {
-                "accentColor": "#F2F2F2",
-                "backgroundColor": "#E8441A"
-            }
-        ]
-    },
-    "IsInverted": false,
-    "Editable": true
+{
+  "palette": {
+    "themePrimary": "#0B1F2A",
+    "themeLighterAlt": "#D1DEE5",
+    "themeLighter": "#ABC1CE",
+    "themeLight": "#88A6B6",
+    "themeTertiary": "#6A8C9F",
+    "themeSecondary": "#4F7387",
+    "themeDarkAlt": "#385C6F",
+    "themeDark": "#254658",
+    "themeDarker": "#163240",
+    "neutralLighterAlt": "#ECECEC",
+    "neutralLighter": "#E8E8E8",
+    "neutralLight": "#DEDEDE",
+    "neutralQuaternaryAlt": "#CFCFCF",
+    "neutralQuaternary": "#C6C6C6",
+    "neutralTertiaryAlt": "#BEBEBE",
+    "neutralTertiary": "#A19F9D",
+    "neutralSecondary": "#605E5C",
+    "neutralPrimaryAlt": "#3B3A39",
+    "neutralPrimary": "#323130",
+    "neutralDark": "#201F1E",
+    "black": "#000000",
+    "white": "#F2F2F2",
+    "backgroundColor": "#F2F2F2"
+  },
+  "displayMode": "light",
+  "secondaryColors": {
+    "light": [
+      {
+        "themePrimary": "#F2F2F2",
+        "backgroundColor": "#0B1F2A"
+      },
+      {
+        "themePrimary": "#0B1F2A",
+        "backgroundColor": "#FAE300"
+      },
+      {
+        "themePrimary": "#FAE300",
+        "backgroundColor": "#0B1F2A"
+      },
+      {
+        "themePrimary": "#E8441A",
+        "backgroundColor": "#F2F2F2"
+      },
+      {
+        "themePrimary": "#F2F2F2",
+        "backgroundColor": "#E8441A"
+      }
+    ],
+    "dark": []
+  },
+  "isInverted": false,
+  "name": "Solbound.Theme"
 }

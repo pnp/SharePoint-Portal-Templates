@@ -1,0 +1,8 @@
+{
+  "Id": "a1473d1d-a52d-4d76-a816-9d74e8df9432",
+  "Title": "Contoso.Fonts",
+  "Store": 0,
+  "PackageJson": "{\"fontFaces\":[{\"fontFamily\":\"Aptos-1043438773\",\"path\":\"Aptos-Black.ttf\",\"fontType\":\"contentFont\"},{\"fontFamily\":\"Aptos-643834297\",\"path\":\"Aptos-SemiBold.ttf\",\"fontType\":\"contentFont\"},{\"fontFamily\":\"Aptos-1242580949\",\"path\":\"Aptos.ttf\",\"fontType\":\"contentFont\"}],\"fontSlots\":{\"title\":{\"fontFamily\":\"Aptos-1043438773\",\"fontFace\":\"Black\"},\"heading\":{\"fontFamily\":\"Aptos-643834297\",\"fontFace\":\"SemiBold\"},\"body\":{\"fontFamily\":\"Aptos-1242580949\",\"fontFace\":\"Regular\"},\"label\":{\"fontFamily\":\"Aptos-1242580949\",\"fontFace\":\"Regular\"}}}",
+  "IsValid": true,
+  "IsHidden": false
+}

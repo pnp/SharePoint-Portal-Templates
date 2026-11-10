@@ -1,21 +1,21 @@
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force # Recommended version: 3.3.0 and above
 
-$templateTenant = "M365x80643879" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$templateTenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $siteName = "Woodgrove" # The name of the site you want to export
-$templateSiteUrl = "https://$($templateTenant).sharepoint.com/sites/hello3"
-$clientId = "0241da54-30d1-48da-8a55-d38d3d7f7863"
+$templateSiteUrl = "https://$($templateTenant).sharepoint.com/sites/$($siteName)"
+$clientId = "781d6ed3-0279-412e-af06-acfa99f57819"
 $templateSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $templateSiteUrl -Interactive -ReturnConnection
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
     -Configuration "./templates/$($siteName)/_exportConfig/PnPSite.json" `
     -IncludeAllPages `
-    -Out "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml" `
+    -Out "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml" `
     -Force
 
 # Remove the Dashboard.aspx page from the template's XML file, as it will be created by the Viva Connections experience setup
-[xml]$xml = Get-Content "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
+[xml]$xml = Get-Content "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml"
 
 $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage | ForEach-Object {
     if ($_.PageName -like "dashboard*.aspx") {
@@ -23,11 +23,10 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
         Write-Host -BackgroundColor Cyan "Removed Dashboard.aspx page from the template XML file."
     }
 }
-$xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml")
-
+$xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml")
 
 # Remove the MediaServiceImageTags from the export to eliminate Term Store mismatches and errors
-$sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
+$sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml"
 $cleanPath  = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 Copy-Item $sourcePath $cleanPath -Force

@@ -1,23 +1,22 @@
-# See:  https://learn.microsoft.com/en-us/sharepoint/dev/declarative-customization/site-theming/sharepoint-site-theming-overview
-#       https://fluentuipr.z22.web.core.windows.net/heads/master/theming-designer/index.html
-
-Import-Module Microsoft.Online.SharePoint.PowerShell -Force
+Import-Module PnP.PowerShell -Force
 
 #region Variables
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "M365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$siteName = "Contoso 4" # The URL name for the site you want to update.
+$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
+$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # Replace with your actual client ID
+$siteName = "Solbound" # The URL name for the site you want to update.
 #endregion
 
-Connect-SPOService -Url "https://$($tenant)-admin.sharepoint.com" -ModernAuth $true -UseSystemBrowser $true
+$adminConnection = Connect-PnPOnline -ClientId $clientId -Url "https://$($tenant)-admin.sharepoint.com" -Interactive -ReturnConnection
 
-$fontPackages = Get-SPOFontPackage
+$config = Get-PnPBrandCenterConfig -Connection $adminConnection
 
-Get-PnPBrandCenterConfig -Connection $siteConnection
+$siteConnection = Connect-PnPOnline -Connection $adminConnection -Url $config.SiteUrl -ReturnConnection
+$fontPackages = Get-PnPBrandCenterFontPackage -Connection $siteConnection
 
 $fontPackages = Get-PnPBrandCenterFontPackage -Connection $siteConnection
 
-$fontPackage = $fontPackages | Where-Object { $_.Title -eq $siteName }
+$fontPackage = $fontPackages | Where-Object { $_.Title -eq $siteName -or $_.Title -eq "$siteName.Fonts" }
 $fontPackageJson = $fontPackage | ConvertTo-Json -Depth 10
 $fontPackageJson | Out-File ".\utils\FontPackages\$($siteName).Fonts.json" -Encoding utf8 -Force
 

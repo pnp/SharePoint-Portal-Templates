@@ -9,7 +9,8 @@
         "Files",
         "Lists",
         "Pages",
-        "Theme"
+        "Theme",
+        "Navigation"
     ],
     "lists": {
         "lists": [

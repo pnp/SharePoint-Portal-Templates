@@ -1,0 +1,198 @@
+[
+  {
+    "FieldValues": {
+      "ID": 10,
+      "ContentTypeId": {
+        "StringValue": "0x006C7C1A93AA18C94A9797AA45851BE9D7",
+        "TypeId": "{da0f1e90-296f-480e-bc27-cefe51eff241}"
+      },
+      "Title": null,
+      "Modified": "2026-11-04T22:33:53Z",
+      "Created": "2026-11-04T22:33:53Z",
+      "Author": {
+        "Email": "marc@span001.onmicrosoft.com",
+        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
+        "LookupId": 6,
+        "LookupValue": "Marc Anderson"
+      },
+      "Editor": {
+        "Email": "marc@span001.onmicrosoft.com",
+        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
+        "LookupId": 6,
+        "LookupValue": "Marc Anderson"
+      },
+      "_HasCopyDestinations": null,
+      "_CopySource": null,
+      "owshiddenversion": 1,
+      "WorkflowVersion": 1,
+      "_UIVersion": 512,
+      "_UIVersionString": "1.0",
+      "Attachments": false,
+      "_ModerationStatus": 0,
+      "_ModerationComments": null,
+      "InstanceID": null,
+      "Order": 1000.0,
+      "GUID": "8ea5dfa7-717e-43a2-a3ac-d216e276522b",
+      "WorkflowInstanceID": null,
+      "FileRef": "/sites/BrandGuide/_catalogs/brandcolors/10_.000",
+      "FileDirRef": "/sites/BrandGuide/_catalogs/brandcolors",
+      "Last_x0020_Modified": "2026-11-04T22:33:53Z",
+      "Created_x0020_Date": "2026-11-04T22:33:53Z",
+      "FSObjType": "0",
+      "SortBehavior": {
+        "LookupId": 10,
+        "LookupValue": "0",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "FileLeafRef": "10_.000",
+      "UniqueId": "d375f801-3d00-4317-9c39-ce4fc5313fe9",
+      "ParentUniqueId": "{FE88DEE5-3F7E-44D1-A718-936610ADE6FE}",
+      "SyncClientId": {
+        "LookupId": 10,
+        "LookupValue": null,
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "ProgId": "",
+      "ScopeId": "{AB653F33-9EBB-4F44-807C-E67008CD9162}",
+      "File_x0020_Type": null,
+      "MetaInfo": "",
+      "_Level": 1,
+      "_IsCurrentVersion": true,
+      "ItemChildCount": "0",
+      "FolderChildCount": "0",
+      "Restricted": "",
+      "OriginatorId": "",
+      "NoExecute": "0",
+      "ContentVersion": "0",
+      "_ComplianceFlags": "",
+      "_ComplianceTag": "",
+      "_ComplianceTagWrittenTime": "",
+      "_ComplianceTagUserId": "",
+      "AccessPolicy": "",
+      "_VirusStatus": "",
+      "_VirusVendorID": "",
+      "_VirusInfo": "",
+      "_RansomwareAnomalyMetaInfo": "",
+      "_ColorHex": null,
+      "_ColorTag": null,
+      "_Emoji": null,
+      "_DraftOwnerId": "",
+      "AppAuthor": null,
+      "AppEditor": null,
+      "SMTotalSize": {
+        "LookupId": 210,
+        "LookupValue": "",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "SMLastModifiedDate": "2026-11-04T22:33:53Z",
+      "SMTotalFileStreamSize": "0",
+      "SMTotalFileCount": {
+        "LookupId": 0,
+        "LookupValue": "",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "ComplianceAssetId": null,
+      "_SPColorTitle": "Contoso.Blue",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#022839"
+    }
+  },
+  {
+    "FieldValues": {
+      "ID": 11,
+      "ContentTypeId": {
+        "StringValue": "0x006C7C1A93AA18C94A9797AA45851BE9D7",
+        "TypeId": "{da0f1e90-296f-480e-bc27-cefe51eff241}"
+      },
+      "Title": null,
+      "Modified": "2026-11-04T22:34:25Z",
+      "Created": "2026-11-04T22:34:13Z",
+      "Author": {
+        "Email": "marc@span001.onmicrosoft.com",
+        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
+        "LookupId": 6,
+        "LookupValue": "Marc Anderson"
+      },
+      "Editor": {
+        "Email": "marc@span001.onmicrosoft.com",
+        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
+        "LookupId": 6,
+        "LookupValue": "Marc Anderson"
+      },
+      "_HasCopyDestinations": null,
+      "_CopySource": null,
+      "owshiddenversion": 2,
+      "WorkflowVersion": 1,
+      "_UIVersion": 512,
+      "_UIVersionString": "1.0",
+      "Attachments": false,
+      "_ModerationStatus": 0,
+      "_ModerationComments": null,
+      "InstanceID": null,
+      "Order": 1100.0,
+      "GUID": "ec0d8b75-1bfd-4e0a-9101-0413734f3f26",
+      "WorkflowInstanceID": null,
+      "FileRef": "/sites/BrandGuide/_catalogs/brandcolors/11_.000",
+      "FileDirRef": "/sites/BrandGuide/_catalogs/brandcolors",
+      "Last_x0020_Modified": "2026-11-04T22:34:13Z",
+      "Created_x0020_Date": "2026-11-04T22:34:13Z",
+      "FSObjType": "0",
+      "SortBehavior": {
+        "LookupId": 11,
+        "LookupValue": "0",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "FileLeafRef": "11_.000",
+      "UniqueId": "40df1739-dad9-4c00-8607-6c3108102af0",
+      "ParentUniqueId": "{FE88DEE5-3F7E-44D1-A718-936610ADE6FE}",
+      "SyncClientId": {
+        "LookupId": 11,
+        "LookupValue": null,
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "ProgId": "",
+      "ScopeId": "{AB653F33-9EBB-4F44-807C-E67008CD9162}",
+      "File_x0020_Type": null,
+      "MetaInfo": "",
+      "_Level": 1,
+      "_IsCurrentVersion": true,
+      "ItemChildCount": "0",
+      "FolderChildCount": "0",
+      "Restricted": "",
+      "OriginatorId": "",
+      "NoExecute": "0",
+      "ContentVersion": "0",
+      "_ComplianceFlags": "",
+      "_ComplianceTag": "",
+      "_ComplianceTagWrittenTime": "",
+      "_ComplianceTagUserId": "",
+      "AccessPolicy": "",
+      "_VirusStatus": "",
+      "_VirusVendorID": "",
+      "_VirusInfo": "",
+      "_RansomwareAnomalyMetaInfo": "",
+      "_ColorHex": null,
+      "_ColorTag": null,
+      "_Emoji": null,
+      "_DraftOwnerId": "",
+      "AppAuthor": null,
+      "AppEditor": null,
+      "SMTotalSize": {
+        "LookupId": 212,
+        "LookupValue": "",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "SMLastModifiedDate": "2026-11-04T22:34:25Z",
+      "SMTotalFileStreamSize": "0",
+      "SMTotalFileCount": {
+        "LookupId": 0,
+        "LookupValue": "",
+        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
+      },
+      "ComplianceAssetId": null,
+      "_SPColorTitle": "Contoso.Peach",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#F5AA5D"
+    }
+  }
+]

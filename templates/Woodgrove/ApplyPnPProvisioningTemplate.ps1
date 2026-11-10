@@ -13,8 +13,7 @@ Import-Module PnP.PowerShell -Force
 # Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
 $tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
 $clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Woodgrove" # The name of the site you want to update.
-$siteUrl = "Woodgrove" # The URL name for the site you want to update.
+$siteUrl = "MARCTEST13" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -52,14 +51,14 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
-    -HeaderLayout Standard `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__HeaderBackground.png" `
+    -HeaderLayout Extended `
+    -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__BG6.png" `
     -SiteThumbnailUrl "SiteAssets/__sitelogo__LogoW.png" `
     -SiteLogoUrl "SiteAssets/__sitelogo__LogoW.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
 
 # Add the correct ACES to the Viva Connections Dashboard
-$aces = Import-Csv -Path "$PSScriptRoot/ACES/Woodgrove.ACES.csv"
+$aces = Import-Csv -Path "$PSScriptRoot/ACEs/Woodgrove.ACEs.csv"
 
 Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
 
@@ -80,10 +79,8 @@ foreach ($ace in $aces) {
         -Order $ace.Order `
         -Title $ace.Title `
         -PropertiesJSON $ace.JsonProperties `
-        -CardSize $ace.CardSize `
+        -CardSize $ace.CardSize
 }
-
-# Resources
 
 Write-Host -BackgroundColor Cyan "Provisioning complete for site at $destinationUrl"
 #endregion
