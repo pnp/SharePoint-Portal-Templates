@@ -11,7 +11,7 @@ Installing the Woodgrove site requires several steps:
 - Configure the Brand Center
 - Configure the Woodgrove site settings which can't be automated
 
-![Woodgrove Home Page](./media/Woodgrove-home-page.jpg)
+![Woodgrove Home Page](./media/woodgrove-home-page.jpg)
 
 ## Prerequisites
 
@@ -35,9 +35,9 @@ Throughout the rest of these instructions, you will be either making changes to 
 
 ### Create the Viva Connections experience for the site
 
-You will need to create a Viva Connections experience for the site you've just created if you'd like to have the Dashboard and Resources displaying properly. For detailed instructions, see [Set up Viva Connections in the Microsoft 365 admin center](https://learn.microsoft.com/viva/connections/set-up-admin-center). This is a long article, but you don't need to follow all the steps. You'll want to choose the option to `Build from an existing portal to set a home site`. This will make the Woodgrove site a home site for your tenant.
+You will need to create a Viva Connections experience for the site you've just created if you'd like to have the Dashboard displaying properly. For detailed instructions, see [Set up Viva Connections in the Microsoft 365 admin center](https://learn.microsoft.com/viva/connections/set-up-admin-center). This is a long article, but you don't need to follow all the steps. You'll want to choose the option to `Build from an existing portal to set a home site`. This will make the Woodgrove site a home site for your tenant.
 
-The provisioning script adds the ACES to the Dashboard for the site and sets up the links in the Resources Web Part. Prior to running the provisioning script, you will need to create the experience in order for them to be visible.
+The provisioning script adds the ACEs to the Dashboard for the site. Prior to running the provisioning script, you will need to create the experience in order for them to be visible.
 
 If you'd like step-by-step instructions which focus only on the required steps here, see the article [Set up Viva Connections for the site](/_common/setup-viva-connections.md).
 
@@ -53,18 +53,17 @@ Finally, publish the *Dashboard.aspx* page. You don't need to add any cards to i
 
 ![Publish the Dashboard page](../../_common/media/vc-publish-dashboard.png)
 
-Ready to provision the Woodgrove artifacts!
-
-
 ### Download ZIP file
 
-Download the [Woodgrove ZIP file](./Woodgrove.zip). This ZIP file contains all the necessary files to apply the PnP Provisioning template, as well as the images and fonts used in the site.
+Download the [Woodgrove ZIP file](./Woodgrove.zip). This ZIP file contains all the necessary files to apply the PnP Provisioning template, as well as the images used in the site.
 
 ### Extract all files in ZIP file
 
 We recommend you extract the ZIP file into a folder in the root of your machine, for example */code/Woodgrove*. This will ensure that the folder paths won't be too long for the script to run successfully.
 
 >Note: The ZIP file contains additional files, should you want to automate more of the implementation. These files can also be used as documentation for the process, in addition to these instructions.
+
+Ready to provision the Woodgrove artifacts!
 
 ## Apply PnP Provisioning template
 
@@ -96,11 +95,11 @@ For this site, you should add the following colors into your Brand Colors. Each 
 
 | Color Name | Color Code | Color |
 |---|---|---|
-| Woodgrove.Yellow | #FAE300 | ![#FAE300](https://placehold.co/30x30/FAE300/FAE300.png) |
-| Woodgrove.Blue | #0B1F2A | ![#0B1F2A](https://placehold.co/30x30/0B1F2A/0B1F2A.png) | 
-| Woodgrove.Orange | #E8441A | ![#E8441A](https://placehold.co/30x30/E8441A/E8441A.png) |
-| Woodgrove.Neutral | #F2F2F2 | ![#F2F2F2](https://placehold.co/30x30/F2F2F2/F2F2F2.png) | 
-| | |
+| Woodgrove.Midnight | #0D2C35 | ![#0D2C35](https://placehold.co/30x30/0D2C35/0D2C35.png) |
+| Woodgrove.Cyan | #06B6D4 | ![#06B6D4](https://placehold.co/30x30/06B6D4/06B6D4.png) |
+| Woodgrove.Teal | #009184 | ![#009184](https://placehold.co/30x30/009184/009184.png) |
+| Woodgrove.Neutral | #EDEDED | ![#EDEDED](https://placehold.co/30x30/EDEDED/EDEDED.png) |
+| | | |
 
 ### Set up theme
 
@@ -110,18 +109,18 @@ Once you have the Brand Colors defined, you use them to set up a theme. For deta
 
 First, you add the colors to the theme. Add the colors in the order listed above.
 
-![Add the theme colors](./media/Woodgrove-add-theme-colors.jpg)
+![Add the theme colors](./media/woodgrove-add-theme-colors.jpg)
 
 #### Name the theme
 
 Next, give the theme the name *Woodgrove.Theme*, and Save.
 
-![Name the theme](./media/Woodgrove-name-theme.jpg)
+![Name the theme](./media/woodgrove-name-theme.jpg)
 
 #### Review the theme
 
-Finally, the theme should look like this is you have set it up correctly.
-![Review the theme](./media/Woodgrove-view-theme.jpg)
+Finally, the theme should look like this if you have set it up correctly.
+![Review the theme](./media/woodgrove-view-theme.jpg)
 
 ## Final site configuration
 
@@ -135,14 +134,14 @@ Go to the gear, and select Change the look.
 
 Select Theme and choose the `Woodgrove.Theme` and Save.
 
-![Apply Woodgrove Theme](./media/Woodgrove-set-theme.jpg)
+![Apply Woodgrove Theme](./media/woodgrove-set-theme.jpg)
 
 #### Apply Font
 
 Set the font to `Georgia Pro Condensed-Verdana Pro Condensed`, which is one of the Microsoft-provided fonts.
 
 
-![Apply Woodgrove Font](./media/Woodgrove-apply-font-package.jpg)
+![Apply Woodgrove Font](./media/woodgrove-apply-font.jpg)
 
 ## Summary
 

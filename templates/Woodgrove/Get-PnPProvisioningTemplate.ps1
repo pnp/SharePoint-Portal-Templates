@@ -11,11 +11,11 @@ Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
     -Configuration "./templates/$($siteName)/_exportConfig/PnPSite.json" `
     -IncludeAllPages `
-    -Out "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml" `
+    -Out "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml" `
     -Force
 
 # Remove the Dashboard.aspx page from the template's XML file, as it will be created by the Viva Connections experience setup
-[xml]$xml = Get-Content "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
+[xml]$xml = Get-Content "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml"
 
 $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage | ForEach-Object {
     if ($_.PageName -like "dashboard*.aspx") {
@@ -23,10 +23,10 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
         Write-Host -BackgroundColor Cyan "Removed Dashboard.aspx page from the template XML file."
     }
 }
-$xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml")
+$xml.Save("./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml")
 
 # Remove the MediaServiceImageTags from the export to eliminate Term Store mismatches and errors
-$sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-test.xml"
+$sourcePath = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning.xml"
 $cleanPath  = "./templates/$($siteName)/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 Copy-Item $sourcePath $cleanPath -Force
