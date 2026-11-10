@@ -1,0 +1,8 @@
+{
+  "Id": "65b0cf65-908b-42be-8190-536e3d2e3754",
+  "Title": "Solbound.Fonts",
+  "Store": 0,
+  "PackageJson": "{\r\n    \"fontFaces\": [\r\n        {\r\n            \"fontFamily\": \"Exo 2-724698146\",\r\n            \"path\": \"Exo2-Black.woff2\",\r\n            \"fontType\": \"displayFont\"\r\n        },\r\n        {\r\n            \"fontFamily\": \"Exo 2-851868182\",\r\n            \"path\": \"Exo2-ExtraBold.woff2\",\r\n            \"fontType\": \"displayFont\"\r\n        },\r\n        {\r\n            \"fontFamily\": \"Barlow-1829961169\",\r\n            \"path\": \"Barlow-Medium.woff2\",\r\n            \"fontType\": \"contentFont\"\r\n        }\r\n    ],\r\n    \"fontSlots\": {\r\n        \"title\": {\r\n            \"fontFamily\": \"Exo 2-724698146\",\r\n            \"fontFace\": \"Black\"\r\n        },\r\n        \"heading\": {\r\n            \"fontFamily\": \"Exo 2-851868182\",\r\n            \"fontFace\": \"ExtraBold\"\r\n        },\r\n        \"body\": {\r\n            \"fontFamily\": \"Barlow-1829961169\",\r\n            \"fontFace\": \"Medium\"\r\n        },\r\n        \"label\": {\r\n            \"fontFamily\": \"Exo 2-851868182\",\r\n            \"fontFace\": \"ExtraBold\"\r\n        }\r\n    }\r\n}",
+  "IsValid": true,
+  "IsHidden": false
+}

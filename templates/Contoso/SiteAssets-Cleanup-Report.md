@@ -1,6 +1,6 @@
 # Contoso SiteAssets cleanup report
 
-Scope: `templates/Contoso/PnPProvisioning/SiteAssets` and the two template files that declare those assets, [PnP-Provisioning-Clean.xml](PnPProvisioning/PnP-Provisioning-Clean.xml) (used by `ApplyPnPProvisioningTemplate.ps1`) and [PnP-Provisioning.xml](PnPProvisioning/PnP-Provisioning.xml). Nothing was committed.
+Scope: `templates/Contoso/PnPProvisioning/SiteAssets` and the two template files that declare those assets, [PnP-Provisioning-Clean.xml](PnPProvisioning/PnP-Provisioning-Clean.xml) (used by `ApplyPnPProvisioningTemplate.ps1`) and [PnP-Provisioning.xml](PnPProvisioning/PnP-Provisioning.xml). The cleanup edited both XMLs; every later fix was made to the Clean XML only, because `PnP-Provisioning.xml` is kept as the raw export from the source site. Nothing was committed by this work. The last section, **Later changes and live verification**, covers what was done after the cleanup.
 
 ## Result
 
@@ -8,6 +8,7 @@ Scope: `templates/Contoso/PnPProvisioning/SiteAssets` and the two template files
 |---|---:|---:|---:|
 | Files in SiteAssets | 172 | 72 | −100 |
 | Size on disk | 742.9 MiB | 210.3 MiB | **−532.5 MiB (−72%)** |
+| Size on disk after image compression | | 72.8 MiB | **−670.1 MiB (−90%)** |
 | `<pnp:File>` declarations per XML | 191 | 90 | −101 (one file was declared twice) |
 | Site Assets folder definitions removed per XML | | 20 | |
 
@@ -68,10 +69,10 @@ These are unreferenced by the template but were kept because something outside i
 
 | Files | Why kept |
 |---|---|
-| 9 `__*` files at the SiteAssets root (`__sitelogo__*`, `__rectSitelogo__*`, `__globalNavigationLogo__*`, `__extendedHeaderBackgroundImage__*`) | SharePoint's site-logo/header settings use these names, and `ApplyPnPProvisioningTemplate.ps1` refers to `__sitelogo__Logo` and `__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME` without an extension. `__extendedHeaderBackgroundImage__Frame 2147238928.png` (2.53 MiB) is the only sizeable one; no file references it, but it may be the header background currently set in the source site. |
+| 9 `__*` files at the SiteAssets root (`__sitelogo__*`, `__rectSitelogo__*`, `__globalNavigationLogo__*`, `__extendedHeaderBackgroundImage__*`) | SharePoint's site-logo/header settings use these names, and `ApplyPnPProvisioningTemplate.ps1` sets `__sitelogo__Logo.png` and `__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png` (the script originally omitted the `.png`; see the last section). `__extendedHeaderBackgroundImage__Frame 2147238928.png` (2.53 MiB) is the only sizeable one; no file references it, but it may be the header background currently set in the source site. |
 | 18 files in `Icons/` (`ic-*.png`, ≤ 4 KB each) | Viva-style card icons. Nothing references them, but they are negligible in size. |
 | 5 root-level auto-named logos (`LogoChat_…png`, `TSLogo_…svg`, `icon_…svg`, `ukgIcon_…svg`, `xm_logomark_…svg`) | Names look like Viva Connections/app icons created by SharePoint. |
-| `SitePages/Dashboard/dashboard-news.jpg` | Matched by file name only (see finding 2 below). |
+| `SitePages/Dashboard/dashboard-news.jpg` | Matched by file name only (see finding 2; left as is by decision). |
 
 Duplicates left among these: `__rectSitelogo__Logo.png` = `__sitelogo__Logo.png`, and the three `Frame 2147238891` branding files are identical to each other.
 
@@ -81,16 +82,16 @@ Duplicates left among these: `__rectSitelogo__Logo.png` = `__sitelogo__Logo.png`
 - Both XMLs are well-formed, with original BOM and line endings preserved.
 - Every remaining `<pnp:File>` declaration has a file on disk, and every file on disk is declared.
 - Re-running the reference analysis found no unreferenced files outside the kept-for-doubt groups, and no new broken references (one pre-existing, below).
-- `ApplyPnPProvisioningTemplate.ps1`, `Resources`, `ACEs` and `Pages Metadata` were not modified.
-- **Not tested:** applying the template to a tenant. Please do a test provision, for example to your MARCTEST9 site.
+- At the time of the cleanup, `ApplyPnPProvisioningTemplate.ps1`, `Resources`, `ACEs` and `Pages Metadata` were not modified (later edits are listed in the last section).
+- The template was later provisioned to a test site and verified (see the last section).
 
 ## Findings you may want to act on
 
-1. **Event banner URLs were malformed in the export, now fixed in `PnP-Provisioning-Clean.xml` only.** They read like `https:{site}{site}m365x58285237.sharepoint.com{site}SiteAssets…` because the site was exported from the tenant root, where `{site}` is `/`, so every `/` was tokenised. All 18 `BannerUrl`/`BannerImageUrl` values in the 9 Events rows were rewritten to the portable form used by the Woodgrove template: `{site}/SiteAssets/SitePages/Event(11)/…` for both halves of `BannerUrl`, `{site}/_layouts/15/getpreview.ashx?path={site}/SiteAssets/…` for `BannerImageUrl`, and plain `https://cdn.hubblecontent.osi.office.net/…` for the stock images. The source tenant host name was dropped. The `Id=` and `listId=` query parameters were left as exported. **`PnP-Provisioning.xml` still has the malformed values.**
-2. **A broken thumbnail reference.** The page *That's a great idea…* points to `SitePages/That-s-a-great-idea--How-to-help-introverts-be-heard-in-meetings/dashboard-news.jpg`, which does not exist. The image exists as `SitePages/Dashboard/dashboard-news.jpg`. Pre-existing, not changed.
+1. **Event banner URLs were malformed in the export, now fixed in `PnP-Provisioning-Clean.xml` only.** They read like `https:{site}{site}m365x58285237.sharepoint.com{site}SiteAssets…` because the site was exported from the tenant root, where `{site}` is `/`, so every `/` was tokenised. All 18 `BannerUrl`/`BannerImageUrl` values in the 9 Events rows were rewritten to the portable `{site}`-token form: `{site}/SiteAssets/SitePages/Event(11)/…` for both halves of `BannerUrl`, `{site}/_layouts/15/getpreview.ashx?path={site}/SiteAssets/…` for `BannerImageUrl`, and plain `https://cdn.hubblecontent.osi.office.net/…` for the stock images. The source tenant host name was dropped. The `Id=` and `listId=` query parameters were left as exported. **`PnP-Provisioning.xml` still has the malformed values; it is kept as the raw source export and was intentionally not edited.**
+2. **A broken thumbnail reference.** The page *That's a great idea…* points to `SitePages/That-s-a-great-idea--How-to-help-introverts-be-heard-in-meetings/dashboard-news.jpg`, which does not exist. The image exists as `SitePages/Dashboard/dashboard-news.jpg`. Pre-existing; left as is by decision (the page is not promoted news, and its header image comes from a CDN URL).
 3. **The bloat came from `"includeItems": true` on Site Assets** in [PnPSite.json](_exportConfig/PnPSite.json). Re-exporting with it will bring back every library item.
-4. **Contoso.zip is now stale.** It was built before this cleanup; rebuild it from the current folder.
-5. **Git:** all changes are uncommitted. One previously tracked file shows as deleted (the Miriam `71656-…jpg` duplicate). The other XML and SiteAssets changes come from your fresh export.
+4. **Contoso.zip** is rebuilt from the current folder (77.0 MiB, including the README and `media`) and is checked against the folder after each change.
+5. **Git:** this work did not stage or commit anything.
 
 ## Image compression (applied after the cleanup)
 
@@ -98,8 +99,8 @@ To bring the ZIP under GitHub's 100 MiB limit, the 22 images of 250 KiB or more 
 
 - **JPEG (15 files):** mozjpeg quality 85, 4:2:0, progressive. EXIF was stripped, and the 3 Adobe RGB images were converted to sRGB. Measured quality against the originals was 33.6–49.0 dB PSNR, with no visible difference at 100% zoom apart from slightly smoothed grain.
 - **PNG (6 files):** lossless repack, and the alpha channel was dropped where it was fully opaque. A pixel comparison confirmed every PNG is **pixel-identical** to the original. `Home/3307752173-Rectangle-1.png` was left as is because there was no meaningful gain.
-- **Result:** SiteAssets went from 210.3 MiB to 72.8 MiB. A test ZIP of the whole Contoso folder, built in a temp location, is **75.8 MiB**.
-- **Originals:** backed up (outside the repo, and these files were mostly untracked) at `C:\Users\mdent\.copilot\session-state\06350047-0f99-4053-824b-b6e4f1c7467c\files\imgwork\originals\Contoso`. Per-file sizes and checks are in `imgwork\compress-Contoso.csv` in the same folder.
+- **Result:** SiteAssets went from 210.3 MiB to 72.8 MiB. The Contoso ZIP built from the compressed folder was 75.8 MiB (77.0 MiB after the README and screenshots were added later).
+- **Originals:** backed up outside the repo (local to the machine that ran this work; these files were mostly untracked) at `C:\Users\mdent\.copilot\session-state\06350047-0f99-4053-824b-b6e4f1c7467c\files\imgwork\originals\Contoso`. Per-file sizes and checks are in `imgwork\compress-Contoso.csv` in the same folder.
 
 ## Undo
 
@@ -110,4 +111,36 @@ Nothing was deleted; files were moved to
 - `xml-original\` holds both XML files as they were before the cleanup.
 - `plan.csv` lists every file with its action, reason, size, hash and duplicate partner.
 
-To restore, copy `SiteAssets\*` back into `PnPProvisioning\SiteAssets` and the two XMLs back into `PnPProvisioning`. Delete the quarantine folder once you are satisfied.
+To restore, copy `SiteAssets\*` back into `PnPProvisioning\SiteAssets` and the two XMLs back into `PnPProvisioning`. Delete the quarantine folder once you are satisfied. (The backup, quarantine and `imgwork` folders are local to the machine that ran this work, not part of the repo.)
+
+## Later changes and live verification
+
+Changes made after the cleanup. Template fixes are in `PnP-Provisioning-Clean.xml` only.
+
+**Template**
+- 13 image URLs got the missing `{site}` prefix: 10 page `ThumbnailUrl` values, the *Contoso Mark 8* banner (`ServerRelativeImageUrl`) and the 2 `getpreview` thumbnails (Arizona, "That's a great idea…").
+- Events banner values use the `{site}` token form (see finding 1).
+- The second Events web part ("IN OUR FIELD") reads the site's Events list (`dataSource` 7, provider `Event`, `selectedListId` `{listid:Events}`, no hard-coded sites). Both Events web parts use the range 2022-11-01 to 2026-11-10.
+- Footer `Logo` is empty (`{site}/` caused `Cannot open "/"`), and the site header layout is Standard to match the script.
+
+**Script and data**
+- `ApplyPnPProvisioningTemplate.ps1`: the logo, thumbnail and header-background paths include `.png`, and the ACE path matches the folder case (`ACEs/Contoso.ACEs.csv`). The theme-import block was removed (the theme is a manual README step).
+- `ACEs/Contoso.ACEs.csv`: the two third-party ACEs (*My sites*, *Viva Learning*) were replaced with CardDesigner cards.
+- `Font Packages/Contoso.Fonts.json`: package title is **Contoso.Fonts**. `utils/exportFontPackages.ps1` also accepts `<site>.Fonts` titles.
+
+**README and media**
+- Typos, the colors table, section order and the theme text were fixed. The font package step now names **Contoso.Fonts**.
+- `media/` holds 12 lowercase `.jpg` files (10 used by the README). One screenshot (`contoso-review-font-package.jpg`) was retouched to read "Contoso.Fonts" instead of "Contoso".
+
+**Verified on a live test site (MARCTEST11)**
+- Site logo returns 200, and the header layout is Standard.
+- All 11 promoted pages have thumbnails that load.
+- "IN OUR FIELD" resolves to the site's own Events list (9 events), and all 4 local event banners return 200.
+- The Dashboard shows 4 cards (*Last incident*, *My sites*, *Assigned Tasks*, *Viva Learning*), and all 9 Resources icons load.
+
+**Accepted as is**
+- *That's a great idea…* keeps its missing thumbnail (see finding 2).
+- The Events end date stays 2026-11-10.
+- `contoso-fonts.jpg`, `Contoso.jpg` and the 13 `Pages Metadata` images are kept.
+- The *Viva Learning* card links to a public page, not a Teams deep link.
+- Seen but not fixed: the browser requests `Aptos*.ttf` relative to the page and gets 404s (also seen on the source site), and the `News-post.aspx` template page points at a stock tile image that returns 404.

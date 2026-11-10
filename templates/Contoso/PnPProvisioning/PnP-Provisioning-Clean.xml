@@ -9,14 +9,9 @@
           <pnp:StructuralNavigation RemoveExistingNodes="false" />
         </pnp:GlobalNavigation>
         <pnp:CurrentNavigation NavigationType="StructuralLocal">
-          <pnp:StructuralNavigation RemoveExistingNodes="false">
+          <pnp:StructuralNavigation RemoveExistingNodes="true">
             <pnp:NavigationNode Title="Home" Url="{site}/" IsExternal="true" />
             <pnp:NavigationNode Title="News" Url="{site}/_layouts/15/news.aspx?title=NEWS&amp;newsSource=1&amp;instanceId=4c39bf70-9d03-487b-a74b-f4142efc3b65&amp;webPartId=8c88f208-6c77-4bdb-86a0-0c47b4316588&amp;serverRelativeUrl=%2FSitePages%2FHome.aspx&amp;pagesListId=d89a0282-90b0-4458-a66e-52bf266c21bd&amp;locale=en-us" IsExternal="true" />
-            <pnp:NavigationNode Title="Recent" Url="{site}" IsExternal="true">
-              <pnp:NavigationNode Title="Demo Docs" Url="{site}/DemoDocs/Forms/AllItems.aspx" />
-              <pnp:NavigationNode Title="JT Design Documents" Url="{site}/JTDesignDocs/Forms/AllItems.aspx" />
-              <pnp:NavigationNode Title="MCAS Demo Files" Url="{site}/MCASDemoFiles/Forms/AllItems.aspx" />
-            </pnp:NavigationNode>
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
@@ -1462,8 +1457,8 @@
                     <pnp:CanvasControlProperty Key="Text" Value="&lt;h2 class=&quot;headingSpacingAbove headingSpacingBelow&quot; style=&quot;text-align:center;&quot;&gt;&lt;span style=&quot;font-size:40px;&quot; data-fontsize=&quot;40px&quot;&gt;&lt;span style=&quot;color:#F5AA5D;&quot;&gt;EVENTS&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;" />
                   </pnp:CanvasControlProperties>
                 </pnp:CanvasControl>
-                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;webPartId&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:428,&quot;reservedWidth&quot;:791,&quot;controlType&quot;:3,&quot;id&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;01bc2b9a-526f-44ef-a0cc-6b3cf1eed117&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:9,&quot;w&quot;:46,&quot;h&quot;:25}},&quot;instanceId&quot;:&quot;b53a3cd2-46a6-4bec-a73c-124e897521a4&quot;,&quot;properties&quot;:{&quot;selectedListId&quot;:&quot;&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;audienceTarget&quot;:false,&quot;showImage&quot;:true,&quot;dataSource&quot;:1,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;maxItemsPerPage&quot;:3,&quot;sites&quot;:[],&quot;isTitleEnabled&quot;:true,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;p class=\&quot;lineHeight1_4 noSpacingAbove spacingBelow\&quot; data-text-type=\&quot;withSpacing\&quot;&gt;FROM US&lt;/p&gt;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;FROM US&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.7&quot;}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="1" />
-                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;webPartId&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:355,&quot;reservedWidth&quot;:378,&quot;controlType&quot;:3,&quot;id&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;01bc2b9a-526f-44ef-a0cc-6b3cf1eed117&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:47,&quot;y&quot;:9,&quot;w&quot;:22,&quot;h&quot;:21}},&quot;instanceId&quot;:&quot;83fa7bf7-60f0-43c9-b3e6-6930ab9258e3&quot;,&quot;properties&quot;:{&quot;selectedListId&quot;:&quot;&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:0,&quot;startDate&quot;:&quot;&quot;,&quot;endDate&quot;:&quot;&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;audienceTarget&quot;:false,&quot;showImage&quot;:true,&quot;dataSource&quot;:99,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;maxItemsPerPage&quot;:4,&quot;sites&quot;:[{&quot;Acronym&quot;:&quot;Z&quot;,&quot;Title&quot;:&quot;zHello1&quot;,&quot;BannerColor&quot;:&quot;#03787C&quot;,&quot;BannerImageUrl&quot;:&quot;&quot;,&quot;Url&quot;:&quot;https://{fqdn}{site}/sites/zHello1&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;DepartmentId&quot;:&quot;&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;ef03aa0f-6003-4a5f-9518-b81e850c8d0c&quot;,&quot;SiteId&quot;:&quot;b40aff06-07c2-4f17-9cb5-95e60bc54eba&quot;,&quot;Type&quot;:&quot;SiteReference&quot;,&quot;IndexId&quot;:0,&quot;GroupID&quot;:&quot;&quot;}},{&quot;Acronym&quot;:&quot;NH&quot;,&quot;Title&quot;:&quot;New HS&quot;,&quot;BannerColor&quot;:&quot;#7a7574&quot;,&quot;Url&quot;:&quot;https://{fqdn}{site}/sites/NewHS&quot;,&quot;Type&quot;:&quot;Site&quot;,&quot;ItemReference&quot;:{&quot;WebId&quot;:&quot;ef03aa0f-6003-4a5f-9518-b81e850c8d0c&quot;,&quot;IndexId&quot;:2450309821522956000,&quot;SiteId&quot;:&quot;d8d55ed4-48ec-4771-a389-c427386569c6&quot;,&quot;Type&quot;:&quot;SiteReference&quot;}}],&quot;isTitleEnabled&quot;:true,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;p class=\&quot;lineHeight1_4 noSpacingAbove spacingBelow\&quot; data-text-type=\&quot;withSpacing\&quot;&gt;IN OUR FIELD&lt;/p&gt;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;IN OUR FIELD&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.7&quot;}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="3" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;webPartId&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:428,&quot;reservedWidth&quot;:791,&quot;controlType&quot;:3,&quot;id&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:2,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;01bc2b9a-526f-44ef-a0cc-6b3cf1eed117&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:0,&quot;y&quot;:9,&quot;w&quot;:46,&quot;h&quot;:25}},&quot;instanceId&quot;:&quot;b53a3cd2-46a6-4bec-a73c-124e897521a4&quot;,&quot;properties&quot;:{&quot;selectedListId&quot;:&quot;&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:10,&quot;startDate&quot;:&quot;2022-11-01&quot;,&quot;endDate&quot;:&quot;2026-11-10&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;audienceTarget&quot;:false,&quot;showImage&quot;:true,&quot;dataSource&quot;:1,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;maxItemsPerPage&quot;:3,&quot;sites&quot;:[],&quot;isTitleEnabled&quot;:true,&quot;layoutId&quot;:&quot;FilmStrip&quot;,&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;Search&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;p class=\&quot;lineHeight1_4 noSpacingAbove spacingBelow\&quot; data-text-type=\&quot;withSpacing\&quot;&gt;FROM US&lt;/p&gt;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;FROM US&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.7&quot;}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="2" Column="1" />
+                <pnp:CanvasControl WebPartType="Events" JsonControlData="{&quot;webPartId&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;rteInstanceId&quot;:null,&quot;addedFromPersistedData&quot;:true,&quot;reservedHeight&quot;:355,&quot;reservedWidth&quot;:378,&quot;controlType&quot;:3,&quot;id&quot;:&quot;20745d7d-8581-4a6c-bf26-68279bc123fc&quot;,&quot;position&quot;:{&quot;controlIndex&quot;:3,&quot;zoneIndex&quot;:4,&quot;sectionIndex&quot;:1,&quot;sectionFactor&quot;:100,&quot;layoutIndex&quot;:1,&quot;zoneId&quot;:&quot;01bc2b9a-526f-44ef-a0cc-6b3cf1eed117&quot;},&quot;emphasis&quot;:{&quot;zoneEmphasis&quot;:0},&quot;flexibleLayoutPosition&quot;:{&quot;lg&quot;:{&quot;x&quot;:47,&quot;y&quot;:9,&quot;w&quot;:22,&quot;h&quot;:21}},&quot;instanceId&quot;:&quot;83fa7bf7-60f0-43c9-b3e6-6930ab9258e3&quot;,&quot;properties&quot;:{&quot;selectedListId&quot;:&quot;{listid:Events}&quot;,&quot;selectedCategory&quot;:&quot;&quot;,&quot;dateRangeOption&quot;:10,&quot;startDate&quot;:&quot;2022-11-01&quot;,&quot;endDate&quot;:&quot;2026-11-10&quot;,&quot;isOnSeeAllPage&quot;:false,&quot;audienceTarget&quot;:false,&quot;showImage&quot;:true,&quot;dataSource&quot;:7,&quot;layout&quot;:&quot;Filmstrip&quot;,&quot;maxItemsPerPage&quot;:4,&quot;sites&quot;:[],&quot;isTitleEnabled&quot;:true,&quot;layoutId&quot;:&quot;Flex&quot;,&quot;showCardMotion&quot;:true,&quot;dataProviderId&quot;:&quot;Event&quot;,&quot;webId&quot;:&quot;{siteid}&quot;,&quot;siteId&quot;:&quot;{sitecollectionid}&quot;,&quot;titleHTML&quot;:&quot;&lt;p class=\&quot;lineHeight1_4 noSpacingAbove spacingBelow\&quot; data-text-type=\&quot;withSpacing\&quot;&gt;IN OUR FIELD&lt;/p&gt;&quot;},&quot;serverProcessedContent&quot;:{&quot;htmlStrings&quot;:{},&quot;searchablePlainTexts&quot;:{&quot;title&quot;:&quot;IN OUR FIELD&quot;},&quot;imageSources&quot;:{},&quot;links&quot;:{&quot;baseUrl&quot;:&quot;https://{fqdn}{site}&quot;},&quot;componentDependencies&quot;:{&quot;layoutComponentId&quot;:&quot;0447e11d-bed9-4898-b600-8dbcd95e9cc2&quot;}},&quot;dynamicDataPaths&quot;:{},&quot;dynamicDataValues&quot;:{},&quot;dataVersion&quot;:&quot;1.7&quot;}" ControlId="20745d7d-8581-4a6c-bf26-68279bc123fc" Order="3" Column="1" />
               </pnp:Controls>
             </pnp:Section>
             <pnp:Section Order="5" Type="OneColumn">
@@ -1521,8 +1516,8 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Mark 8: See the world through a whole new perspective" ThumbnailUrl="/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" PageName="Contoso-Mark-8--See-the-world-through-a-whole-new-perspective.aspx">
-          <pnp:Header Type="Custom" ServerRelativeImageUrl="/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Contoso Mark 8: See the world through a whole new perspective" ThumbnailUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" PageName="Contoso-Mark-8--See-the-world-through-a-whole-new-perspective.aspx">
+          <pnp:Header Type="Custom" ServerRelativeImageUrl="{site}/SiteAssets/SitePages/newpage/40298-NewPerspective-newspost.jpg" LayoutType="ColorBlock" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
               <pnp:Controls>
@@ -1535,7 +1530,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Taking flight: Student mentorship opportunities at Contoso" ThumbnailUrl="{site}/SiteAssets/SitePages/Taking-flight--Student-mentorship-opportunities-at-Contoso/TAKINGFLIGHT.jpeg" PageName="Taking-flight--Student-mentorship-opportunities-at-Contoso.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1563,7 +1558,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" PageName="Communicating-Product-Value(1).aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Communicating Product Value" ThumbnailUrl="{site}/SiteAssets/SitePages/Communicating-Product-Value-1-/product-value.png" PageName="Communicating-Product-Value(1).aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1577,7 +1572,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" PageName="The-importance-of-branding-at-Contoso.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="The importance of branding at Contoso" ThumbnailUrl="{site}/SiteAssets/SitePages/The-importance-of-branding-at-Contoso/importance-of-branding.png" PageName="The-importance-of-branding-at-Contoso.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="GLOBAL MARKETING" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1591,7 +1586,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now" ThumbnailUrl="/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" PageName="New-401K-Packets-Available-Now.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="New 401K Packets Available Now" ThumbnailUrl="{site}/SiteAssets/SitePages/New-401K-Packets-Available-Now/401k-packets.png" PageName="New-401K-Packets-Available-Now.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="contoso works" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="TwoColumnLeft">
@@ -1605,7 +1600,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="/SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg" PageName="Functions-of-customer-service.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Functions of customer service" ThumbnailUrl="{site}/SiteAssets/SitePages/Functions-of-customer-service/retail_258493796.jpeg" PageName="Functions-of-customer-service.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="true" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1619,7 +1614,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="FlySafe Conference propels commercial drone industry forward" ThumbnailUrl="/SiteAssets/SitePages/FlySafe-Conference-propels-commercial-drone-industry-forward/38062003FlySafe_conference.jpeg" PageName="FlySafe-Conference-propels-commercial-drone-industry-forward.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="FlySafe Conference propels commercial drone industry forward" ThumbnailUrl="{site}/SiteAssets/SitePages/FlySafe-Conference-propels-commercial-drone-industry-forward/38062003FlySafe_conference.jpeg" PageName="FlySafe-Conference-propels-commercial-drone-industry-forward.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1633,7 +1628,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Washington scheduled update to drone laws" ThumbnailUrl="/SiteAssets/SitePages/Washington-scheduled-update-to-drone-laws/GettyImages-688060593.jpg" PageName="Washington-scheduled-update-to-drone-laws.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Washington scheduled update to drone laws" ThumbnailUrl="{site}/SiteAssets/SitePages/Washington-scheduled-update-to-drone-laws/GettyImages-688060593.jpg" PageName="Washington-scheduled-update-to-drone-laws.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="/_LAYOUTS/IMAGES/SLEEKTEMPLATEIMAGETILE.JPG" LayoutType="NoImage" TextAlignment="Center" ShowTopicHeader="true" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="place holder news post" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1666,7 +1661,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="That's a great idea: How to help introverts be heard in meetings" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2FSiteAssets%2FSitePages%2FThat-s-a-great-idea--How-to-help-introverts-be-heard-in-meetings%2Fdashboard-news.jpg" PageName="That's-a-great-idea--How-to-help-introverts-be-heard-in-meetings.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Title="That's a great idea: How to help introverts be heard in meetings" ThumbnailUrl="{site}/_layouts/15/getpreview.ashx?path={site}/SiteAssets/SitePages/That-s-a-great-idea--How-to-help-introverts-be-heard-in-meetings/dashboard-news.jpg" PageName="That's-a-great-idea--How-to-help-introverts-be-heard-in-meetings.aspx">
           <pnp:Header Type="Custom" ServerRelativeImageUrl="https://cdn.hubblecontent.osi.office.net/m365content/publish/d13c60a5-cf31-40c6-b20e-d7c40a6d43ce/607477457.jpg" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="TEXT ABOVE TITLE" AlternativeText="" Authors="[]" AuthorByLine="[]" AuthorByLineId="14" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1695,7 +1690,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ThumbnailUrl="/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/16094-37867-miriamgraham.jpeg" PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" EnableComments="false" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ThumbnailUrl="{site}/SiteAssets/SitePages/Miriam-Graham--Contoso-s-new-Chief-Marketing-Officer/16094-37867-miriamgraham.jpeg" PageName="Miriam-Graham,-Contoso's-new-Chief-Marketing-Officer.aspx">
           <pnp:Header Type="Default" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumnFullWidth">
@@ -1733,7 +1728,7 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Arizona's solar wave initiative – $50M PV Tax funding for home expansion" ThumbnailUrl="/_layouts/15/getpreview.ashx?path=%2FSiteAssets%2FSitePages%2FPage%2F2034430082-GettyImages-1850142671.jpg" PageName="Arizona's-solar-wave-initiative-–-$50M-PV-Tax-funding-for-home-expansion.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Title="Arizona's solar wave initiative – $50M PV Tax funding for home expansion" ThumbnailUrl="{site}/_layouts/15/getpreview.ashx?path={site}/SiteAssets/SitePages/Page/2034430082-GettyImages-1850142671.jpg" PageName="Arizona's-solar-wave-initiative-–-$50M-PV-Tax-funding-for-home-expansion.aspx">
           <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn">
@@ -1748,17 +1743,17 @@
             </pnp:Section>
           </pnp:Sections>
         </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="/SiteAssets/SitePages/Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers_29757474/GettyImages-2166211751.jpg" PageName="Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers.aspx">
+        <pnp:ClientSidePage PromoteAsNewsArticle="true" PromoteAsTemplate="false" Overwrite="true" Layout="RepostPage" Title="Q1 2024 Peak performance report efficiency rankings by company installers" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C4118002A50BFCFB7614729B56886FADA02339B" ThumbnailUrl="{site}/SiteAssets/SitePages/Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers_29757474/GettyImages-2166211751.jpg" PageName="Q1-2024-Peak-performance-report-efficiency-rankings-by-company-installers.aspx">
           <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
-      <pnp:Header Layout="Compact" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" ShowSiteTitle="false" />
-      <pnp:Footer Enabled="true" Logo="{site}/" RemoveExistingNodes="false" DisplayName="" BackgroundEmphasis="Strong">
+      <pnp:Header Layout="Standard" MenuStyle="MegaMenu" BackgroundEmphasis="Strong" ShowSiteTitle="false" />
+      <pnp:Footer Enabled="true" Logo="" RemoveExistingNodes="false" DisplayName="" BackgroundEmphasis="Strong">
         <pnp:FooterLinks>
-          <pnp:FooterLink DisplayName="Contact us" Url="/" />
-          <pnp:FooterLink DisplayName="Terms of use" Url="/" />
-          <pnp:FooterLink DisplayName="Privacy policy" Url="/" />
-          <pnp:FooterLink DisplayName="Legal" Url="/" />
+          <pnp:FooterLink DisplayName="Contact us" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Terms of use" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Privacy policy" Url="http://linkless.header/" />
+          <pnp:FooterLink DisplayName="Legal" Url="http://linkless.header/" />
         </pnp:FooterLinks>
       </pnp:Footer>
     </pnp:ProvisioningTemplate>
