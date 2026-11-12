@@ -1,17 +1,26 @@
 # Exports a named site-local theme without changing the site or tenant themes.
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    [string]$SiteName, # The URL name of the source site; also used for the output file name.
+
+    [Parameter(Mandatory)]
+    [string]$ThemeName, # Must match the local theme name exactly.
+
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 Import-Module PnP.PowerShell -Force -ErrorAction Stop
 
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "m365x80643879" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "0241da54-30d1-48da-8a55-d38d3d7f7863" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Hello3" # The URL name of the source site.
-$themeName = "Woodgrove" # Must match the local theme name exactly.
-#endregion
+# Source tenant settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\Get-SourceConfig.ps1" -SiteName $SiteName -Tenant $Tenant -ClientId $ClientId
+$Tenant = $source.Tenant
+$ClientId = $source.ClientId
 
-$adminConnection = Connect-PnPOnline -ClientId $clientId -Url "https://$($tenant)-admin.sharepoint.com" -Interactive -ReturnConnection
+$adminConnection = Connect-PnPOnline -ClientId $ClientId -Url "https://$($Tenant)-admin.sharepoint.com" -Interactive -ReturnConnection
 
-$siteConnection = Connect-PnPOnline -Connection $adminConnection -Url "https://$($tenant).sharepoint.com/sites/$siteName" -ReturnConnection -ErrorAction Stop
+$siteConnection = Connect-PnPOnline -Connection $adminConnection -Url "https://$($Tenant).sharepoint.com/sites/$SiteName" -ReturnConnection -ErrorAction Stop
 
 #region Export Theme
 $context = Get-PnPContext -Connection $siteConnection -ErrorAction Stop

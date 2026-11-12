@@ -1,0 +1,30 @@
+[
+  {
+    "FieldValues": {
+      "_SPColorTitle": "Woodgrove.Midnight",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#0D2C35"
+    }
+  },
+  {
+    "FieldValues": {
+      "_SPColorTitle": "Woodgrove.Cyan",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#06B6D4"
+    }
+  },
+  {
+    "FieldValues": {
+      "_SPColorTitle": "Woodgrove.Teal",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#009184"
+    }
+  },
+  {
+    "FieldValues": {
+      "_SPColorTitle": "Woodgrove.Neutral",
+      "_SPColorVisible": true,
+      "_SPColorCode": "#EDEDED"
+    }
+  }
+]

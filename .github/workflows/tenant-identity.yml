@@ -1,0 +1,14 @@
+name: Check for tenant identity
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tenant-identity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if tenant names or client IDs are committed
+        shell: pwsh
+        run: ./utils/Test-NoTenantIdentity.ps1

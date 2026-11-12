@@ -1,11 +1,18 @@
+[CmdletBinding()]
+param(
+    [string]$SourceSite, # The URL name of the source site. Omit to export from the tenant root site.
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force # Recommended version: 3.3.0 and above
 
-$templateTenant = "M365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$siteName = "m365x58285237" # The name of the site you want to export
-$templateSiteUrl = "https://$($templateTenant).sharepoint.com" #/sites/hello3"
-$clientId = "2396d3c1-c4c2-445b-b514-835990c14dd0"
-$templateSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $templateSiteUrl -Interactive -ReturnConnection
+# Maintainer script: exports from the SOURCE tenant. Settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\..\..\utils\Get-SourceConfig.ps1" -SiteName 'Contoso' -Tenant $Tenant -ClientId $ClientId
+$templateSiteUrl = "https://$($source.Tenant).sharepoint.com"
+if ($SourceSite) { $templateSiteUrl += "/sites/$($SourceSite)" }
+$templateSiteConnection = Connect-PnPOnline -ClientId $source.ClientId -Url $templateSiteUrl -Interactive -ReturnConnection
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
@@ -60,3 +67,6 @@ $content = $content -replace `
     '{site}'
 
 Set-Content $cleanPath $content
+
+# Remove source tenant names and user domains from the exported XML before it is committed
+& "$PSScriptRoot\..\..\utils\Remove-TenantIdentity.ps1" -Path $sourcePath, $cleanPath

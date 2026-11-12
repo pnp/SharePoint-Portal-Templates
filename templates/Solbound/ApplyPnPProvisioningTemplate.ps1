@@ -3,17 +3,29 @@
 #   PnP.PowerShell module
 #   PnP.PowerShell App Registration
 #   Global Admin or SharePoint Admin permissions
+#
+# Usage:
+#   .\ApplyPnPProvisioningTemplate.ps1 -Tenant contoso -ClientId <your-app-id> -SiteUrl <site-url-name>
+
+[CmdletBinding()]
+param(
+    # Your tenant name, without the .onmicrosoft.com or .com suffix (for example, contoso).
+    [Parameter(Mandatory)]
+    [ValidatePattern('^[a-zA-Z0-9][a-zA-Z0-9-]*$')]
+    [string]$Tenant,
+
+    # The App (client) ID of your Entra ID app registration for PnP.PowerShell.
+    [Parameter(Mandatory)]
+    [guid]$ClientId,
+
+    # The URL name of the site you created for this template (the part after /sites/).
+    [Parameter(Mandatory)]
+    [string]$SiteUrl
+)
 
 #region Setup
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force
-#endregion
-
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteUrl = "Solbound" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -41,7 +53,7 @@ Write-Host -BackgroundColor Cyan "Applying PnP Provisioning Template to site at 
 # Apply PnP Template
 Invoke-PnPSiteTemplate `
     -Connection $newSiteConnection `
-    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning.xml"
+    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 #endregion
 

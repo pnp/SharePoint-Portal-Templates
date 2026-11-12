@@ -35,19 +35,7 @@
       "_SPFontFaces": null,
       "ID": 30,
       "Created": "2026-07-31T16:20:13Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T16:20:13Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -133,8 +121,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 286920,
         "LookupValue": "",
@@ -178,8 +164,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Black-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -207,19 +193,7 @@
       ],
       "ID": 1,
       "Created": "2026-07-30T20:04:17Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:19Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -261,7 +235,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|mt3A18gUWvAakzqAts8Ff9/uYKI=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Black Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
+      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|mt3A18gUWvAakzqAts8Ff9/uYKI=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Black Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -309,8 +283,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 690352,
         "LookupValue": "",
@@ -354,8 +326,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Black.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -383,19 +355,7 @@
       ],
       "ID": 2,
       "Created": "2026-07-30T20:04:17Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:19Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -437,7 +397,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:17 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TW|30 Jul 2026 20:04:19 -0000\r\nvti_writevalidationtoken:SW|EcUILa6wH+v7lg6hnjoyrztHYp0=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Black;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:17 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TW|30 Jul 2026 20:04:19 -0000\r\nvti_writevalidationtoken:SW|EcUILa6wH+v7lg6hnjoyrztHYp0=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Black;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -485,8 +445,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 665317,
         "LookupValue": "",
@@ -530,8 +488,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Bold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -559,19 +517,7 @@
       ],
       "ID": 3,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:19Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -613,7 +559,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|sDmstgs/w4Etulyw0/8cV7PSGCQ=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
+      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|sDmstgs/w4Etulyw0/8cV7PSGCQ=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -661,8 +607,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 686921,
         "LookupValue": "",
@@ -706,8 +650,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Bold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -735,19 +679,7 @@
       ],
       "ID": 4,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:19Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -789,7 +721,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:17 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TW|30 Jul 2026 20:04:19 -0000\r\nvti_writevalidationtoken:SW|8AQVVq/C3+6T5PWRKKZIs6jQKeE=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:17 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TW|30 Jul 2026 20:04:19 -0000\r\nvti_writevalidationtoken:SW|8AQVVq/C3+6T5PWRKKZIs6jQKeE=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -837,8 +769,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 665111,
         "LookupValue": "",
@@ -882,8 +812,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Display-Bold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -911,19 +841,7 @@
       ],
       "ID": 5,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:19Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -965,7 +883,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|8WERUYPW0WeLC0cghIyDLOxTjWs=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display Bold Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
+      "MetaInfo": "vti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:17 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|8WERUYPW0WeLC0cghIyDLOxTjWs=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display Bold Italic;#\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:19 -0000\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\n_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1013,8 +931,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 688279,
         "LookupValue": "",
@@ -1058,8 +974,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Display.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1087,19 +1003,7 @@
       ],
       "ID": 6,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:20Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -1141,7 +1045,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|hUZFAq5iPYXfa9w2qt2dY5TZ3j4=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|hUZFAq5iPYXfa9w2qt2dY5TZ3j4=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1189,8 +1093,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 442890,
         "LookupValue": "",
@@ -1234,8 +1136,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Display-Bold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1263,19 +1165,7 @@
       ],
       "ID": 7,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:20Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -1317,7 +1207,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|cVfgu1noPrbNChUEoTkerEJchGk=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|cVfgu1noPrbNChUEoTkerEJchGk=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Display Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1365,8 +1255,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 444328,
         "LookupValue": "",
@@ -1410,8 +1298,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Display-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1437,19 +1325,7 @@
       "_SPFontFaces": null,
       "ID": 8,
       "Created": "2026-07-30T20:04:18Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:18Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -1491,7 +1367,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_writevalidationtoken:SW|wZCs4UlU3jjtCFkVIxpufpEoMs4=\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_decryptskipreason:IW|1\r\nvti_supportsZipIt:BW|false\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_writevalidationtoken:SW|wZCs4UlU3jjtCFkVIxpufpEoMs4=\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_decryptskipreason:IW|1\r\nvti_supportsZipIt:BW|false\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:18 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1539,8 +1415,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 228600,
         "LookupValue": "",
@@ -1584,8 +1458,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-ExtraBold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1613,19 +1487,7 @@
       ],
       "ID": 9,
       "Created": "2026-07-30T20:04:19Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:21Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -1667,7 +1529,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|O+LN5vpWMUdZkBKVtnQprkoBCKk=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#ExtraBold Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|O+LN5vpWMUdZkBKVtnQprkoBCKk=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#ExtraBold Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1715,8 +1577,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 459085,
         "LookupValue": "",
@@ -1760,8 +1620,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-ExtraBold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1789,19 +1649,7 @@
       ],
       "ID": 10,
       "Created": "2026-07-30T20:04:19Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:20Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -1843,7 +1691,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|c3P4ktpNUh5NiY4fAXQ5yv1fTFU=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#ExtraBold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|c3P4ktpNUh5NiY4fAXQ5yv1fTFU=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#ExtraBold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -1891,8 +1739,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 444395,
         "LookupValue": "",
@@ -1936,8 +1782,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -1965,19 +1811,7 @@
       ],
       "ID": 11,
       "Created": "2026-07-30T20:04:20Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:21Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2019,7 +1853,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|DzPXSq2iTI7SP6Plkq2A7wjNZyg=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:19 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|DzPXSq2iTI7SP6Plkq2A7wjNZyg=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2067,8 +1901,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 456326,
         "LookupValue": "",
@@ -2112,8 +1944,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Light-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -2141,19 +1973,7 @@
       ],
       "ID": 12,
       "Created": "2026-07-30T20:04:20Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:21Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2195,7 +2015,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|qls7Ba9a9YMQIiryIhd/P3Z5vA0=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Light Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|qls7Ba9a9YMQIiryIhd/P3Z5vA0=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Light Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2243,8 +2063,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 453982,
         "LookupValue": "",
@@ -2288,8 +2106,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Mono-Bold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -2317,19 +2135,7 @@
       ],
       "ID": 13,
       "Created": "2026-07-30T20:04:20Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2371,7 +2177,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|qeKKPK7DjJEfR8/Y2bU3PGx/j3A=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|qeKKPK7DjJEfR8/Y2bU3PGx/j3A=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2419,8 +2225,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 205932,
         "LookupValue": "",
@@ -2464,8 +2268,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Light.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -2493,19 +2297,7 @@
       ],
       "ID": 14,
       "Created": "2026-07-30T20:04:20Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:21Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2547,7 +2339,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|1F6tcTF4X0noKOlDU5I/1ovR0Dw=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Light;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|1F6tcTF4X0noKOlDU5I/1ovR0Dw=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Light;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2595,8 +2387,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 439551,
         "LookupValue": "",
@@ -2640,8 +2430,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Mono-Bold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -2669,19 +2459,7 @@
       ],
       "ID": 15,
       "Created": "2026-07-30T20:04:20Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2723,7 +2501,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:20 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:22 -0000\r\nvti_writevalidationtoken:SW|LsaIMsKACLLJqU552C7imUkd5oQ=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:20 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:22 -0000\r\nvti_writevalidationtoken:SW|LsaIMsKACLLJqU552C7imUkd5oQ=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2771,8 +2549,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 198271,
         "LookupValue": "",
@@ -2816,8 +2592,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Mono.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -2845,19 +2621,7 @@
       ],
       "ID": 16,
       "Created": "2026-07-30T20:04:21Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:21Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -2899,7 +2663,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:20 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:22 -0000\r\nvti_writevalidationtoken:SW|6aiUOI3PlCBTJJV8Mq6d1PuxBOg=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:20 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:22 -0000\r\nvti_writevalidationtoken:SW|6aiUOI3PlCBTJJV8Mq6d1PuxBOg=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -2947,8 +2711,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 197138,
         "LookupValue": "",
@@ -2992,8 +2754,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Mono-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3021,19 +2783,7 @@
       ],
       "ID": 17,
       "Created": "2026-07-30T20:04:21Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3075,7 +2825,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|hK/Ny8fQ718a6CMKnI7aYSV++pc=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:20 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|hK/Ny8fQ718a6CMKnI7aYSV++pc=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -3123,8 +2873,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 204881,
         "LookupValue": "",
@@ -3168,8 +2916,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Narrow-Bold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3197,19 +2945,7 @@
       ],
       "ID": 18,
       "Created": "2026-07-30T20:04:21Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3251,7 +2987,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|op9fR98MzSWWjI4BrMrsE05BokY=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|op9fR98MzSWWjI4BrMrsE05BokY=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -3299,8 +3035,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 501225,
         "LookupValue": "",
@@ -3344,8 +3078,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Narrow-Bold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3373,19 +3107,7 @@
       ],
       "ID": 19,
       "Created": "2026-07-30T20:04:21Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3427,7 +3149,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|gMAfNP0y2XNOUfp+5eZ8H7kho3c=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|gMAfNP0y2XNOUfp+5eZ8H7kho3c=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -3475,8 +3197,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 476822,
         "LookupValue": "",
@@ -3520,8 +3240,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Narrow-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3549,19 +3269,7 @@
       ],
       "ID": 20,
       "Created": "2026-07-30T20:04:21Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:22Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3603,7 +3311,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|BIqFkPcmszxDcEkVz1Ues7K+7g8=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|BIqFkPcmszxDcEkVz1Ues7K+7g8=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -3651,8 +3359,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 498280,
         "LookupValue": "",
@@ -3696,8 +3402,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-SemiBold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3725,19 +3431,7 @@
       ],
       "ID": 21,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3779,7 +3473,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:21 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:23 -0000\r\nvti_writevalidationtoken:SW|tN8qSRzQmdz+WYgl4OKYmrpwbLM=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#SemiBold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:21 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:23 -0000\r\nvti_writevalidationtoken:SW|tN8qSRzQmdz+WYgl4OKYmrpwbLM=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#SemiBold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -3827,8 +3521,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 442691,
         "LookupValue": "",
@@ -3872,8 +3564,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-SemiBold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -3901,19 +3593,7 @@
       ],
       "ID": 22,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:24Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -3955,7 +3635,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|gEmHfyeFlJNLibYuVqlIlheGv9M=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#SemiBold Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:21 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|gEmHfyeFlJNLibYuVqlIlheGv9M=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#SemiBold Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4003,8 +3683,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 456592,
         "LookupValue": "",
@@ -4048,8 +3726,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Narrow.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4077,19 +3755,7 @@
       ],
       "ID": 23,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -4131,7 +3797,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:21 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:23 -0000\r\nvti_writevalidationtoken:SW|4A5E/HrbeagHSv1/2Rqb6qTkyCg=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:21 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:23 -0000\r\nvti_writevalidationtoken:SW|4A5E/HrbeagHSv1/2Rqb6qTkyCg=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Narrow\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4179,8 +3845,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 477819,
         "LookupValue": "",
@@ -4224,8 +3888,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Serif-Bold-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4253,19 +3917,7 @@
       ],
       "ID": 24,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -4307,7 +3959,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|MY6BlDXL8aj68P2fc61V1KtPXEo=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|MY6BlDXL8aj68P2fc61V1KtPXEo=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4355,8 +4007,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 447226,
         "LookupValue": "",
@@ -4400,8 +4050,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Serif-Italic.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4429,19 +4079,7 @@
       ],
       "ID": 25,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -4483,7 +4121,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|6zopldkBspr7SReB7dU6vSYwsuM=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|6zopldkBspr7SReB7dU6vSYwsuM=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Italic;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4531,8 +4169,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 446518,
         "LookupValue": "",
@@ -4576,8 +4212,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Serif-Bold.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4605,19 +4241,7 @@
       ],
       "ID": 26,
       "Created": "2026-07-30T20:04:22Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -4659,7 +4283,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_writevalidationtoken:SW|pmPqbVzlyqJkymrtesndwsPeews=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TX|30 Jul 2026 20:04:22 -0000\r\nvti_author:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_writevalidationtoken:SW|pmPqbVzlyqJkymrtesndwsPeews=\r\nvti_modifiedby:SR|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IR|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IR|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4707,8 +4331,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 406070,
         "LookupValue": "",
@@ -4752,8 +4374,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Serif.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4781,19 +4403,7 @@
       ],
       "ID": 27,
       "Created": "2026-07-30T20:04:23Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:24Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -4835,7 +4445,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:22 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:24 -0000\r\nvti_writevalidationtoken:SW|gKedf3y91WG8TgSyeKJ1ouZKaHw=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:22 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:24 -0000\r\nvti_writevalidationtoken:SW|gKedf3y91WG8TgSyeKJ1ouZKaHw=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Serif\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -4883,8 +4493,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 405525,
         "LookupValue": "",
@@ -4928,8 +4536,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos.ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -4957,19 +4565,7 @@
       ],
       "ID": 28,
       "Created": "2026-07-30T20:04:23Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:04:23Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5011,7 +4607,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:22 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:24 -0000\r\nvti_writevalidationtoken:SW|wXHInB+xCtLp42yAGhY7zTAHmZ8=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:04:22 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:04:24 -0000\r\nvti_writevalidationtoken:SW|wXHInB+xCtLp42yAGhY7zTAHmZ8=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Regular;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -5059,8 +4655,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 442312,
         "LookupValue": "",
@@ -5104,8 +4698,8 @@
       },
       "_ModerationComments": null,
       "FileLeafRef": "Aptos-Mono-Bold (1).ttf",
-      "Modified_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
-      "Created_x0020_By": "i:0#.f|membership|admin@m365x58285237.onmicrosoft.com",
+      "Modified_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
+      "Created_x0020_By": "i:0#.f|membership|admin@contoso.onmicrosoft.com",
       "File_x0020_Type": "ttf",
       "HTML_x0020_File_x0020_Type": null,
       "_SourceUrl": null,
@@ -5133,19 +4727,7 @@
       ],
       "ID": 29,
       "Created": "2026-07-30T20:07:04Z",
-      "Author": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "Modified": "2026-07-30T20:07:05Z",
-      "Editor": {
-        "Email": "admin@m365x58285237.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "MOD Administrator"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5187,7 +4769,7 @@
         "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
       },
       "_CheckinComment": "",
-      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:07:03 -0000\r\nvti_author:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:07:05 -0000\r\nvti_writevalidationtoken:SW|LsaIMsKACLLJqU552C7imUkd5oQ=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@m365x58285237.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
+      "MetaInfo": "_SPFontVisible:BW|true\r\nvti_parserversion:SR|16.0.0.27515\r\nvti_decryptskipreason:IW|1\r\nvti_commentcount:IR|0\r\nvti_previewinvalidtime:TW|30 Jul 2026 20:07:03 -0000\r\nvti_author:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_priorversioncreationtime:TR|30 Jul 2026 20:07:05 -0000\r\nvti_writevalidationtoken:SW|LsaIMsKACLLJqU552C7imUkd5oQ=\r\nvti_modifiedby:SW|i:0#.f|membership|admin@contoso.onmicrosoft.com\r\nvti_accesscontrolflags:IR|0\r\nvti_dlppolicyrulesids:SW|01\r\nvti_supportsZipIt:BW|false\r\nvti_foldersubfolderitemcount:IW|0\r\nContentTypeId:SW|0x010100E2A8CDEC8E4B454F84F528474AED04F80024B63773E0E2BF4487576A27C21AF251\r\nvti_iplabelpromotionversion:IW|0\r\nInUseByTenantCdn:BW|TRUE\r\nvti_areHybridOrphanHashedBlobsCleaned:BW|false\r\n_SPFontFamilyName:SW|Aptos Mono\r\nvti_folderitemcount:IW|0\r\n_SPFontFaces:SW|;#Bold;#\r\n",
       "_Level": 1,
       "_IsCurrentVersion": true,
       "ItemChildCount": "0",
@@ -5235,8 +4817,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 198274,
         "LookupValue": "",
@@ -5307,19 +4887,7 @@
       "_SPFontFaces": null,
       "ID": 31,
       "Created": "2026-07-31T16:20:13Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T16:20:13Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5409,8 +4977,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 39113,
         "LookupValue": "",
@@ -5481,19 +5047,7 @@
       "_SPFontFaces": null,
       "ID": 32,
       "Created": "2026-07-31T16:20:14Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T16:20:14Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5583,8 +5137,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 16734,
         "LookupValue": "",
@@ -5655,19 +5207,7 @@
       "_SPFontFaces": null,
       "ID": 33,
       "Created": "2026-07-31T18:57:10Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T18:57:10Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5757,8 +5297,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 47996,
         "LookupValue": "",
@@ -5829,19 +5367,7 @@
       "_SPFontFaces": null,
       "ID": 34,
       "Created": "2026-07-31T18:57:10Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T18:57:10Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -5931,8 +5457,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 47984,
         "LookupValue": "",
@@ -6003,19 +5527,7 @@
       "_SPFontFaces": null,
       "ID": 35,
       "Created": "2026-07-31T18:57:35Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T18:57:35Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -6105,8 +5617,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 62391,
         "LookupValue": "",
@@ -6177,19 +5687,7 @@
       "_SPFontFaces": null,
       "ID": 36,
       "Created": "2026-07-31T18:57:35Z",
-      "Author": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "Modified": "2026-07-31T18:57:35Z",
-      "Editor": {
-        "Email": "",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 1073741823,
-        "LookupValue": "System Account"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "_ModerationStatus": 0,
@@ -6279,8 +5777,6 @@
       "_FileArchiveStatus": "",
       "_ExtractedMetadata": "",
       "_FileArchiveTimeLastModified": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 72550,
         "LookupValue": "",

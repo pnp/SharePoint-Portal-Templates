@@ -1,0 +1,5 @@
+# Maintainer-only source tenant settings. Copy utils/source.config.sample.json to create it.
+utils/source.config.json
+
+# Optional local denylist of extra strings (tenant names, app IDs) for utils/Test-NoTenantIdentity.ps1
+utils/denylist.txt

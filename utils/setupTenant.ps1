@@ -199,11 +199,8 @@ foreach ($template in (Get-ChildItem -LiteralPath $templatesPath -Directory | So
         Write-Warning "$($template.Name): no Fonts folder; skipping font uploads."
     }
 
-    foreach ($folderName in 'Font Packages', 'FontPackages') {
-        $packagesPath = Join-Path $template.FullName $folderName
-        if (!(Test-Path -LiteralPath $packagesPath -PathType Container)) {
-            continue
-        }
+    $packagesPath = Join-Path $template.FullName 'Font Packages'
+    if (Test-Path -LiteralPath $packagesPath -PathType Container) {
         foreach ($file in (Get-ChildItem -LiteralPath $packagesPath -Filter '*.Fonts.json' -File)) {
             $package = Get-Content -LiteralPath $file.FullName -Raw | ConvertFrom-Json
             if ([string]::IsNullOrWhiteSpace($package.Title)) {
