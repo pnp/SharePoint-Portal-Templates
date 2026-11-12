@@ -63,8 +63,8 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 
 # # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
-    -HeaderLayout Extended `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
+    -HeaderLayout Standard `
+    -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
     -SiteThumbnailUrl "SiteAssets/__sitelogo__credimus-icon@2x.png" `
     -SiteLogoUrl "SiteAssets/__rectSitelogo__credimus-full@2x.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
@@ -100,6 +100,11 @@ foreach ($page in $sitePages) {
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Credimus.ACES.csv"
 
 Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
+
+$existingAces = Get-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection
+foreach ($existingAce in $existingAces) {
+    Remove-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection -Identity $existingAce
+}
 
 foreach ($ace in $aces) {
     Add-PnPVivaConnectionsDashboardACE `

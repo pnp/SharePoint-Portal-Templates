@@ -64,7 +64,7 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
     -HeaderLayout Standard `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
+    -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
     -SiteThumbnailUrl "SiteAssets/__rectSitelogo__solbound-logo.png" `
     -SiteLogoUrl "SiteAssets/__sitelogo__solbound-logo.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
@@ -107,9 +107,6 @@ Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on th
 $resources | ForEach-Object {
     $_.Value = $_.Value -replace "{site}", $destinationUrl
 }
-
-$resources | ForEach-Object { Write-Host -BackgroundColor Cyan "Resource: $($_.Value)" }
-
 
 Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
     Spotlight_x0020_Configuration = $resources.Value

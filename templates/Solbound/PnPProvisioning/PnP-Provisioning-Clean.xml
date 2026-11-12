@@ -508,12 +508,22 @@
         <pnp:File Src="SiteAssets/SitePages/Home/1880863995-toolbox.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/1880863995-toolbox_1772018340633.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/sustainability-report.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/eployee-handbook@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/org-chart@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/brand-assets@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/Internal-job-board@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/benefits-insurance@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/pay-stubs@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/training-library@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Home/sustainability-report@2x.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/shape-1335339194-pattie-fernandez-1772131246889.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/1335339194-pattie-fernandez.jpeg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/shape-2534133050-nestor-wilken-1772132499389.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/2534133050-nestor-wilken.jpeg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/shape-314114618-Miram-Graham-1772133060467.png" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/SitePages/Home/314114618-Miram-Graham.jpeg" Folder="SiteAssets/SitePages/Home" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/Dashboard/Copilot.png" Folder="SiteAssets/SitePages/Dashboard" Overwrite="true" Level="Published" />
+        <pnp:File Src="SiteAssets/SitePages/New-EU-Net-Metering-Rules--What-Changes-on-April-1st-and-What-It-Means-for-Us/Flag_of_Europe.svg" Folder="SiteAssets/SitePages/New-EU-Net-Metering-Rules--What-Changes-on-April-1st-and-What-It-Means-for-Us" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/__sitelogo__solbound-logo.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" Folder="SiteAssets" Overwrite="true" Level="Published" />
         <pnp:File Src="SiteAssets/__rectSitelogo__solbound-logo.png" Folder="SiteAssets" Overwrite="true" Level="Published" />

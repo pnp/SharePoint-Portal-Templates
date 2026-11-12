@@ -57,7 +57,13 @@ $brandConnection = Connect-PnPOnline -ClientId $ClientId -Url $brandCenterUrl -I
 
 if (!$config.OrgAssets.Url -or !$config.OrgAssets.Url.DecodedUrl) {
     # Brand Center is anchored to the tenant's organization assets site.
-    $library = Get-PnPList -Connection $brandConnection -Identity 'BrandAssets' -Includes RootFolder
+    # Get-PnPList throws when the list is missing, so treat that as "not found".
+    $library = try {
+        Get-PnPList -Connection $brandConnection -Identity 'BrandAssets' -Includes RootFolder -ErrorAction Stop
+    }
+    catch {
+        if ($_.Exception.Message -notlike "*does not exist*") { throw }
+    }
     if (!$library) {
         New-PnPList -Connection $brandConnection -Title 'Brand Assets' -Url 'BrandAssets' -Template DocumentLibrary | Out-Null
         $library = Get-PnPList -Connection $brandConnection -Identity 'BrandAssets' -Includes RootFolder
@@ -66,9 +72,26 @@ if (!$config.OrgAssets.Url -or !$config.OrgAssets.Url.DecodedUrl) {
     $realm = Get-PnPAuthenticationRealm -Connection $brandConnection
     $visitors = Get-PnPGroup -Connection $brandConnection -AssociatedVisitorGroup
     Add-PnPGroupMember -Connection $brandConnection -Group $visitors.Id -LoginName "c:0-.f|rolemanager|spo-grid-all-users/$realm" | Out-Null
-    Add-PnPOrgAssetsLibrary -Connection $adminConnection `
-        -LibraryUrl ("https://$Tenant.sharepoint.com" + $library.RootFolder.ServerRelativeUrl) `
-        -CdnType Public -DefaultOriginAdded $false | Out-Null
+    # The tenant must have Public CDN enabled before a library can be registered as a public org assets origin.
+    if (!$config.IsPublicCdnEnabled) {
+        Write-Host 'Enabling Public CDN for the tenant...'
+        Set-PnPTenantCdnEnabled -Connection $adminConnection -CdnType Public -Enable $true -NoDefaultOrigins
+    }
+
+    $libraryUrl = "https://$Tenant.sharepoint.com" + $library.RootFolder.ServerRelativeUrl
+    for ($attempt = 1; $attempt -le 12; $attempt++) {
+        try {
+            Add-PnPOrgAssetsLibrary -Connection $adminConnection -LibraryUrl $libraryUrl `
+                -CdnType Public -DefaultOriginAdded $false -ErrorAction Stop | Out-Null
+            break
+        }
+        catch {
+            # The CDN setting can take a moment to take effect after it is enabled.
+            if ($attempt -eq 12 -or $_.Exception.Message -notlike '*CDN feature is not enabled*') { throw }
+            Write-Host "Waiting for Public CDN to take effect (attempt $attempt of 12)..."
+            Start-Sleep -Seconds 10
+        }
+    }
 }
 
 if (!$config.IsBrandCenterSiteFeatureEnabled) {
@@ -280,4 +303,5 @@ foreach ($template in (Get-ChildItem -LiteralPath $templatesPath -Directory | So
     }
 }
 
-Write-Host "Tenant branding setup complete. Brand Center: $brandCenterUrl"
+Write-Host "Tenant branding setup complete. Brand Center site: $brandCenterUrl"
+Write-Host "Brand Center app: $brandCenterUrl/_layouts/15/BrandCenter.aspx"

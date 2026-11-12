@@ -175,6 +175,8 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
+Standard headers can display the background image when an overlay is configured. Configure the background image overlay under Header as described below.
+
 #### Apply theme
 
 Select Theme and choose the `Solbound.Theme` and Save.
@@ -186,6 +188,14 @@ Select Theme and choose the `Solbound.Theme` and Save.
 Enable the Font Package you created above under Fonts.
 
 ![Apply Solbound Font Package](./media/solbound-apply-font-package.jpg)
+
+#### Set footer alignment
+
+After applying the provisioning template, select Footer under Change the look, set the alignment to Left, and select Save.
+
+#### Set header image overlay
+
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to Black and the overlay opacity to 60%, and select Save.
 
 ## Summary
 

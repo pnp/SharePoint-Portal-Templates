@@ -63,7 +63,7 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
-    -HeaderLayout Extended `
+    -HeaderLayout Standard `
     -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__BG6.png" `
     -SiteThumbnailUrl "SiteAssets/__sitelogo__LogoW.png" `
     -SiteLogoUrl "SiteAssets/__sitelogo__LogoW.png"
