@@ -83,6 +83,12 @@ For detailed instructions, see [Applying PnP Templates to SharePoint Sites](http
 
 You will be asked to log in with your credentials twice, once to connect to the SharePoint Admin Center to ensure the site you specified exists, and a second time to connect to that site. Then the script will run through several steps, applying the template and making the additional configurations.
 
+### Recommended viewing events
+
+Recommended viewing uses an Events web part sourced from this site's Events list, with no category filter. Its custom range is January 1 through November 13, 2026, configured directly in [PnP-Provisioning-Clean.xml](./PnPProvisioning/PnP-Provisioning-Clean.xml) using `dateRangeOption`, `startDate`, and `endDate`.
+
+The dates are fixed; edit the template and reapply it to change the range. The script does not override these dates. The web part displays up to 20 matching events; use **See all** to browse additional events (the all-events page can include events outside the home page's custom range).
+
 If you see yellow information or warning messages, these are not errors, and the script should continue to run successfully. If you see red error messages, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues).
 
 ## Configure Brand Center
@@ -136,7 +142,7 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
-The provisioning script sets the header layout to Standard. Configure a background image overlay under Header so the background image is displayed.
+The provisioning script sets the header layout to Standard and configures the background image. The only manual step needed to display the header image is to set the overlay color to black under Header.
 
 #### Apply theme
 
@@ -157,7 +163,7 @@ After applying the provisioning template, select Footer under Change the look, s
 
 #### Set header image overlay
 
-After applying the provisioning template, select Header under Change the look, choose a background image overlay color and a nonzero overlay opacity, and select Save.
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to black, and select Save. No manual image selection, layout change, or opacity adjustment is required.
 
 ## Summary
 
