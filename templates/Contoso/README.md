@@ -73,6 +73,8 @@ The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning templ
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
+The homepage's **FROM US** Events web part reads directly from the site's Events list, without depending on SharePoint Search indexing. Its three-card filmstrip layout and fixed date range (November 1, 2022 through November 10, 2026) are configured in *PnP-Provisioning-Clean.xml*.
+
 To run the script, open PowerShell 7 in the template folder and pass your tenant name (without `.onmicrosoft.com`), the App (client) ID of your PnP.PowerShell app registration, and the URL name of the site you created (the part after `/sites/`):
 
 ```powershell
@@ -172,7 +174,7 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
-The provisioning script sets the header layout to Standard. Configure a background image overlay under Header so the background image is displayed.
+The provisioning script sets the header layout to Standard and configures the background image. The only manual step needed to display the header image is to set the overlay color to black under Header.
 
 #### Apply theme
 
@@ -192,7 +194,7 @@ After applying the provisioning template, select Footer under Change the look, s
 
 #### Set header image overlay
 
-After applying the provisioning template, select Header under Change the look, choose a background image overlay color and a nonzero overlay opacity, and select Save.
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to black, and select Save. No manual image selection, layout change, or opacity adjustment is required.
 
 ## Summary
 
