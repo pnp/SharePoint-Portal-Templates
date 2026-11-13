@@ -9,18 +9,6 @@
       "Title": null,
       "Modified": "2026-11-04T22:33:53Z",
       "Created": "2026-11-04T22:33:53Z",
-      "Author": {
-        "Email": "marc@span001.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Marc Anderson"
-      },
-      "Editor": {
-        "Email": "marc@span001.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Marc Anderson"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -77,8 +65,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 210,
         "LookupValue": "",
@@ -107,18 +93,6 @@
       "Title": null,
       "Modified": "2026-11-04T22:34:25Z",
       "Created": "2026-11-04T22:34:13Z",
-      "Author": {
-        "Email": "marc@span001.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Marc Anderson"
-      },
-      "Editor": {
-        "Email": "marc@span001.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Marc Anderson"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 2,
@@ -175,8 +149,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 212,
         "LookupValue": "",

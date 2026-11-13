@@ -9,18 +9,6 @@
       "Title": null,
       "Modified": "2026-02-23T07:46:43Z",
       "Created": "2026-02-23T07:46:43Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -77,8 +65,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 216,
         "LookupValue": "",
@@ -107,18 +93,6 @@
       "Title": null,
       "Modified": "2026-02-23T07:47:14Z",
       "Created": "2026-02-23T07:47:14Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -175,8 +149,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 212,
         "LookupValue": "",
@@ -205,18 +177,6 @@
       "Title": null,
       "Modified": "2026-02-23T07:47:45Z",
       "Created": "2026-02-23T07:47:45Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -273,8 +233,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 216,
         "LookupValue": "",
@@ -303,18 +261,6 @@
       "Title": null,
       "Modified": "2026-02-23T07:49:36Z",
       "Created": "2026-02-23T07:49:36Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -371,8 +317,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 218,
         "LookupValue": "",

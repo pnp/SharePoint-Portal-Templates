@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
   <pnp:Preferences Generator="PnP.Framework, Version=1.21.2.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
   <pnp:Templates ID="CONTAINER-TEMPLATE-3446CAC7987D4E3AA9BC124EF96D252E">
@@ -216,7 +216,7 @@
               <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
               <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
               <pnp:DataValue FieldName="Category">External</pnp:DataValue>
-              <pnp:DataValue FieldName="BannerUrl">https://sympraxisdesign.sharepoint.com{site}/SiteAssets/SitePages/Event(3)/84993-RE-Plus-blue-header-logo.svg?X=NaN&amp;Y=NaN&amp;Id=01d687a4-406a-4b96-93e0-f373a027b587&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=1.9, {site}/SiteAssets/SitePages/Event(3)/84993-RE-Plus-blue-header-logo.svg?X=NaN&amp;Y=NaN&amp;Id=01d687a4-406a-4b96-93e0-f373a027b587&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=1.9</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event(3)/84993-RE-Plus-blue-header-logo.svg?X=NaN&amp;Y=NaN&amp;Id=01d687a4-406a-4b96-93e0-f373a027b587&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=1.9, {site}/SiteAssets/SitePages/Event(3)/84993-RE-Plus-blue-header-logo.svg?X=NaN&amp;Y=NaN&amp;Id=01d687a4-406a-4b96-93e0-f373a027b587&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=1.9</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">NEC Code Update Webinar</pnp:DataValue>
@@ -238,7 +238,7 @@
               <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
               <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
               <pnp:DataValue FieldName="Category">External</pnp:DataValue>
-              <pnp:DataValue FieldName="BannerUrl">https://sympraxisdesign.sharepoint.com{site}/SiteAssets/SitePages/Event(2)/33197-seia-solar-energy-industries-logo.png?X=50&amp;Y=50&amp;Id=3ca69ac8-56a0-4f7d-ae7e-6955b835a03f&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814, https://sympraxisdesign.sharepoint.com{site}/SiteAssets/SitePages/Event(2)/33197-seia-solar-energy-industries-logo.png?X=50&amp;Y=50&amp;Id=3ca69ac8-56a0-4f7d-ae7e-6955b835a03f&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event(2)/33197-seia-solar-energy-industries-logo.png?X=50&amp;Y=50&amp;Id=3ca69ac8-56a0-4f7d-ae7e-6955b835a03f&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814, {site}/SiteAssets/SitePages/Event(2)/33197-seia-solar-energy-industries-logo.png?X=50&amp;Y=50&amp;Id=3ca69ac8-56a0-4f7d-ae7e-6955b835a03f&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Intersolar North America</pnp:DataValue>
@@ -249,7 +249,7 @@
               <pnp:DataValue FieldName="fRecurrence">False</pnp:DataValue>
               <pnp:DataValue FieldName="EventType">0</pnp:DataValue>
               <pnp:DataValue FieldName="Category">External</pnp:DataValue>
-              <pnp:DataValue FieldName="BannerUrl">https://sympraxisdesign.sharepoint.com{site}/SiteAssets/SitePages/Event(1)/28089-isna_esna_logo_lockup_rgb.png?X=NaN&amp;Y=NaN&amp;Id=7d9673d4-60be-48a8-bd6b-1fb0ee35f18a&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=5.1, {site}/SiteAssets/SitePages/Event(1)/28089-isna_esna_logo_lockup_rgb.png?X=NaN&amp;Y=NaN&amp;Id=7d9673d4-60be-48a8-bd6b-1fb0ee35f18a&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=5.1</pnp:DataValue>
+              <pnp:DataValue FieldName="BannerUrl">{site}/SiteAssets/SitePages/Event(1)/28089-isna_esna_logo_lockup_rgb.png?X=NaN&amp;Y=NaN&amp;Id=7d9673d4-60be-48a8-bd6b-1fb0ee35f18a&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=5.1, {site}/SiteAssets/SitePages/Event(1)/28089-isna_esna_logo_lockup_rgb.png?X=NaN&amp;Y=NaN&amp;Id=7d9673d4-60be-48a8-bd6b-1fb0ee35f18a&amp;listId=907c478a-cf6b-4de9-90b0-b4f22bd27814&amp;ar=5.1</pnp:DataValue>
             </pnp:DataRow>
             <pnp:DataRow>
               <pnp:DataValue FieldName="Title">Safety &amp; OSHA Refresher Workshop</pnp:DataValue>
@@ -1112,9 +1112,6 @@
               </pnp:Controls>
             </pnp:Section>
           </pnp:Sections>
-        </pnp:ClientSidePage>
-        <pnp:ClientSidePage PromoteAsNewsArticle="false" PromoteAsTemplate="false" Overwrite="true" Layout="Dashboard" Title="Dashboard" ContentTypeID="0x0101009D1CB255DA76424F860D91F20E6C411800C0E54B39129A4FB6B71E908D1C98831E" ThumbnailUrl="" PageName="Dashboard.aspx">
-          <pnp:Header Type="None" LayoutType="FullWidthImage" ShowTopicHeader="false" ShowPublishDate="false" ShowBackgroundGradient="false" TopicHeader="" AlternativeText="" Authors="" AuthorByLineId="-1" />
         </pnp:ClientSidePage>
       </pnp:ClientSidePages>
       <pnp:Header Layout="Standard" MenuStyle="MegaMenu" ShowSiteTitle="false" />

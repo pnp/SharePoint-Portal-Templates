@@ -1,15 +1,24 @@
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    [string]$SiteName, # The template name; used for the output file name.
+
+    [string]$SourceSite, # The URL name of the source site. Omit to export from the tenant root site.
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 Import-Module PnP.PowerShell -Force
 
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "m365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "2396d3c1-c4c2-445b-b514-835990c14dd0" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "hello3" # The URL name for the site you want to update.
-#endregion
+# Source tenant settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\Get-SourceConfig.ps1" -SiteName $SiteName -Tenant $Tenant -ClientId $ClientId
+$Tenant = $source.Tenant
+$ClientId = $source.ClientId
 
 # region Export Resources
-$siteUrl = "https://$($tenant).sharepoint.com/" #sites/$($siteName)"
-$siteConnection = Connect-PnPOnline -ClientId $clientId -Url $siteUrl -Interactive -ReturnConnection
+$siteUrl = "https://$($Tenant).sharepoint.com/"
+if ($SourceSite) { $siteUrl += "sites/$($SourceSite)" }
+$siteConnection = Connect-PnPOnline -ClientId $ClientId -Url $siteUrl -Interactive -ReturnConnection
 
 
 $config = Get-PnPListItem `
@@ -23,6 +32,8 @@ $resources = [PSCustomObject]@{
     Value = $config.FieldValues["Spotlight_x0020_Configuration"]
 }
 
-$resources | Export-Csv -Path "./utils/Resources/$($siteName).Resources.csv" -NoTypeInformation -Force
+$resources | Export-Csv -Path "./utils/Resources/$($SiteName).Resources.csv" -NoTypeInformation -Force
+
+& "$PSScriptRoot\Remove-TenantIdentity.ps1" -Path "./utils/Resources/$($SiteName).Resources.csv"
 
 # endregion

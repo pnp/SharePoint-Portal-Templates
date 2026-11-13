@@ -1,13 +1,20 @@
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    [string]$ThemeName, # Must match the tenant theme name exactly, for example Solbound.Theme.
+
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 Import-Module PnP.PowerShell -Force
 
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$themeName = "Solbound.Theme" # Must match the tenant theme name exactly
-#endregion
+# Source tenant settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\Get-SourceConfig.ps1" -SiteName ($ThemeName -replace '\.Theme$', '') -Tenant $Tenant -ClientId $ClientId
+$Tenant = $source.Tenant
+$ClientId = $source.ClientId
 
-$siteConnection = Connect-PnPOnline -ClientId $clientId -Url "https://$($tenant).sharepoint.com" -Interactive -ReturnConnection -ErrorAction Stop
+$siteConnection = Connect-PnPOnline -ClientId $ClientId -Url "https://$($Tenant).sharepoint.com" -Interactive -ReturnConnection -ErrorAction Stop
 
 #region Export Theme
 $context = Get-PnPContext -Connection $siteConnection -ErrorAction Stop

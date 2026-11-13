@@ -1,18 +1,26 @@
+[CmdletBinding()]
+param(
+    [Parameter(Mandatory)]
+    [string]$SiteName, # The template name; used for output file and folder names.
+
+    [string]$SourceSite, # The URL name of the source site. Omit to export from the tenant root site.
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 Import-Module PnP.PowerShell -Force
 
-
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "m365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "2396d3c1-c4c2-445b-b514-835990c14dd0" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Contoso" # The URL name for the site you want to update.
-#endregion
+# Source tenant settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\Get-SourceConfig.ps1" -SiteName $SiteName -Tenant $Tenant -ClientId $ClientId
+$Tenant = $source.Tenant
+$ClientId = $source.ClientId
 
 # region Export Resources
-$siteUrl = "https://$($tenant).sharepoint.com/" # sites/$($siteName)"
-$siteConnection = Connect-PnPOnline -ClientId $clientId -Url $siteUrl -Interactive -ReturnConnection
+$siteUrl = "https://$($Tenant).sharepoint.com/"
+if ($SourceSite) { $siteUrl += "sites/$($SourceSite)" }
+$siteConnection = Connect-PnPOnline -ClientId $ClientId -Url $siteUrl -Interactive -ReturnConnection
 
-$outputPath = ".\utils\Pages Metadata\$($siteName).PagesMetadata.csv"
+$outputPath = ".\utils\Pages Metadata\$($SiteName).PagesMetadata.csv"
 
 $pages = Get-PnPListItem -Connection $siteConnection -List "Site Pages" `
     -Fields "FileLeafRef", "Title", "CanvasContent1", "BannerImageUrl", "AuthorByline", "FieldValuesAsText"
@@ -37,8 +45,10 @@ foreach ($page in $pages) {
     }
 
     # Normalize URL (important for cross-tenant)
+    $isSharePointFile = $false
     if ($thumbUrl -and $thumbUrl.StartsWith("http")) {
         $uri = [System.Uri]$thumbUrl
+        $isSharePointFile = $uri.Host -like '*.sharepoint.com'
         $thumbUrl = $uri.AbsolutePath
     }
 
@@ -50,20 +60,18 @@ foreach ($page in $pages) {
         ThumbnailUrl = $thumbUrl
     }
 
-    # If the $thumbUrl isn't in stock images, download it to the folder Pages Metadata
-    if ($thumbUrl -and $thumbUrl -ne "INFERRED_FROM_CANVAS") {
-        $uri = [System.Uri]$thumbUrl
-        $fileName = [System.IO.Path]::GetFileName($uri.LocalPath)
-        $folder = ".\utils\Pages Metadata\$($siteName)\$($page.Id)"
-        $downloadPath = "$($folder)\$($fileName)"
+    # Download thumbnails stored in SharePoint. Anonymous requests return a sign-in page, so use the connection.
+    if ($thumbUrl -and $isSharePointFile) {
+        $fileName = [System.IO.Path]::GetFileName($thumbUrl)
+        $folder = ".\utils\Pages Metadata\$($SiteName)\$($page.Id)"
 
         if (!(Test-Path $folder)) {
             New-Item -ItemType Directory -Path $folder | Out-Null
         }
 
         try {
-            Invoke-WebRequest -Uri $thumbUrl -OutFile $downloadPath -ErrorAction Stop
-            Write-Host "Downloaded thumbnail for page '$title' to '$downloadPath'"
+            Get-PnPFile -Connection $siteConnection -Url ([System.Uri]::UnescapeDataString($thumbUrl)) -Path $folder -FileName $fileName -AsFile -Force -ErrorAction Stop
+            Write-Host "Downloaded thumbnail for page '$title' to '$folder\$fileName'"
         }
         catch {
             Write-Warning "Failed to download thumbnail for page '$title' from '$thumbUrl': $_"
@@ -74,5 +82,6 @@ foreach ($page in $pages) {
 
 
 $results | Export-Csv -Path $outputPath -NoTypeInformation -Encoding UTF8 -Force
+& "$PSScriptRoot\Remove-TenantIdentity.ps1" -Path $outputPath
 
 Write-Host "Export complete: $outputPath"

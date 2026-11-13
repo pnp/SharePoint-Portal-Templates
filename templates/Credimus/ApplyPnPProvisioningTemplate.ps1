@@ -3,18 +3,29 @@
 #   PnP.PowerShell module
 #   PnP.PowerShell App Registration
 #   Global Admin or SharePoint Admin permissions
+#
+# Usage:
+#   .\ApplyPnPProvisioningTemplate.ps1 -Tenant contoso -ClientId <your-app-id> -SiteUrl <site-url-name>
+
+[CmdletBinding()]
+param(
+    # Your tenant name, without the .onmicrosoft.com or .com suffix (for example, contoso).
+    [Parameter(Mandatory)]
+    [ValidatePattern('^[a-zA-Z0-9][a-zA-Z0-9-]*$')]
+    [string]$Tenant,
+
+    # The App (client) ID of your Entra ID app registration for PnP.PowerShell.
+    [Parameter(Mandatory)]
+    [guid]$ClientId,
+
+    # The URL name of the site you created for this template (the part after /sites/).
+    [Parameter(Mandatory)]
+    [string]$SiteUrl
+)
 
 #region Setup
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force
-#endregion
-
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Credimus" # The name of the site you want to update.
-$siteUrl = "Credimus" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -52,8 +63,8 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 
 # # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
-    -HeaderLayout Extended `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
+    -HeaderLayout Standard `
+    -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
     -SiteThumbnailUrl "SiteAssets/__sitelogo__credimus-icon@2x.png" `
     -SiteLogoUrl "SiteAssets/__rectSitelogo__credimus-full@2x.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
@@ -89,6 +100,11 @@ foreach ($page in $sitePages) {
 $aces = Import-Csv -Path "$PSScriptRoot/ACES/Credimus.ACES.csv"
 
 Write-Host -BackgroundColor Cyan "Setting up $($aces.Count) ACES on the Dashboard"
+
+$existingAces = Get-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection
+foreach ($existingAce in $existingAces) {
+    Remove-PnPVivaConnectionsDashboardACE -Connection $newSiteConnection -Identity $existingAce
+}
 
 foreach ($ace in $aces) {
     Add-PnPVivaConnectionsDashboardACE `

@@ -73,9 +73,21 @@ The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning templ
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
-To run the script, you will need to update the variables at the top of the script to reflect your tenant and site information. Then, you can run the script. For detailed instructions, see [Applying PnP Templates to SharePoint Sites](https://learn.microsoft.com/sharepoint/dev/solution-guidance/applying-pnp-templates).
+To run the script, open PowerShell 7 in the template folder and pass your tenant name (without `.onmicrosoft.com`), the App (client) ID of your PnP.PowerShell app registration, and the URL name of the site you created (the part after `/sites/`):
+
+```powershell
+.\ApplyPnPProvisioningTemplate.ps1 -Tenant "contoso" -ClientId "<your-app-id>" -SiteUrl "<site-url-name>"
+```
+
+For detailed instructions, see [Applying PnP Templates to SharePoint Sites](https://learn.microsoft.com/sharepoint/dev/solution-guidance/applying-pnp-templates).
 
 You will be asked to log in with your credentials twice, once to connect to the SharePoint Admin Center to ensure the site you specified exists, and a second time to connect to that site. Then the script will run through several steps, applying the template and making the additional configurations.
+
+### Recommended viewing events
+
+Recommended viewing uses an Events web part sourced from this site's Events list, with no category filter. Its custom range is January 1 through November 13, 2026, configured directly in [PnP-Provisioning-Clean.xml](./PnPProvisioning/PnP-Provisioning-Clean.xml) using `dateRangeOption`, `startDate`, and `endDate`.
+
+The dates are fixed; edit the template and reapply it to change the range. The script does not override these dates. The web part displays up to 20 matching events; use **See all** to browse additional events (the all-events page can include events outside the home page's custom range).
 
 If you see yellow information or warning messages, these are not errors, and the script should continue to run successfully. If you see red error messages, please [create an issue](https://github.com/pnp/SharePoint-Portal-Templates/issues).
 
@@ -130,6 +142,8 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
+The provisioning script sets the header layout to Standard and configures the background image. The only manual step needed to display the header image is to set the overlay color to black under Header.
+
 #### Apply theme
 
 Select Theme and choose the `Woodgrove.Theme` and Save.
@@ -142,6 +156,14 @@ Set the font to `Georgia Pro Condensed-Verdana Pro Condensed`, which is one of t
 
 
 ![Apply Woodgrove Font](./media/woodgrove-apply-font.jpg)
+
+#### Set footer alignment
+
+After applying the provisioning template, select Footer under Change the look, set the alignment to Left, and select Save.
+
+#### Set header image overlay
+
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to black, and select Save. No manual image selection, layout change, or opacity adjustment is required.
 
 ## Summary
 

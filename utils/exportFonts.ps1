@@ -1,17 +1,23 @@
+[CmdletBinding()]
+param(
+    [string]$SiteName, # Optional; selects a Sites.<name> entry in utils\source.config.json.
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 Import-Module PnP.PowerShell -Force
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "M365x58285237" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "2396d3c1-c4c2-445b-b514-835990c14dd0" # The App Id from your App Registration for PnP.PowerShell
-$siteName = "Contoso 4" # The URL name for the site you want to update.
-#endregion
+
+# Source tenant settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\Get-SourceConfig.ps1" -SiteName $SiteName -Tenant $Tenant -ClientId $ClientId
+$Tenant = $source.Tenant
+$ClientId = $source.ClientId
 
 #region Connect to Brand Center Site
 # Connect to the Brand Center site
 # Fonts are stored in the hidden Fonts list in the Brand Center site
 
-$brandCenterSiteUrl = "https://$($tenant).sharepoint.com/sites/BrandGuide"
-$brandCenterSiteConnection = Connect-PnPOnline -ClientId $clientId -Url $brandCenterSiteUrl -Interactive -ReturnConnection
+$brandCenterSiteUrl = "https://$($Tenant).sharepoint.com/sites/BrandGuide"
+$brandCenterSiteConnection = Connect-PnPOnline -ClientId $ClientId -Url $brandCenterSiteUrl -Interactive -ReturnConnection
 
 Get-PnPList -Connection $brandCenterSiteConnection
 
@@ -20,6 +26,7 @@ $fonts = Get-PnPListItem -Connection $brandCenterSiteConnection -List "Fonts"
 # Save font info
 $fontInfo = $fonts | Select-Object -Property Title, FieldValues
 $fontInfo | ConvertTo-Json -Depth 5 | Out-File ".\utils\Fonts\Fonts.json" -Encoding utf8 -Force
+& "$PSScriptRoot\Remove-TenantIdentity.ps1" -Path ".\utils\Fonts\Fonts.json"
 
 # Get font files
 $destinationPath = ".\utils\Fonts"

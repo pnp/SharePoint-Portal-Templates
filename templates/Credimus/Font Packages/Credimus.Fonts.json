@@ -1,6 +1,6 @@
 ﻿{
     "ID": "feab25b6-d9b4-4526-9593-922666fcefff",
-    "Title": "Credimus",
+    "Title": "Credimus.Fonts",
     "IsHidden": false,
     "IsValid": true,
     "PackageJson": "{\"fontFaces\":[{\"fontFamily\":\"DM Sans-161214235\",\"path\":\"DMSans-VariableFont_opsz,wght.ttf\",\"fontType\":\"displayFont\"},{\"fontFamily\":\"Playfair-1762986278\",\"path\":\"Playfair-VariableFont_opsz,wdth,wght.ttf\",\"fontType\":\"contentFont\"}],\"fontSlots\":{\"title\":{\"fontFamily\":\"DM Sans-161214235\",\"fontFace\":\"ExtraBold\",\"fontVariationSettings\":{\"opsz\":14,\"wght\":800}},\"heading\":{\"fontFamily\":\"DM Sans-161214235\",\"fontFace\":\"Bold\",\"fontVariationSettings\":{\"opsz\":14,\"wght\":700}},\"body\":{\"fontFamily\":\"Playfair-1762986278\",\"fontFace\":\"Medium\",\"fontVariationSettings\":{\"opsz\":12,\"wdth\":100,\"wght\":500}},\"label\":{\"fontFamily\":\"DM Sans-161214235\",\"fontFace\":\"Bold\",\"fontVariationSettings\":{\"opsz\":14,\"wght\":700}}}}"

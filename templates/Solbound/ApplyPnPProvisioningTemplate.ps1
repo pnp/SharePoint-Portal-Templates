@@ -3,17 +3,29 @@
 #   PnP.PowerShell module
 #   PnP.PowerShell App Registration
 #   Global Admin or SharePoint Admin permissions
+#
+# Usage:
+#   .\ApplyPnPProvisioningTemplate.ps1 -Tenant contoso -ClientId <your-app-id> -SiteUrl <site-url-name>
+
+[CmdletBinding()]
+param(
+    # Your tenant name, without the .onmicrosoft.com or .com suffix (for example, contoso).
+    [Parameter(Mandatory)]
+    [ValidatePattern('^[a-zA-Z0-9][a-zA-Z0-9-]*$')]
+    [string]$Tenant,
+
+    # The App (client) ID of your Entra ID app registration for PnP.PowerShell.
+    [Parameter(Mandatory)]
+    [guid]$ClientId,
+
+    # The URL name of the site you created for this template (the part after /sites/).
+    [Parameter(Mandatory)]
+    [string]$SiteUrl
+)
 
 #region Setup
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force
-#endregion
-
-#region Variables
-# Set variables - CHANGE THESE TO MATCH YOUR ENVIRONMENT
-$tenant = "span001" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$clientId = "781d6ed3-0279-412e-af06-acfa99f57819" # The App Id from your App Registration for PnP.PowerShell
-$siteUrl = "Solbound" # The URL name for the site you want to update.
 #endregion
 
 #region Connections
@@ -41,7 +53,7 @@ Write-Host -BackgroundColor Cyan "Applying PnP Provisioning Template to site at 
 # Apply PnP Template
 Invoke-PnPSiteTemplate `
     -Connection $newSiteConnection `
-    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning.xml"
+    -Path "$PSScriptRoot/PnPProvisioning/PnP-Provisioning-Clean.xml"
 
 #endregion
 
@@ -52,7 +64,7 @@ Write-Host -BackgroundColor Cyan "Performing additional configuration for site a
 # Set site header background image and other settings
 Set-PnPWebHeader -Connection $newSiteConnection `
     -HeaderLayout Standard `
-    -HeaderBackgroundImageUrl "SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
+    -HeaderBackgroundImageUrl "/sites/$($siteUrl)/SiteAssets/__extendedHeaderBackgroundImage__DEFAULT_CHROME_BG_IMAGE_NAME.png" `
     -SiteThumbnailUrl "SiteAssets/__rectSitelogo__solbound-logo.png" `
     -SiteLogoUrl "SiteAssets/__sitelogo__solbound-logo.png"
 Set-PnPWeb -Connection $newSiteConnection -HideTitleInHeader
@@ -95,9 +107,6 @@ Write-Host -BackgroundColor Cyan "Setting up $($resources.Count) resources on th
 $resources | ForEach-Object {
     $_.Value = $_.Value -replace "{site}", $destinationUrl
 }
-
-$resources | ForEach-Object { Write-Host -BackgroundColor Cyan "Resource: $($_.Value)" }
-
 
 Set-PnPListItem -Connection $newSiteConnection -List $vcList -Identity 1 -Values @{
     Spotlight_x0020_Configuration = $resources.Value

@@ -1,9 +1,17 @@
+[CmdletBinding()]
+param(
+    [string]$SourceSite = 'Credimus', # The URL name of the source site.
+    [string]$Tenant,
+    [string]$ClientId
+)
+
 # Load PnP.PowerShell, if it isn't already
 Import-Module PnP.PowerShell -Force # Recommended version: 3.3.0 and above
 
-$templateTenant = "spex003" # Your tenant name, without the .onmicrosoft.com or .com suffix
-$templateSiteUrl = "https://$($templateTenant).sharepoint.com/sites/Credimus"
-$templateSiteConnection = Connect-PnPOnline -ClientId e6f6cea5-3653-448b-b4fc-5ddb2a4b376f -Url $templateSiteUrl -Interactive -ReturnConnection
+# Maintainer script: exports from the SOURCE tenant. Settings come from utils\source.config.json, environment variables or parameters.
+$source = & "$PSScriptRoot\..\..\utils\Get-SourceConfig.ps1" -SiteName 'Credimus' -Tenant $Tenant -ClientId $ClientId
+$templateSiteUrl = "https://$($source.Tenant).sharepoint.com/sites/$($SourceSite)"
+$templateSiteConnection = Connect-PnPOnline -ClientId $source.ClientId -Url $templateSiteUrl -Interactive -ReturnConnection
 
 Get-PnPSiteTemplate `
     -Connection $templateSiteConnection `
@@ -22,3 +30,6 @@ $xml.Provisioning.Templates.ProvisioningTemplate.ClientSidePages.ClientSidePage 
     }
 }
 $xml.Save("./templates/Credimus/PnPProvisioning/PnP-Provisioning-CredimusSite.xml")
+
+# Remove source tenant names and user domains from the exported XML before it is committed
+& "$PSScriptRoot\..\..\utils\Remove-TenantIdentity.ps1" -Path "./templates/Credimus/PnPProvisioning/PnP-Provisioning-CredimusSite.xml"

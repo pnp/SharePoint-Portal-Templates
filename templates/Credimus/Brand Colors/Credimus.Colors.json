@@ -9,18 +9,6 @@
       "Title": null,
       "Modified": "2026-03-11T10:12:51Z",
       "Created": "2026-03-11T10:12:51Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -77,8 +65,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 226,
         "LookupValue": "",
@@ -107,18 +93,6 @@
       "Title": null,
       "Modified": "2026-03-11T10:13:29Z",
       "Created": "2026-03-11T10:13:29Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -175,8 +149,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 220,
         "LookupValue": "",
@@ -205,18 +177,6 @@
       "Title": null,
       "Modified": "2026-03-11T10:14:09Z",
       "Created": "2026-03-11T10:14:09Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -273,8 +233,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 220,
         "LookupValue": "",
@@ -303,18 +261,6 @@
       "Title": null,
       "Modified": "2026-03-11T10:15:57Z",
       "Created": "2026-03-11T10:15:57Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
       "_HasCopyDestinations": null,
       "_CopySource": null,
       "owshiddenversion": 1,
@@ -371,8 +317,6 @@
       "_ColorTag": null,
       "_Emoji": null,
       "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
       "SMTotalSize": {
         "LookupId": 216,
         "LookupValue": "",
@@ -389,104 +333,6 @@
       "_SPColorTitle": "Credimus.Carbon",
       "_SPColorVisible": true,
       "_SPColorCode": "#0A0F0D"
-    }
-  },
-  {
-    "FieldValues": {
-      "ID": 10,
-      "ContentTypeId": {
-        "StringValue": "0x00C025425F27C91D42AA527A0E204A5520",
-        "TypeId": "{da0f1e90-296f-480e-bc27-cefe51eff241}"
-      },
-      "Title": null,
-      "Modified": "2026-03-11T10:20:07Z",
-      "Created": "2026-03-11T10:20:07Z",
-      "Author": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "Editor": {
-        "Email": "stefan@spex002.onmicrosoft.com",
-        "TypeId": "{c956ab54-16bd-4c18-89d2-996f57282a6f}",
-        "LookupId": 6,
-        "LookupValue": "Stefan Bauer"
-      },
-      "_HasCopyDestinations": null,
-      "_CopySource": null,
-      "owshiddenversion": 1,
-      "WorkflowVersion": 1,
-      "_UIVersion": 512,
-      "_UIVersionString": "1.0",
-      "Attachments": false,
-      "_ModerationStatus": 0,
-      "_ModerationComments": null,
-      "InstanceID": null,
-      "Order": 1000.0,
-      "GUID": "8176aeb4-8ecd-4e7d-b2ad-06baada13eb2",
-      "WorkflowInstanceID": null,
-      "FileRef": "/sites/BrandGuide/_catalogs/brandcolors/10_.000",
-      "FileDirRef": "/sites/BrandGuide/_catalogs/brandcolors",
-      "Last_x0020_Modified": "2026-03-11T10:20:07Z",
-      "Created_x0020_Date": "2026-03-11T10:20:07Z",
-      "FSObjType": "0",
-      "SortBehavior": {
-        "LookupId": 10,
-        "LookupValue": "0",
-        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
-      },
-      "FileLeafRef": "10_.000",
-      "UniqueId": "79bdbabc-30ef-4fa5-b4db-e76b5779681e",
-      "ParentUniqueId": "{8C0ED087-D527-41AB-93B6-836FC5B3DD69}",
-      "SyncClientId": {
-        "LookupId": 10,
-        "LookupValue": null,
-        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
-      },
-      "ProgId": "",
-      "ScopeId": "{AEF09068-813E-42EB-8A42-FA7393B4602E}",
-      "File_x0020_Type": null,
-      "MetaInfo": "",
-      "_Level": 1,
-      "_IsCurrentVersion": true,
-      "ItemChildCount": "0",
-      "FolderChildCount": "0",
-      "Restricted": "",
-      "OriginatorId": "",
-      "NoExecute": "0",
-      "ContentVersion": "0",
-      "_ComplianceFlags": "",
-      "_ComplianceTag": "",
-      "_ComplianceTagWrittenTime": "",
-      "_ComplianceTagUserId": "",
-      "AccessPolicy": "",
-      "_VirusStatus": "",
-      "_VirusVendorID": "",
-      "_VirusInfo": "",
-      "_RansomwareAnomalyMetaInfo": "",
-      "_ColorHex": null,
-      "_ColorTag": null,
-      "_Emoji": null,
-      "_DraftOwnerId": "",
-      "AppAuthor": null,
-      "AppEditor": null,
-      "SMTotalSize": {
-        "LookupId": 218,
-        "LookupValue": "",
-        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
-      },
-      "SMLastModifiedDate": "2026-03-11T10:20:07Z",
-      "SMTotalFileStreamSize": "0",
-      "SMTotalFileCount": {
-        "LookupId": 0,
-        "LookupValue": "",
-        "TypeId": "{f1d34cc0-9b50-4a78-be78-d5facfcccfb7}"
-      },
-      "ComplianceAssetId": null,
-      "_SPColorTitle": "Credimus.SkyBlue",
-      "_SPColorVisible": true,
-      "_SPColorCode": "#0EA5E9"
     }
   }
 ]

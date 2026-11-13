@@ -74,7 +74,13 @@ The script *ApplyPnPProvisioningTemplate.ps1* applies the PnP Provisioning templ
 
 The template contains information about the lists and libraries, pages, and images contained in the site.
 
-To run the script, you will need to update the variables at the top of the script to reflect your tenant and site information. Then, you can run the script. For detailed instructions, see [Applying PnP Templates to SharePoint Sites](https://learn.microsoft.com/sharepoint/dev/solution-guidance/applying-pnp-templates).
+To run the script, open PowerShell 7 in the template folder and pass your tenant name (without `.onmicrosoft.com`), the App (client) ID of your PnP.PowerShell app registration, and the URL name of the site you created (the part after `/sites/`):
+
+```powershell
+.\ApplyPnPProvisioningTemplate.ps1 -Tenant "contoso" -ClientId "<your-app-id>" -SiteUrl "<site-url-name>"
+```
+
+For detailed instructions, see [Applying PnP Templates to SharePoint Sites](https://learn.microsoft.com/sharepoint/dev/solution-guidance/applying-pnp-templates).
 
 You will be asked to log in with your credentials twice, once to connect to the SharePoint Admin Center to ensure the site you specified exists, and a second time to connect to that site. Then the script will run through several steps, applying the template and making the additional configurations.
 
@@ -151,6 +157,8 @@ Font Packages combine sets of fonts for use in a site which has the Font Package
 
 #### Give your package a name
 
+Name the font package *Solbound.Fonts*, and Save.
+
 ![Give your package a name](./media/solbound-give-your-package-a-name.jpg)
 
 ### Review font package
@@ -167,6 +175,8 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
+Standard headers can display the background image when an overlay is configured. Configure the background image overlay under Header as described below.
+
 #### Apply theme
 
 Select Theme and choose the `Solbound.Theme` and Save.
@@ -178,6 +188,14 @@ Select Theme and choose the `Solbound.Theme` and Save.
 Enable the Font Package you created above under Fonts.
 
 ![Apply Solbound Font Package](./media/solbound-apply-font-package.jpg)
+
+#### Set footer alignment
+
+After applying the provisioning template, select Footer under Change the look, set the alignment to Left, and select Save.
+
+#### Set header image overlay
+
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to Black and the overlay opacity to 60%, and select Save.
 
 ## Summary
 
