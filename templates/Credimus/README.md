@@ -174,7 +174,7 @@ These final steps apply the configurations you have set up above in the site its
 
 Go to the gear, and select Change the look.
 
-The provisioning script sets the header layout to Standard. Configure a background image overlay under Header so the background image is displayed.
+The provisioning script sets the header layout to Standard and configures the background image. The only manual step needed to display the header image is to set the overlay color to black under Header.
 
 #### Apply theme
 
@@ -188,13 +188,9 @@ Enable the Font Package you created above under Fonts.
 
 ![Apply Credimus Font Package](./media/credimus-apply-font-package.jpg)
 
-#### Set footer alignment
-
-After applying the provisioning template, select Footer under Change the look, set the alignment to Left, and select Save.
-
 #### Set header image overlay
 
-After applying the provisioning template, select Header under Change the look, choose a background image overlay color and a nonzero overlay opacity, and select Save.
+After applying the provisioning template, select Header under Change the look, set the background image overlay color to black, and select Save. No manual image selection, layout change, or opacity adjustment is required.
 
 ## Summary
 
